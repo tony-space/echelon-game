@@ -23,7 +23,7 @@ add_library(echelon_core STATIC ${SRC})
 target_include_directories(echelon_core PUBLIC include)
 target_link_libraries(echelon_core
 	PUBLIC glm::glm Boost::json
-	PRIVATE ECH_CXX_FLAGS)
+	PRIVATE miniz ECH_CXX_FLAGS)
 
 set_target_properties(echelon_core PROPERTIES
 	UNITY_BUILD ${ECH_UNITY_BUILD}

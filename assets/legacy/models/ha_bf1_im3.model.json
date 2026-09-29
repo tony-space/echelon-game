@@ -1,0 +1,66 @@
+{
+  "craft": "Human_BF1",
+  "source": "ha_bf1",
+  "lod": 0,
+  "damage_state": 3,
+  "parts": [
+    {
+      "name": "cockpit",
+      "mesh": "ha_bf1_im3_cockpit.emesh",
+      "parent": "",
+      "position": [
+        0.06837206333875656,
+        0.054651208221912384,
+        2.067298368046977e-07
+      ],
+      "orientation": [
+        0.0,
+        -6.942610922707797e-17,
+        -1.979097642866695e-16,
+        1.0
+      ],
+      "local_position": [
+        0.06837206333875656,
+        0.054651208221912384,
+        2.067298368046977e-07
+      ],
+      "textures": [
+        "inside"
+      ],
+      "materials": [
+        "Cockpit"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_CoPilot",
+      "mesh": "ha_bf1_im3_cockpit_CoPilot.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.0340249799191946,
+        -1.402536801993847,
+        0.004030002722956271
+      ],
+      "orientation": [
+        0.0,
+        -1.3885221845415593e-16,
+        -3.95819528573339e-16,
+        1.0
+      ],
+      "local_position": [
+        -0.034347083419561386,
+        -1.4571880102157593,
+        0.004029795993119478
+      ],
+      "textures": [
+        "inside",
+        "pil1m"
+      ],
+      "materials": [
+        "Cockpit",
+        "Pilot"
+      ],
+      "visible": false
+    }
+  ]
+}

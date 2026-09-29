@@ -16,7 +16,7 @@ add_executable(master-test-suite ${SRC})
 
 target_compile_definitions(master-test-suite PRIVATE ECH_TEST_ASSETS_DIR="${ECH_ASSETS_DIR}")
 target_link_libraries(master-test-suite
-	PRIVATE echelon_core Boost::unit_test_framework ECH_CXX_FLAGS)
+	PRIVATE echelon_core miniz Boost::unit_test_framework ECH_CXX_FLAGS)
 
 set_target_properties(master-test-suite PROPERTIES
 	UNITY_BUILD ${ECH_UNITY_BUILD}

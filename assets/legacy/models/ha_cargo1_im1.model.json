@@ -1,0 +1,437 @@
+{
+  "craft": "Human_Cargo1",
+  "source": "ha_cargo1",
+  "lod": 0,
+  "damage_state": 1,
+  "parts": [
+    {
+      "name": "BEBack",
+      "mesh": "ha_cargo1_im1_BEBack.emesh",
+      "parent": "",
+      "position": [
+        0.010155350901186466,
+        -1.893622636795044,
+        22.422794342041016
+      ],
+      "orientation": [
+        -4.2146846013224564e-08,
+        -5.395963341358846e-16,
+        5.395962208017695e-16,
+        1.0000000000000009
+      ],
+      "local_position": [
+        0.010155350901186466,
+        -1.893622636795044,
+        22.422794342041016
+      ],
+      "textures": [
+        "asrez",
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "BEFront",
+      "mesh": "ha_cargo1_im1_BEFront.emesh",
+      "parent": "",
+      "position": [
+        0.010155555792152882,
+        -5.307761192321777,
+        -19.955223083496094
+      ],
+      "orientation": [
+        -2.980232771676582e-08,
+        1.776356310004645e-15,
+        -7.1054269870240874e-15,
+        1.0000000000000004
+      ],
+      "local_position": [
+        0.010155555792152882,
+        -5.307761192321777,
+        -19.955223083496094
+      ],
+      "textures": [
+        "asrez",
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "ha_cargo1_im1_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0001107044517993927,
+        2.072230577468872,
+        6.213133811950684
+      ],
+      "orientation": [
+        2.98023223876953e-08,
+        -2.185569349201846e-08,
+        -2.1855696571076237e-08,
+        1.0000000000000004
+      ],
+      "local_position": [
+        0.0001107044517993927,
+        2.072230577468872,
+        6.213133811950684
+      ],
+      "textures": [
+        "asrez",
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Hands",
+      "mesh": "ha_cargo1_im1_Hands.emesh",
+      "parent": "",
+      "position": [
+        0.010155798867344856,
+        -3.6307125091552734,
+        0.9316656589508057
+      ],
+      "orientation": [
+        0.7071067390396978,
+        3.090862284085279e-08,
+        1.9259245257249915e-15,
+        0.7071068233333998
+      ],
+      "local_position": [
+        0.010155798867344856,
+        -3.6307125091552734,
+        0.9316656589508057
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Hands_GCargo",
+      "mesh": "ha_cargo1_im1_Hands_GCargo.emesh",
+      "parent": "Hands",
+      "position": [
+        0.01015707488716951,
+        -5.821642907965918,
+        0.6607593525564586
+      ],
+      "orientation": [
+        0.7071067390396978,
+        3.0908622505927433e-08,
+        -9.211491741989722e-16,
+        0.7071068233333998
+      ],
+      "local_position": [
+        1.1920928955078125e-06,
+        -0.27090656757354736,
+        2.1909303665161133
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE",
+      "mesh": "ha_cargo1_im1_LE.emesh",
+      "parent": "",
+      "position": [
+        -6.507232666015625,
+        -2.520853042602539,
+        -21.334823608398438
+      ],
+      "orientation": [
+        -4.2146846013224564e-08,
+        -5.395963341358846e-16,
+        5.395962208017695e-16,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -6.507232666015625,
+        -2.520853042602539,
+        -21.334823608398438
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LEBottom",
+      "mesh": "ha_cargo1_im1_LEBottom.emesh",
+      "parent": "",
+      "position": [
+        -3.317079782485962,
+        -1.728481650352478,
+        23.589820861816406
+      ],
+      "orientation": [
+        -4.2146846013224564e-08,
+        -5.395963122076088e-16,
+        2.315953060202021e-15,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -3.317079782485962,
+        -1.728481650352478,
+        23.589820861816406
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LETop",
+      "mesh": "ha_cargo1_im1_LETop.emesh",
+      "parent": "",
+      "position": [
+        -2.97005558013916,
+        2.792182445526123,
+        23.040679931640625
+      ],
+      "orientation": [
+        -4.2146846013224564e-08,
+        -2.315953226475693e-15,
+        5.3959629566961305e-16,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -2.97005558013916,
+        2.792182445526123,
+        23.040679931640625
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE",
+      "mesh": "ha_cargo1_im1_RE.emesh",
+      "parent": "",
+      "position": [
+        6.540201187133789,
+        -2.520850419998169,
+        -21.334823608398438
+      ],
+      "orientation": [
+        -4.2146846013224564e-08,
+        -5.395963341358846e-16,
+        5.395962208017695e-16,
+        1.0000000000000009
+      ],
+      "local_position": [
+        6.540201187133789,
+        -2.520850419998169,
+        -21.334823608398438
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "REBottom",
+      "mesh": "ha_cargo1_im1_REBottom.emesh",
+      "parent": "",
+      "position": [
+        3.326526165008545,
+        -1.7284798622131348,
+        23.589820861816406
+      ],
+      "orientation": [
+        -4.2146846013224564e-08,
+        -5.395963341358846e-16,
+        5.395962208017695e-16,
+        1.0000000000000009
+      ],
+      "local_position": [
+        3.326526165008545,
+        -1.7284798622131348,
+        23.589820861816406
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RETop",
+      "mesh": "ha_cargo1_im1_RETop.emesh",
+      "parent": "",
+      "position": [
+        2.979501485824585,
+        2.792182207107544,
+        23.040672302246094
+      ],
+      "orientation": [
+        -8.881784726396844e-16,
+        1.3027009916142112e-15,
+        4.736560595442753e-16,
+        1.0
+      ],
+      "local_position": [
+        2.979501485824585,
+        2.792182207107544,
+        23.040672302246094
+      ],
+      "textures": [
+        "ha_cargo1dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit",
+      "mesh": "ha_cargo1_im1_cockpit.emesh",
+      "parent": "",
+      "position": [
+        0.010154575109481812,
+        -0.630782961845398,
+        -24.385501861572266
+      ],
+      "orientation": [
+        0.0,
+        -4.736557419069216e-16,
+        4.736560595442768e-16,
+        1.0
+      ],
+      "local_position": [
+        0.010154575109481812,
+        -0.630782961845398,
+        -24.385501861572266
+      ],
+      "textures": [
+        "asrez",
+        "ha_cargo1dmg",
+        "inside",
+        "kabina"
+      ],
+      "materials": [
+        "Cockpit",
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_Copilot",
+      "mesh": "ha_cargo1_im1_cockpit_Copilot.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.8866655528545431,
+        -1.041019111871709,
+        -29.395248413085938
+      ],
+      "orientation": [
+        0.5699965854931364,
+        4.66463210295453e-08,
+        5.74676159094251e-08,
+        0.8216470551916175
+      ],
+      "local_position": [
+        0.8765109777450562,
+        -0.4102361500263214,
+        -5.009746551513672
+      ],
+      "textures": [
+        "pil1m"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": false
+    },
+    {
+      "name": "cockpit_Glass",
+      "mesh": "ha_cargo1_im1_cockpit_Glass.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.010150624596919173,
+        -0.05493724346160467,
+        -26.597150802612305
+      ],
+      "orientation": [
+        0.7071067179662776,
+        3.090862032870521e-08,
+        4.1867747090816625e-15,
+        0.7071068444068231
+      ],
+      "local_position": [
+        -3.950512564188102e-06,
+        0.5758457183837891,
+        -2.211648941040039
+      ],
+      "textures": [],
+      "materials": [
+        "Glass"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_pilot",
+      "mesh": "ha_cargo1_im1_cockpit_pilot.emesh",
+      "parent": "cockpit",
+      "position": [
+        -0.8763944208621928,
+        -1.0410191714763555,
+        -29.395248413085938
+      ],
+      "orientation": [
+        0.5699965854931364,
+        4.66463210295453e-08,
+        5.74676159094251e-08,
+        0.8216470551916175
+      ],
+      "local_position": [
+        -0.8865489959716797,
+        -0.4102362096309662,
+        -5.009746551513672
+      ],
+      "textures": [
+        "pil1m"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": true
+    }
+  ]
+}

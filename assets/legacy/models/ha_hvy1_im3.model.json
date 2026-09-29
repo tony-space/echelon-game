@@ -1,0 +1,64 @@
+{
+  "craft": "Human_HVY1",
+  "source": "ha_hvy1",
+  "lod": 0,
+  "damage_state": 3,
+  "parts": [
+    {
+      "name": "cockpit",
+      "mesh": "ha_hvy1_im3_cockpit.emesh",
+      "parent": "",
+      "position": [
+        -2.350241175008705e-06,
+        0.41315844655036926,
+        0.060554519295692444
+      ],
+      "orientation": [
+        -1.430939107568704e-07,
+        -0.7071067800512439,
+        0.7071067823218511,
+        -3.576441033534502e-08
+      ],
+      "local_position": [
+        -2.350241175008705e-06,
+        0.41315844655036926,
+        0.060554519295692444
+      ],
+      "textures": [
+        "inside"
+      ],
+      "materials": [
+        "Cockpit"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_Zhopa",
+      "mesh": "ha_hvy1_im3_cockpit_Zhopa.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.12699591817372016,
+        0.2141632715091245,
+        -3.85998649599206
+      ],
+      "orientation": [
+        1.219236013986802e-07,
+        0.7071068114558802,
+        -0.7071067509172222,
+        6.021760488660628e-09
+      ],
+      "local_position": [
+        -0.12699730694293976,
+        3.9205410480499268,
+        0.19899514317512512
+      ],
+      "textures": [
+        "inside"
+      ],
+      "materials": [
+        "Cockpit"
+      ],
+      "visible": true
+    }
+  ]
+}

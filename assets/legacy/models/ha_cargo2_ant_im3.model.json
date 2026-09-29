@@ -1,0 +1,38 @@
+{
+  "craft": "Human_Cargo2_Ant",
+  "source": "ha_cargo2_ant",
+  "lod": 0,
+  "damage_state": 3,
+  "parts": [
+    {
+      "name": "Cockpit",
+      "mesh": "ha_cargo2_ant_im3_Cockpit.emesh",
+      "parent": "",
+      "position": [
+        0.00423833355307579,
+        -1.66322660446167,
+        0.2707476317882538
+      ],
+      "orientation": [
+        0.7071067179662726,
+        6.251874572122843e-08,
+        5.2683564469561116e-08,
+        0.7071068444068281
+      ],
+      "local_position": [
+        0.00423833355307579,
+        -1.66322660446167,
+        0.2707476317882538
+      ],
+      "textures": [
+        "asrez",
+        "inside",
+        "kabina"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

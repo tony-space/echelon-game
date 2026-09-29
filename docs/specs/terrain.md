@@ -7,7 +7,8 @@
 Один уровень — набор файлов с общим именем и разными расширениями. Код чтения
 в оригинале — `Terrain.dll` (см. [modules.md](modules.md)); адресация и
 интерполяция ниже сверены с её дизассемблером (`GroundLevel`, `WaterLevel`,
-функции `10001070` и `10001130`). Экспорт — `tools/terrain_export.py`,
+функции `10001070` и `10001130`). Разбор самой DLL — [terrain_dll.md](terrain_dll.md).
+Экспорт — `tools/terrain_export.py`,
 рендер в песочнице — `src/app/render/terrain_renderer.cpp`.
 
 ## Сетка — проверено
@@ -116,12 +117,21 @@ k = ((i >> 5) + (j >> 5) · tilesX) · 1024 + (j & 31) · 32 + (i & 31)
 | `.bmq` | разный | Тоже начинается с `BM`. Меньше парного `.bmp` |
 | `.ros` | единицы килобайт | `EVG1`. Строки `treesa`, `treesb`, `Density`, `Dispersion`, `ObjectName` — россыпь объектов по карте |
 
-## Наш формат `.eterr` v1
+## Наш формат `.eterr`
 
 `tools/terrain_export.py [--terrain Continent]` →
 `assets/legacy/terrain/<name>.eterr`, `<name>.terrain.json` (слоты → PNG,
 `detail`, средний цвет `detail`, вода) и PNG текстур в
 `assets/legacy/textures/`.
+
+На диске — **v2**: тот же файл v1, сжатый zlib (уровень 9, обёртка RFC 1950,
+как `zlib.compress` в Python). Распаковывает `Heightfield::parse` через miniz.
+
+```
+'ETER', u32 version=2, u32 uncompressedSize, zlib(файл v1)
+```
+
+v1, уже распакованный:
 
 ```
 'ETER', u32 version=1, u32 width, u32 height, u32 cellsX, u32 cellsY,
@@ -131,7 +141,8 @@ u8  flags[height][width]       старший байт флагов .sq (бит 
 u8  cell[cellsY][cellsX][16]   записи .vb без изменений, построчно
 ```
 
-Читает `Heightfield::parse` (`src/core/.../terrain/heightfield.hpp`).
+Читает `Heightfield::parse` (`src/core/.../terrain/heightfield.hpp`). v1 без
+обёртки тоже принимается.
 
 ## Что из этого следует
 

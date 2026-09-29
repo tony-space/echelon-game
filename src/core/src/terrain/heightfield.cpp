@@ -1,18 +1,39 @@
 #include <echelon/terrain/heightfield.hpp>
 
+#include <miniz.h>
+
 #include <algorithm>
 #include <cmath>
 #include <cstring>
 #include <format>
 #include <fstream>
+#include <limits>
 
 namespace ech {
 
 namespace {
 
-constexpr std::uint32_t kEterrVersion = 1;
+constexpr std::uint32_t kEterrPlainVersion = 1;
+constexpr std::uint32_t kEterrZlibVersion = 2;
+constexpr std::size_t kZlibHeaderBytes = 12; // 'ETER', version, uncompressed size
+constexpr std::uint32_t kMaxUncompressedBytes = 512u * 1024u * 1024u;
 constexpr std::size_t kHeaderBytes = 4 + 5 * 4 + 2 * 4;
 constexpr std::size_t kCellBytes = 16;
+
+// zlib wrapper (RFC 1950), the same bytes Python's zlib.compress writes.
+std::vector<std::byte> inflateZlib(std::span<const std::byte> src, std::uint32_t rawSize)
+{
+	if (rawSize == 0 || rawSize > kMaxUncompressedBytes || src.empty() ||
+		src.size() > static_cast<std::size_t>(std::numeric_limits<mz_ulong>::max()))
+		throw HeightfieldError("eterr: bad compressed size");
+	std::vector<std::byte> raw(rawSize);
+	auto got = static_cast<mz_ulong>(rawSize);
+	const int rc = mz_uncompress(reinterpret_cast<unsigned char*>(raw.data()), &got,
+		reinterpret_cast<const unsigned char*>(src.data()), static_cast<mz_ulong>(src.size()));
+	if (rc != MZ_OK || got != rawSize)
+		throw HeightfieldError(std::format("eterr: inflate failed ({})", mz_error(rc) != nullptr ? mz_error(rc) : "unknown"));
+	return raw;
+}
 
 class ByteReader {
 public:
@@ -63,7 +84,7 @@ Heightfield::Heightfield(int width, int height, float spacing, float heightScale
 		throw HeightfieldError("heightfield: cell array does not match the size");
 }
 
-// .eterr v1, see tools/terrain_export.py.
+// .eterr v1, or v2 (zlib-wrapped v1). See tools/terrain_export.py.
 Heightfield Heightfield::parse(std::span<const std::byte> bytes)
 {
 	const ByteReader r(bytes);
@@ -72,9 +93,14 @@ Heightfield Heightfield::parse(std::span<const std::byte> bytes)
 	if (std::memcmp(magic, "ETER", 4) != 0)
 		throw HeightfieldError("eterr: bad magic");
 	const auto version = r.pod<std::uint32_t>(4);
-	if (version != kEterrVersion)
-		throw HeightfieldError(
-			std::format("eterr: version {} (expected {}); re-run tools/terrain_export.py", version, kEterrVersion));
+	if (version == kEterrZlibVersion) {
+		const auto rawSize = r.pod<std::uint32_t>(8);
+		return parse(inflateZlib(bytes.subspan(kZlibHeaderBytes), rawSize));
+	}
+	if (version != kEterrPlainVersion)
+		throw HeightfieldError(std::format(
+			"eterr: version {} (expected {} or {}); re-run tools/terrain_export.py", version, kEterrPlainVersion,
+			kEterrZlibVersion));
 	const auto width = static_cast<int>(r.pod<std::uint32_t>(8));
 	const auto height = static_cast<int>(r.pod<std::uint32_t>(12));
 	const auto cellsX = static_cast<int>(r.pod<std::uint32_t>(16));

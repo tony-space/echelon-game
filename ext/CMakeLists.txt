@@ -18,6 +18,9 @@ set_property(TARGET glfw PROPERTY FOLDER ext)
 # ---- stb (image loading) ----
 add_subdirectory(stb)
 
+# ---- miniz (zlib inflate/deflate) ----
+add_subdirectory(miniz)
+
 # ---- GLEW (OpenGL function loader, prebuilt binaries) ----
 # Layout: glew-2.1.0/lib/Release/<platform>/...  Add new platforms here.
 set(ECH_GLEW_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/glew-2.1.0")

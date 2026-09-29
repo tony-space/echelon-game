@@ -165,6 +165,7 @@
 `TraceLineOut`, `TraceSquareLine`, `TraceBoxLine` (боксы `T_BOX` /
 `T_VBOX`), `ClipLine`. Во второй игре ещё `openRandomObject` /
 `saveRandomObject` → `IRObjectsData` (россыпь `.ros`).
+Разбор кода — [terrain_dll.md](terrain_dll.md).
 
 ## ИИ
 

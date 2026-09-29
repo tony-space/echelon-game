@@ -1,0 +1,36 @@
+{
+  "craft": "Human_HVY2",
+  "source": "ha_hvy2",
+  "lod": 0,
+  "damage_state": 3,
+  "parts": [
+    {
+      "name": "cockpit",
+      "mesh": "ha_hvy2_im3_cockpit.emesh",
+      "parent": "",
+      "position": [
+        7.713984473411983e-08,
+        0.7716313004493713,
+        -0.44647929072380066
+      ],
+      "orientation": [
+        0.0,
+        8.290460967402377e-16,
+        -8.290452497072904e-16,
+        1.0
+      ],
+      "local_position": [
+        7.713984473411983e-08,
+        0.7716313004493713,
+        -0.44647929072380066
+      ],
+      "textures": [
+        "inside"
+      ],
+      "materials": [
+        "Cockpit"
+      ],
+      "visible": true
+    }
+  ]
+}

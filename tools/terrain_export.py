@@ -24,7 +24,9 @@ Original layout (see docs/specs/terrain.md):
     rdata.dat "default#terrmtl": detail + water headers, then 32 layer slots of
          {u32 textureHash, u32 materialHash, u32 -1, u32 0} from offset 52.
 
-.eterr v1 (little endian):
+.eterr v2 (little endian) is a zlib wrapper around the v1 layout:
+    'ETER', u32 version=2, u32 uncompressedSize, zlib(v1 file)
+v1:
     'ETER', u32 version=1, u32 width, u32 height (samples), u32 cellsX, u32 cellsY,
     f32 sampleSpacing, f32 heightScale
     i16 height[height][width]            row j = original row (D3D +Z)
@@ -38,6 +40,7 @@ import argparse
 import json
 import struct
 import sys
+import zlib
 from array import array
 from pathlib import Path
 
@@ -45,6 +48,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from legacy_export import Container, decode_dxt, export_texture  # noqa: E402
 
 ETERR_VERSION = 1
+ETERR_ZLIB_VERSION = 2
 SAMPLE_SPACING = 64.0
 HEIGHT_SCALE = 0.2
 SQ_TILE = 32
@@ -129,14 +133,19 @@ def export_terrain(data_dir: Path, name: str, out_dir: Path) -> None:
 
     if sys.byteorder != "little":
         heights.byteswap()
+    plain = bytearray()
+    plain += b"ETER"
+    plain += struct.pack("<5I2f", ETERR_VERSION, width, height, cells_x, cells_y, SAMPLE_SPACING, HEIGHT_SCALE)
+    plain += heights.tobytes()
+    plain += flags
+    plain += cells
+    compressed = zlib.compress(plain, 9)
     out = terrain_dir / f"{name}.eterr"
     with out.open("wb") as f:
         f.write(b"ETER")
-        f.write(struct.pack("<5I2f", ETERR_VERSION, width, height, cells_x, cells_y, SAMPLE_SPACING, HEIGHT_SCALE))
-        f.write(heights.tobytes())
-        f.write(flags)
-        f.write(cells)
-    print(f"  -> {out} ({out.stat().st_size / 1e6:.1f} MB)")
+        f.write(struct.pack("<II", ETERR_ZLIB_VERSION, len(plain)))
+        f.write(compressed)
+    print(f"  -> {out} ({out.stat().st_size / 1e6:.1f} MB, plain {len(plain) / 1e6:.1f} MB)")
 
     textures = Container.load(graphics / "textures.dat")
     rdata = Container.load(graphics / "rdata.dat")

@@ -1,0 +1,36 @@
+{
+  "craft": "Human_CC",
+  "source": "ha_cc",
+  "lod": 0,
+  "damage_state": 3,
+  "parts": [
+    {
+      "name": "cockpit",
+      "mesh": "ha_cc_im3_cockpit.emesh",
+      "parent": "",
+      "position": [
+        -0.0017105689039453864,
+        -0.48091620206832886,
+        8.834425813120106e-08
+      ],
+      "orientation": [
+        0.0,
+        -4.736553713300072e-16,
+        4.736559007255992e-16,
+        1.0
+      ],
+      "local_position": [
+        -0.0017105689039453864,
+        -0.48091620206832886,
+        8.834425813120106e-08
+      ],
+      "textures": [
+        "inside"
+      ],
+      "materials": [
+        "Cockpit"
+      ],
+      "visible": true
+    }
+  ]
+}

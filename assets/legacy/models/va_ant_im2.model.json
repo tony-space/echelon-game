@@ -1,0 +1,321 @@
+{
+  "craft": "Velian Cargo Antenna",
+  "source": "va_ant",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "CE",
+      "mesh": "va_ant_im2_CE.emesh",
+      "parent": "",
+      "position": [
+        -7.828931813946838e-08,
+        10.296804428100586,
+        14.641934394836426
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862158477861e-08,
+        1.590999256317561e-15,
+        0.7071068022599721
+      ],
+      "local_position": [
+        -7.828931813946838e-08,
+        10.296804428100586,
+        14.641934394836426
+      ],
+      "textures": [
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "va_ant_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.06813739240169525,
+        -2.0734527111053467,
+        -3.503276824951172
+      ],
+      "orientation": [
+        2.98023223876953e-08,
+        -2.1855693492018406e-08,
+        -2.1855698347433076e-08,
+        1.0000000000000004
+      ],
+      "local_position": [
+        0.06813739240169525,
+        -2.0734527111053467,
+        -3.503276824951172
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LBE",
+      "mesh": "va_ant_im2_LBE.emesh",
+      "parent": "",
+      "position": [
+        -7.369740009307861,
+        6.204257488250732,
+        11.759406089782715
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862158477861e-08,
+        1.590999256317561e-15,
+        0.7071068022599721
+      ],
+      "local_position": [
+        -7.369740009307861,
+        6.204257488250732,
+        11.759406089782715
+      ],
+      "textures": [
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Leg_Antenna",
+      "mesh": "va_ant_im2_Leg_Antenna.emesh",
+      "parent": "Leg",
+      "position": [
+        -0.0477248914539814,
+        -8.180753707885742,
+        4.131036281585693
+      ],
+      "orientation": [
+        0.7071067390396952,
+        3.0908622840852685e-08,
+        1.92592430580071e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        -0.0477248914539814,
+        -8.180753707885742,
+        4.131036281585693
+      ],
+      "textures": [
+        "a0tr1b",
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Leg_Antenna_Antenna",
+      "mesh": "va_ant_im2_Leg_Antenna_Antenna.emesh",
+      "parent": "Leg_Antenna",
+      "position": [
+        -0.047724320213960385,
+        -14.260775566101183,
+        4.13103598833216
+      ],
+      "orientation": [
+        0.7071067390396952,
+        3.0908621640199496e-08,
+        7.252712466850342e-16,
+        0.7071068233334024
+      ],
+      "local_position": [
+        3.0547380447387695e-07,
+        -1.018048692458251e-06,
+        6.080021858215332
+      ],
+      "textures": [
+        "a0tr1b"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RBE",
+      "mesh": "va_ant_im2_RBE.emesh",
+      "parent": "",
+      "position": [
+        7.369741439819336,
+        6.204257011413574,
+        11.759406089782715
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862158477861e-08,
+        1.590999256317561e-15,
+        0.7071068022599721
+      ],
+      "local_position": [
+        7.369741439819336,
+        6.204257011413574,
+        11.759406089782715
+      ],
+      "textures": [
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsBack",
+      "mesh": "va_ant_im2_korpsBack.emesh",
+      "parent": "",
+      "position": [
+        2.3483350730657548e-07,
+        6.022399425506592,
+        17.53094482421875
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862158477861e-08,
+        1.590999256317561e-15,
+        0.7071068022599721
+      ],
+      "local_position": [
+        2.3483350730657548e-07,
+        6.022399425506592,
+        17.53094482421875
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsnose",
+      "mesh": "va_ant_im2_korpsnose.emesh",
+      "parent": "",
+      "position": [
+        -6.588667247342528e-07,
+        1.7402145862579346,
+        -7.196720123291016
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862158477861e-08,
+        1.590999256317561e-15,
+        0.7071068022599721
+      ],
+      "local_position": [
+        -6.588667247342528e-07,
+        1.7402145862579346,
+        -7.196720123291016
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsnose_LFE",
+      "mesh": "va_ant_im2_korpsnose_LFE.emesh",
+      "parent": "korpsnose",
+      "position": [
+        -6.940764196146441,
+        3.3248614690147047,
+        -7.070935994064836
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862071905095e-08,
+        7.252716473182492e-16,
+        0.7071068022599721
+      ],
+      "local_position": [
+        -6.940763473510742,
+        0.12578392028808594,
+        -1.5846471786499023
+      ],
+      "textures": [
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsnose_RFE",
+      "mesh": "va_ant_im2_korpsnose_RFE.emesh",
+      "parent": "korpsnose",
+      "position": [
+        6.940762750875093,
+        3.324862075795581,
+        -7.0709366008456875
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862071905095e-08,
+        7.252716473182492e-16,
+        0.7071068022599721
+      ],
+      "local_position": [
+        6.940763473510742,
+        0.12578392028808594,
+        -1.5846471786499023
+      ],
+      "textures": [
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsnose_cockpit",
+      "mesh": "va_ant_im2_korpsnose_cockpit.emesh",
+      "parent": "korpsnose",
+      "position": [
+        -3.98435570188264e-07,
+        -2.866885819979359,
+        -5.845850669914455
+      ],
+      "orientation": [
+        0.7071067601131236,
+        3.090862071905117e-08,
+        7.252715724504088e-16,
+        0.7071068022599721
+      ],
+      "local_position": [
+        -3.639900897643754e-15,
+        1.3508691787719727,
+        4.607100486755371
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo2dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    }
+  ]
+}

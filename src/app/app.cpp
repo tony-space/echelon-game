@@ -308,9 +308,9 @@ int runApp(const AppOptions& options)
 				const glm::vec3 p = camera.position;
 				const auto stats = terrain.renderer ? terrain.renderer->stats() : TerrainRenderer::Stats{};
 				log::info("{:.0f} fps | cam {:.0f} {:.0f} {:.0f} (agl {:.0f} m) yaw {:.0f} pitch {:.0f} | "
-						  "terrain {} blocks, {:.1f}M tris, {} water",
+						  "terrain {} nodes, {:.2f}M tris, {} water",
 					statFrames / statTimer, p.x, p.y, p.z, p.y - terrain.groundAt(p.x, p.z), camera.yawDeg,
-					camera.pitchDeg, stats.blocks, static_cast<double>(stats.triangles) / 1e6, stats.waterBlocks);
+					camera.pitchDeg, stats.nodes, static_cast<double>(stats.triangles) / 1e6, stats.waterNodes);
 				statTimer = 0.0;
 				statFrames = 0;
 			}

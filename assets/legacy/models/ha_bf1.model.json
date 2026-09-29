@@ -1,0 +1,190 @@
+{
+  "craft": "Human_BF1",
+  "source": "ha_bf1",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "LE",
+      "mesh": "ha_bf1_LE.emesh",
+      "parent": "",
+      "position": [
+        -2.8378450870513916,
+        -0.24806229770183563,
+        2.977335214614868
+      ],
+      "local_position": [
+        -2.8378450870513916,
+        -0.24806229770183563,
+        2.977335214614868
+      ],
+      "textures": [
+        "asrez",
+        "ha_bf1"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE_LW",
+      "mesh": "ha_bf1_LE_LW.emesh",
+      "parent": "LE",
+      "position": [
+        -6.386212348937988,
+        -1.1852946728467941,
+        2.357427179813385
+      ],
+      "local_position": [
+        -3.5483672618865967,
+        -0.9372323751449585,
+        -0.6199080348014832
+      ],
+      "textures": [
+        "ha_bf1"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE",
+      "mesh": "ha_bf1_RE.emesh",
+      "parent": "",
+      "position": [
+        2.8785581588745117,
+        -0.24806159734725952,
+        2.9773354530334473
+      ],
+      "local_position": [
+        2.8785581588745117,
+        -0.24806159734725952,
+        2.9773354530334473
+      ],
+      "textures": [
+        "asrez",
+        "ha_bf1"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE_RW",
+      "mesh": "ha_bf1_RE_RW.emesh",
+      "parent": "RE",
+      "position": [
+        6.406569242477417,
+        -1.1852935552597046,
+        2.357427179813385
+      ],
+      "local_position": [
+        3.5280110836029053,
+        -0.9372319579124451,
+        -0.6199082732200623
+      ],
+      "textures": [
+        "ha_bf1"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_CoPilot",
+      "mesh": "ha_bf1_cockpit_CoPilot.emesh",
+      "parent": "cockpit",
+      "position": [
+        -0.034347083419561386,
+        -1.4571880102157593,
+        0.004029795993119478
+      ],
+      "local_position": [
+        -0.034347083419561386,
+        -1.4571880102157593,
+        0.004029795993119478
+      ],
+      "textures": [
+        "pil1m"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": false
+    },
+    {
+      "name": "cockpit",
+      "mesh": "ha_bf1_cockpit.emesh",
+      "parent": "",
+      "position": [
+        0.06837206333875656,
+        0.054651208221912384,
+        2.067298368046977e-07
+      ],
+      "local_position": [
+        0.06837206333875656,
+        0.054651208221912384,
+        2.067298368046977e-07
+      ],
+      "textures": [
+        "asrez",
+        "ha_bf1",
+        "kabina"
+      ],
+      "materials": [
+        "Cockpit",
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_Pilot",
+      "mesh": "ha_bf1_cockpit_Pilot.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.0035691112279891968,
+        -0.620849959552288,
+        -4.891194613674216
+      ],
+      "local_position": [
+        -0.06480295211076736,
+        -0.6755011677742004,
+        -4.891194820404053
+      ],
+      "textures": [
+        "pil1m"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_glass",
+      "mesh": "ha_bf1_cockpit_glass.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.028556425124406815,
+        -0.2901204451918602,
+        -3.9715881664543673
+      ],
+      "local_position": [
+        -0.03981563821434975,
+        -0.3447716534137726,
+        -3.971588373184204
+      ],
+      "textures": [],
+      "materials": [
+        "Glass"
+      ],
+      "visible": true
+    }
+  ]
+}

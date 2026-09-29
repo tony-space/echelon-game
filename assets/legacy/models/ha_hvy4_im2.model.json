@@ -1,0 +1,419 @@
+{
+  "craft": "Human_HVY4",
+  "source": "ha_hvy4",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "LE",
+      "mesh": "ha_hvy4_im2_LE.emesh",
+      "parent": "",
+      "position": [
+        -2.610229015350342,
+        0.6638976335525513,
+        1.3081494569778442
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.963752105812277e-08,
+        1.996713215954625e-08,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -2.610229015350342,
+        0.6638976335525513,
+        1.3081494569778442
+      ],
+      "textures": [
+        "g-bbb"
+      ],
+      "materials": [
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE_LW",
+      "mesh": "ha_hvy4_im2_LE_LW.emesh",
+      "parent": "LE",
+      "position": [
+        -6.518540084933081,
+        3.2870641930680082,
+        2.8083039045860714
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.963752060377961e-08,
+        1.996713170520298e-08,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -3.908310890197754,
+        1.5001544952392578,
+        -2.623166799545288
+      ],
+      "textures": [
+        "asrez",
+        "g-bbb",
+        "ha_hvy4dmg"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE_LW_LWA",
+      "mesh": "ha_hvy4_im2_LE_LW_LWA.emesh",
+      "parent": "LE_LW",
+      "position": [
+        -11.737336666454617,
+        1.1363111385278617,
+        1.6301184765878718
+      ],
+      "orientation": [
+        0.7071067811865488,
+        3.963751795130735e-08,
+        1.9967130936841972e-08,
+        0.7071067811865488
+      ],
+      "local_position": [
+        -5.218796730041504,
+        -1.1781857013702393,
+        2.150752544403076
+      ],
+      "textures": [
+        "ha_hvy4dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE_LW_TurretCA",
+      "mesh": "ha_hvy4_im2_LE_LW_TurretCA.emesh",
+      "parent": "LE_LW",
+      "position": [
+        -7.578402803622569,
+        5.368970334988726,
+        5.341906286098179
+      ],
+      "orientation": [
+        -2.9637386843444335e-09,
+        1.0000000000000118,
+        7.275329501157931e-08,
+        8.491785808714988e-08
+      ],
+      "local_position": [
+        -1.0598626136779785,
+        2.533602476119995,
+        -2.0819060802459717
+      ],
+      "textures": [
+        "g-bbb",
+        "ha_hvy4dmg",
+        "pil1mb"
+      ],
+      "materials": [
+        "Metal",
+        "Pilot",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE_LW_TurretCA_CoPilot",
+      "mesh": "ha_hvy4_im2_LE_LW_TurretCA_CoPilot.emesh",
+      "parent": "LE_LW_TurretCA",
+      "position": [
+        -7.563127793637716,
+        5.387467325981876,
+        5.439512942868828
+      ],
+      "orientation": [
+        3.1885657392676935e-08,
+        1.0000000000000153,
+        9.503979755949744e-08,
+        2.816766616056793e-08
+      ],
+      "local_position": [
+        -0.015275026671588421,
+        0.018497005105018616,
+        -0.09760665148496628
+      ],
+      "textures": [
+        "pil1mb"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": false
+    },
+    {
+      "name": "LE_LW_TurretCA_Gun",
+      "mesh": "ha_hvy4_im2_LE_LW_TurretCA_Gun.emesh",
+      "parent": "LE_LW_TurretCA",
+      "position": [
+        -6.548118794716888,
+        5.1967518655119775,
+        5.572964854769056
+      ],
+      "orientation": [
+        2.0574202110419643e-08,
+        1.0000000000000158,
+        1.1142999597552491e-07,
+        1.3547397361690945e-08
+      ],
+      "local_position": [
+        -1.03028404712677,
+        -0.1722184419631958,
+        -0.23105841875076294
+      ],
+      "textures": [
+        "ha_hvy4dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE",
+      "mesh": "ha_hvy4_im2_RE.emesh",
+      "parent": "",
+      "position": [
+        2.6102309226989746,
+        0.663898229598999,
+        1.3081499338150024
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.963752105812277e-08,
+        1.996713215954625e-08,
+        0.7071068022599746
+      ],
+      "local_position": [
+        2.6102309226989746,
+        0.663898229598999,
+        1.3081499338150024
+      ],
+      "textures": [
+        "g-bbb",
+        "ha_hvy4dmg"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE_RW",
+      "mesh": "ha_hvy4_im2_RE_RW.emesh",
+      "parent": "RE",
+      "position": [
+        6.557572183122296,
+        3.287064492694192,
+        2.725625844870021
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.963752060377961e-08,
+        1.996713170520298e-08,
+        0.7071068022599746
+      ],
+      "local_position": [
+        3.9473414421081543,
+        1.4174761772155762,
+        -2.6231658458709717
+      ],
+      "textures": [
+        "asrez",
+        "g-bbb",
+        "ha_hvy4dmg"
+      ],
+      "materials": [
+        "Metal",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE_RW_RWA",
+      "mesh": "ha_hvy4_im2_RE_RW_RWA.emesh",
+      "parent": "RE_RW",
+      "position": [
+        11.867765855698833,
+        1.3369109281362346,
+        1.6301185492513286
+      ],
+      "orientation": [
+        0.7071067811865488,
+        3.963751795130735e-08,
+        1.9967130936841972e-08,
+        0.7071067811865488
+      ],
+      "local_position": [
+        5.3101935386657715,
+        -1.095507264137268,
+        1.9501539468765259
+      ],
+      "textures": [
+        "ha_hvy4dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE_RW_TurretCB",
+      "mesh": "ha_hvy4_im2_RE_RW_TurretCB.emesh",
+      "parent": "RE_RW",
+      "position": [
+        7.509544566428387,
+        5.368971765864332,
+        5.393279254935008
+      ],
+      "orientation": [
+        -2.9637386843444335e-09,
+        1.0000000000000118,
+        7.275329501157931e-08,
+        8.491785808714988e-08
+      ],
+      "local_position": [
+        0.951972484588623,
+        2.6676535606384277,
+        -2.081907033920288
+      ],
+      "textures": [
+        "g-bbb",
+        "pil1mb"
+      ],
+      "materials": [
+        "Pilot",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE_RW_TurretCB_CoPilot",
+      "mesh": "ha_hvy4_im2_RE_RW_TurretCB_CoPilot.emesh",
+      "parent": "RE_RW_TurretCB",
+      "position": [
+        7.488631451734118,
+        5.387470185291738,
+        5.490886389847568
+      ],
+      "orientation": [
+        1.1949697721135918e-08,
+        1.000000000000033,
+        -4.446937993678995e-08,
+        1.5969939723916987e-08
+      ],
+      "local_position": [
+        0.020913098007440567,
+        0.018498433753848076,
+        -0.09760713577270508
+      ],
+      "textures": [
+        "pil1mb"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": false
+    },
+    {
+      "name": "RE_RW_TurretCB_Gun",
+      "mesh": "ha_hvy4_im2_RE_RW_TurretCB_Gun.emesh",
+      "parent": "RE_RW_TurretCB",
+      "position": [
+        6.549231276376983,
+        5.196753128150808,
+        5.572963914373885
+      ],
+      "orientation": [
+        2.0574202110419643e-08,
+        1.0000000000000158,
+        1.1142999597552491e-07,
+        1.3547397361690945e-08
+      ],
+      "local_position": [
+        0.9603132605552673,
+        -0.17221860587596893,
+        -0.1796848475933075
+      ],
+      "textures": [
+        "g-bbb"
+      ],
+      "materials": [
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit",
+      "mesh": "ha_hvy4_im2_cockpit.emesh",
+      "parent": "",
+      "position": [
+        6.362656677083578e-07,
+        0.7027472257614136,
+        -0.7770320773124695
+      ],
+      "orientation": [
+        0.0,
+        -3.552713678800501e-15,
+        1.323488980084846e-23,
+        1.0
+      ],
+      "local_position": [
+        6.362656677083578e-07,
+        0.7027472257614136,
+        -0.7770320773124695
+      ],
+      "textures": [
+        "asrez",
+        "g-bbb",
+        "ha_hvy4dmg",
+        "pil1mb"
+      ],
+      "materials": [
+        "Metal",
+        "Pilot",
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "cockpit_Pilot",
+      "mesh": "ha_hvy4_im2_cockpit_Pilot.emesh",
+      "parent": "cockpit",
+      "position": [
+        0.0029148009466836186,
+        0.7403960227966309,
+        -4.76183956861496
+      ],
+      "orientation": [
+        0.0,
+        -7.105427357601002e-15,
+        2.6469779601696886e-23,
+        1.0
+      ],
+      "local_position": [
+        0.0029141646809875965,
+        0.037648797035217285,
+        -3.9848074913024902
+      ],
+      "textures": [
+        "pil1mb"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": true
+    }
+  ]
+}

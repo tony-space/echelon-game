@@ -1,0 +1,352 @@
+{
+  "craft": "Velian Cargo Ship 1",
+  "source": "va_cargo1",
+  "lod": 0,
+  "damage_state": 1,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "va_cargo1_im1_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.015093110501766205,
+        -2.1567258834838867,
+        -0.8310122489929199
+      ],
+      "orientation": [
+        2.980232594040898e-08,
+        -2.185569349201838e-08,
+        -2.1855696571076316e-08,
+        1.0000000000000004
+      ],
+      "local_position": [
+        -0.015093110501766205,
+        -2.1567258834838867,
+        -0.8310122489929199
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsBack",
+      "mesh": "va_cargo1_im1_korpsBack.emesh",
+      "parent": "",
+      "position": [
+        5.96806160046981e-07,
+        2.424506902694702,
+        16.205677032470703
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625353000404e-08,
+        -2.177222866787391e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        5.96806160046981e-07,
+        2.424506902694702,
+        16.205677032470703
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsBack_LBE",
+      "mesh": "va_cargo1_im1_korpsBack_LBE.emesh",
+      "parent": "korpsBack",
+      "position": [
+        -7.013999589361178,
+        0.2655638426977407,
+        19.300162750643484
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -7.014000415802002,
+        3.094485282897949,
+        2.158942937850952
+      ],
+      "textures": [
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsBack_RBE",
+      "mesh": "va_cargo1_im1_korpsBack_RBE.emesh",
+      "parent": "korpsBack",
+      "position": [
+        7.014001719080034,
+        0.26556445588121624,
+        19.300162137459886
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        7.01400089263916,
+        3.094485282897949,
+        2.158942937850952
+      ],
+      "textures": [
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsNose",
+      "mesh": "va_cargo1_im1_korpsNose.emesh",
+      "parent": "",
+      "position": [
+        -5.85194243285514e-07,
+        0.4445534348487854,
+        -12.815292358398438
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625353000404e-08,
+        -2.177222866787391e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -5.85194243285514e-07,
+        0.4445534348487854,
+        -12.815292358398438
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsNose_LFE",
+      "mesh": "va_cargo1_im1_korpsNose_LFE.emesh",
+      "parent": "korpsNose",
+      "position": [
+        -5.1703321081972105,
+        -3.3500180013829035,
+        -17.636689687593993
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -5.1703314781188965,
+        -4.82139778137207,
+        3.7945709228515625
+      ],
+      "textures": [
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsNose_RFE",
+      "mesh": "va_cargo1_im1_korpsNose_RFE.emesh",
+      "parent": "korpsNose",
+      "position": [
+        5.170331324877778,
+        -3.3500175493781024,
+        -17.636690139598883
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        5.170331954956055,
+        -4.82139778137207,
+        3.7945709228515625
+      ],
+      "textures": [
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "korpsNose_cockpit",
+      "mesh": "va_cargo1_im1_korpsNose_cockpit.emesh",
+      "parent": "korpsNose",
+      "position": [
+        -7.827102742847817e-07,
+        -3.2579464448178346,
+        -21.036432045549162
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        8.053368356301244e-14,
+        -8.221139907836914,
+        3.7024993896484375
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoykaA",
+      "mesh": "va_cargo1_im1_stoykaA.emesh",
+      "parent": "",
+      "position": [
+        -6.3732171058654785,
+        -2.8804118633270264,
+        0.12090101838111877
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625353000404e-08,
+        -2.177222866787391e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -6.3732171058654785,
+        -2.8804118633270264,
+        0.12090101838111877
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoykaA_LE",
+      "mesh": "va_cargo1_im1_stoykaA_LE.emesh",
+      "parent": "stoykaA",
+      "position": [
+        -8.06096209601875,
+        -4.758612438043003,
+        0.6252841720532247
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        -1.6877450942993164,
+        0.5043829679489136,
+        1.8782005310058594
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoykaB",
+      "mesh": "va_cargo1_im1_stoykaB.emesh",
+      "parent": "",
+      "position": [
+        6.373217582702637,
+        -2.8804128170013428,
+        0.12090058624744415
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625353000404e-08,
+        -2.177222866787391e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        6.373217582702637,
+        -2.8804128170013428,
+        0.12090058624744415
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoykaB_RE",
+      "mesh": "va_cargo1_im1_stoykaB_RE.emesh",
+      "parent": "stoykaB",
+      "position": [
+        8.060962304310873,
+        -4.758613721007121,
+        0.6252835923721922
+      ],
+      "orientation": [
+        0.7071067601131211,
+        3.0908625316832156e-08,
+        -2.2133911087019712e-15,
+        0.7071068022599746
+      ],
+      "local_position": [
+        1.6877446174621582,
+        0.5043829679489136,
+        1.8782010078430176
+      ],
+      "textures": [
+        "alimapnutr",
+        "va_cargo1dmg"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -6,8 +6,9 @@
 // corner collapse to a point and are dropped by the rasteriser.
 
 uniform isampler2D uWater;  // R16I, raw water level per cell, <= -2500 means none
-uniform ivec2 uCellOrigin;  // first cell of the block
-uniform int uCells;         // cells per block edge
+uniform ivec2 uCellOrigin;  // first cell of the node
+uniform ivec2 uCells;       // quads per axis
+uniform int uCellStep;      // cells per quad edge (coarser far away)
 uniform float uCellSize;    // metres per cell
 uniform float uHeightScale;
 
@@ -29,8 +30,10 @@ void main()
 {
 	int quad = gl_VertexID / 6;
 	int corner = gl_VertexID - quad * 6;
-	ivec2 q = uCellOrigin + ivec2(quad % uCells, quad / uCells);
-	int minLevel = min(min(levelAt(q), levelAt(q + ivec2(1, 0))), min(levelAt(q + ivec2(0, 1)), levelAt(q + ivec2(1, 1))));
+	ivec2 q = uCellOrigin + ivec2(quad % uCells.x, quad / uCells.x) * uCellStep;
+	ivec2 limit = textureSize(uWater, 0) - 1;
+	ivec2 q1 = min(q + ivec2(uCellStep), limit);
+	int minLevel = min(min(levelAt(q), levelAt(ivec2(q1.x, q.y))), min(levelAt(ivec2(q.x, q1.y)), levelAt(q1)));
 	if (minLevel <= kNoWater) {
 		vWorldPos = vec3(0.0);
 		vLogZ = 1.0;
@@ -38,7 +41,7 @@ void main()
 		return;
 	}
 
-	ivec2 c = q + kCorners[corner];
+	ivec2 c = min(q + kCorners[corner] * uCellStep, limit);
 	vec3 world = vec3(float(c.x) * uCellSize, float(levelAt(c)) * uHeightScale, -float(c.y) * uCellSize);
 	vWorldPos = world;
 	gl_Position = uProj * uView * vec4(world, 1.0);

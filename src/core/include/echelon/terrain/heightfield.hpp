@@ -34,7 +34,8 @@ struct TerrainCell {
 	bool hasWater() const { return waterRaw > kNoWater; }
 };
 
-// Terrain height field as exported by tools/terrain_export.py (.eterr v1).
+// Terrain height field as exported by tools/terrain_export.py.
+// .eterr v1 is the plain layout; v2 is that same file wrapped in zlib.
 // Sample (i, j) sits at engine position (i * spacing, h, -j * spacing):
 // i runs along +X, j along the original +Z, which is -Z here.
 class Heightfield {

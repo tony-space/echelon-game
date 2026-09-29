@@ -19,7 +19,9 @@ public:
 	float pitchDeg = 0.0f;
 	float fovDeg = 60.0f;
 	float nearPlane = 0.5f;
-	float farPlane = 150000.0f; // depth is logarithmic, see lit.vert
+	// Continent is ~500 km corner to corner; depth is logarithmic (lit.frag),
+	// so a far plane past the whole map costs no precision.
+	float farPlane = 2000000.0f;
 
 	glm::vec3 forward() const
 	{

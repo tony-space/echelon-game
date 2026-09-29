@@ -4,9 +4,7 @@ build-*/
 .vs/
 *.user
 # Original game files: reference only, never committed
-legacy/
-# Assets extracted from the original game by tools/legacy_export.py
-assets/legacy/
+legacy/Echelon*
 # Throwaway probe scripts (see AGENTS.MD). Never $env:TEMP.
 tools/temp/
 __pycache__/

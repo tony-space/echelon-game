@@ -1,0 +1,1772 @@
+{
+  "craft": "Human_Cargo3",
+  "source": "ha_cargo3",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "BEBack",
+      "mesh": "ha_cargo3_im2_BEBack.emesh",
+      "parent": "",
+      "position": [
+        -0.0009865564061328769,
+        -2.789315938949585,
+        20.288667678833008
+      ],
+      "orientation": [
+        -4.214684956593824e-08,
+        -4.371138302360821e-08,
+        -4.371139354986832e-08,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -0.0009865564061328769,
+        -2.789315938949585,
+        20.288667678833008
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "BEFront",
+      "mesh": "ha_cargo3_im2_BEFront.emesh",
+      "parent": "",
+      "position": [
+        -0.0009850198403000832,
+        -4.05970573425293,
+        -16.132938385009766
+      ],
+      "orientation": [
+        -4.214684956593824e-08,
+        -4.371138302360821e-08,
+        -4.371139354986832e-08,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -0.0009850198403000832,
+        -4.05970573425293,
+        -16.132938385009766
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Cockpit",
+      "mesh": "ha_cargo3_im2_Cockpit.emesh",
+      "parent": "",
+      "position": [
+        -0.0009846994653344154,
+        -1.8093920946121216,
+        -17.652793884277344
+      ],
+      "orientation": [
+        0.7071067179662726,
+        -3.0908622840852506e-08,
+        1.507372233294216e-15,
+        0.7071068444068281
+      ],
+      "local_position": [
+        -0.0009846994653344154,
+        -1.8093920946121216,
+        -17.652793884277344
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Cockpit_CoPilot",
+      "mesh": "ha_cargo3_im2_Cockpit_CoPilot.emesh",
+      "parent": "Cockpit",
+      "position": [
+        -1.425504690351352,
+        -1.641376421963372,
+        -23.507215592189425
+      ],
+      "orientation": [
+        0.5699966874164818,
+        -1.4184386262519046e-08,
+        4.64676296873477e-08,
+        0.8216470101930491
+      ],
+      "local_position": [
+        -1.4245202541351318,
+        -5.854421615600586,
+        -0.16801665723323822
+      ],
+      "textures": [
+        "pil1mb"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": false
+    },
+    {
+      "name": "Cockpit_Pilot",
+      "mesh": "ha_cargo3_im2_Cockpit_Pilot.emesh",
+      "parent": "Cockpit",
+      "position": [
+        1.447272056398618,
+        -1.6413765475364297,
+        -23.507215466616334
+      ],
+      "orientation": [
+        0.5699966874164818,
+        -1.4184386262519046e-08,
+        4.64676296873477e-08,
+        0.8216470101930491
+      ],
+      "local_position": [
+        1.448256492614746,
+        -5.854421615600586,
+        -0.16801665723323822
+      ],
+      "textures": [
+        "pil1mb"
+      ],
+      "materials": [
+        "Pilot"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "ha_cargo3_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.00023675709962844849,
+        -5.717398643493652,
+        -0.8195247650146484
+      ],
+      "orientation": [
+        2.98023223876953e-08,
+        2.185569349201846e-08,
+        2.1855696571076237e-08,
+        1.0000000000000004
+      ],
+      "local_position": [
+        0.00023675709962844849,
+        -5.717398643493652,
+        -0.8195247650146484
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE",
+      "mesh": "ha_cargo3_im2_LE.emesh",
+      "parent": "",
+      "position": [
+        -5.992259502410889,
+        -4.554811954498291,
+        -15.586984634399414
+      ],
+      "orientation": [
+        -4.214684956593824e-08,
+        -4.371138302360821e-08,
+        -4.371139354986832e-08,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -5.992259502410889,
+        -4.554811954498291,
+        -15.586984634399414
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LEBack",
+      "mesh": "ha_cargo3_im2_LEBack.emesh",
+      "parent": "",
+      "position": [
+        -5.194223880767822,
+        -1.6911964416503906,
+        20.992969512939453
+      ],
+      "orientation": [
+        -4.214684956593824e-08,
+        -4.371138302360821e-08,
+        -4.371139354986832e-08,
+        1.0000000000000009
+      ],
+      "local_position": [
+        -5.194223880767822,
+        -1.6911964416503906,
+        20.992969512939453
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LE_LEFront",
+      "mesh": "ha_cargo3_im2_LE_LEFront.emesh",
+      "parent": "LE",
+      "position": [
+        -7.2850819529264355,
+        -4.653851876895244,
+        -14.661999747522623
+      ],
+      "orientation": [
+        -2.9802311654679326e-08,
+        3.4752482736508145e-08,
+        -1.7015200621898364e-07,
+        0.9999999999999994
+      ],
+      "local_position": [
+        -1.2928223609924316,
+        -0.09904011338949203,
+        0.9249849915504456
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo",
+      "mesh": "ha_cargo3_im2_PCargo.emesh",
+      "parent": "",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D01",
+      "mesh": "ha_cargo3_im2_PCargo_D01.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D02",
+      "mesh": "ha_cargo3_im2_PCargo_D02.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D03",
+      "mesh": "ha_cargo3_im2_PCargo_D03.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D04",
+      "mesh": "ha_cargo3_im2_PCargo_D04.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D05",
+      "mesh": "ha_cargo3_im2_PCargo_D05.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D06",
+      "mesh": "ha_cargo3_im2_PCargo_D06.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D07",
+      "mesh": "ha_cargo3_im2_PCargo_D07.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D08",
+      "mesh": "ha_cargo3_im2_PCargo_D08.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D09",
+      "mesh": "ha_cargo3_im2_PCargo_D09.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D10",
+      "mesh": "ha_cargo3_im2_PCargo_D10.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D11",
+      "mesh": "ha_cargo3_im2_PCargo_D11.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D12",
+      "mesh": "ha_cargo3_im2_PCargo_D12.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D13",
+      "mesh": "ha_cargo3_im2_PCargo_D13.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D14",
+      "mesh": "ha_cargo3_im2_PCargo_D14.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D15",
+      "mesh": "ha_cargo3_im2_PCargo_D15.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D16",
+      "mesh": "ha_cargo3_im2_PCargo_D16.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D17",
+      "mesh": "ha_cargo3_im2_PCargo_D17.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D18",
+      "mesh": "ha_cargo3_im2_PCargo_D18.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D19",
+      "mesh": "ha_cargo3_im2_PCargo_D19.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D20",
+      "mesh": "ha_cargo3_im2_PCargo_D20.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D21",
+      "mesh": "ha_cargo3_im2_PCargo_D21.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D22",
+      "mesh": "ha_cargo3_im2_PCargo_D22.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D23",
+      "mesh": "ha_cargo3_im2_PCargo_D23.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D24",
+      "mesh": "ha_cargo3_im2_PCargo_D24.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D25",
+      "mesh": "ha_cargo3_im2_PCargo_D25.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D26",
+      "mesh": "ha_cargo3_im2_PCargo_D26.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D27",
+      "mesh": "ha_cargo3_im2_PCargo_D27.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D28",
+      "mesh": "ha_cargo3_im2_PCargo_D28.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D29",
+      "mesh": "ha_cargo3_im2_PCargo_D29.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D30",
+      "mesh": "ha_cargo3_im2_PCargo_D30.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D31",
+      "mesh": "ha_cargo3_im2_PCargo_D31.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D32",
+      "mesh": "ha_cargo3_im2_PCargo_D32.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D33",
+      "mesh": "ha_cargo3_im2_PCargo_D33.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D34",
+      "mesh": "ha_cargo3_im2_PCargo_D34.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D35",
+      "mesh": "ha_cargo3_im2_PCargo_D35.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D36",
+      "mesh": "ha_cargo3_im2_PCargo_D36.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D37",
+      "mesh": "ha_cargo3_im2_PCargo_D37.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D38",
+      "mesh": "ha_cargo3_im2_PCargo_D38.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D39",
+      "mesh": "ha_cargo3_im2_PCargo_D39.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D40",
+      "mesh": "ha_cargo3_im2_PCargo_D40.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D41",
+      "mesh": "ha_cargo3_im2_PCargo_D41.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D42",
+      "mesh": "ha_cargo3_im2_PCargo_D42.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D43",
+      "mesh": "ha_cargo3_im2_PCargo_D43.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D44",
+      "mesh": "ha_cargo3_im2_PCargo_D44.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D45",
+      "mesh": "ha_cargo3_im2_PCargo_D45.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D46",
+      "mesh": "ha_cargo3_im2_PCargo_D46.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D47",
+      "mesh": "ha_cargo3_im2_PCargo_D47.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D48",
+      "mesh": "ha_cargo3_im2_PCargo_D48.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D49",
+      "mesh": "ha_cargo3_im2_PCargo_D49.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PCargo_D50",
+      "mesh": "ha_cargo3_im2_PCargo_D50.emesh",
+      "parent": "PCargo",
+      "position": [
+        0.0023857271298766136,
+        5.232611656188965,
+        2.555577039718628
+      ],
+      "orientation": [
+        0.7071067390396952,
+        -3.090862284085238e-08,
+        3.0983715619873256e-15,
+        0.7071068233334024
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "weapon"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE",
+      "mesh": "ha_cargo3_im2_RE.emesh",
+      "parent": "",
+      "position": [
+        5.996286869049072,
+        -4.554815292358398,
+        -15.5869722366333
+      ],
+      "orientation": [
+        -4.214684956593824e-08,
+        -4.371138302360821e-08,
+        -4.371139354986832e-08,
+        1.0000000000000009
+      ],
+      "local_position": [
+        5.996286869049072,
+        -4.554815292358398,
+        -15.5869722366333
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "REBack",
+      "mesh": "ha_cargo3_im2_REBack.emesh",
+      "parent": "",
+      "position": [
+        5.2080302238464355,
+        -1.691198706626892,
+        20.99297332763672
+      ],
+      "orientation": [
+        -4.214684956593824e-08,
+        -4.371138302360821e-08,
+        -4.371139354986832e-08,
+        1.0000000000000009
+      ],
+      "local_position": [
+        5.2080302238464355,
+        -1.691198706626892,
+        20.99297332763672
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RE_REFront",
+      "mesh": "ha_cargo3_im2_RE_REFront.emesh",
+      "parent": "RE",
+      "position": [
+        7.206865693450795,
+        -4.653851502783361,
+        -14.61014074590043
+      ],
+      "orientation": [
+        5.329070632086481e-15,
+        -4.371138533956152e-08,
+        -4.371139478662906e-08,
+        1.0000000000000036
+      ],
+      "local_position": [
+        1.2105789184570312,
+        -0.09903618693351746,
+        0.9768313765525818
+      ],
+      "textures": [
+        "ha_cargo3dmg"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,8 +1,11 @@
 #include <echelon/terrain/heightfield.hpp>
 
+#include <miniz.h>
+
 #include <boost/test/unit_test.hpp>
 
 #include <cstring>
+#include <vector>
 
 using namespace ech;
 
@@ -113,11 +116,55 @@ BOOST_AUTO_TEST_CASE(parses_eterr)
 	BOOST_CHECK_EQUAL(hf.layerAt(0, 0), 5);
 	BOOST_CHECK_EQUAL(hf.layerAt(2, 1), 9);
 
-	bytes[4] = std::byte{2};
+	bytes[4] = std::byte{3};
 	BOOST_CHECK_THROW(Heightfield::parse(bytes), HeightfieldError);
 	bytes[4] = std::byte{1};
 	bytes.resize(bytes.size() - 1);
 	BOOST_CHECK_THROW(Heightfield::parse(bytes), HeightfieldError);
+}
+
+BOOST_AUTO_TEST_CASE(parses_zlib_wrapped_eterr)
+{
+	std::vector<std::byte> plain;
+	const char magic[4] = {'E', 'T', 'E', 'R'};
+	for (char ch : magic)
+		plain.push_back(static_cast<std::byte>(ch));
+	put<std::uint32_t>(plain, 1);
+	put<std::uint32_t>(plain, 2);
+	put<std::uint32_t>(plain, 2);
+	put<std::uint32_t>(plain, 1);
+	put<std::uint32_t>(plain, 1);
+	put<float>(plain, 64.0f);
+	put<float>(plain, 0.2f);
+	for (std::int16_t k = 0; k < 4; ++k)
+		put<std::int16_t>(plain, static_cast<std::int16_t>(k * 10));
+	for (int k = 0; k < 4; ++k)
+		plain.push_back(std::byte{0x80});
+	for (int k = 0; k < 16; ++k)
+		plain.push_back(std::byte{0});
+
+	std::vector<unsigned char> compressed(mz_compressBound(static_cast<mz_ulong>(plain.size())));
+	auto compressedSize = static_cast<mz_ulong>(compressed.size());
+	BOOST_REQUIRE_EQUAL(mz_compress2(compressed.data(), &compressedSize,
+							reinterpret_cast<const unsigned char*>(plain.data()), static_cast<mz_ulong>(plain.size()),
+							9),
+		MZ_OK);
+
+	std::vector<std::byte> wrapped;
+	for (char ch : magic)
+		wrapped.push_back(static_cast<std::byte>(ch));
+	put<std::uint32_t>(wrapped, 2);
+	put<std::uint32_t>(wrapped, static_cast<std::uint32_t>(plain.size()));
+	for (mz_ulong i = 0; i < compressedSize; ++i)
+		wrapped.push_back(static_cast<std::byte>(compressed[i]));
+
+	const Heightfield hf = Heightfield::parse(wrapped);
+	BOOST_CHECK_EQUAL(hf.width(), 2);
+	BOOST_CHECK_EQUAL(hf.rawHeight(1, 1), 30);
+	BOOST_CHECK_EQUAL(hf.flags(0, 0), Heightfield::kDiagonalFlag);
+
+	wrapped.back() = std::byte{0};
+	BOOST_CHECK_THROW(Heightfield::parse(wrapped), HeightfieldError);
 }
 
 BOOST_AUTO_TEST_SUITE_END()

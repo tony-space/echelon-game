@@ -1,0 +1,39 @@
+{
+  "craft": "Human_SF1",
+  "source": "ha_sf1",
+  "lod": 0,
+  "damage_state": 3,
+  "parts": [
+    {
+      "name": "cockpit",
+      "mesh": "ha_sf1_im3_cockpit.emesh",
+      "parent": "",
+      "position": [
+        3.361690801284567e-07,
+        1.7541205883026123,
+        0.18191277980804443
+      ],
+      "orientation": [
+        0.7071067179662726,
+        3.090862660907474e-08,
+        2.260849330641541e-15,
+        0.7071068444068281
+      ],
+      "local_position": [
+        3.361690801284567e-07,
+        1.7541205883026123,
+        0.18191277980804443
+      ],
+      "textures": [
+        "inside",
+        "kabina",
+        "stels"
+      ],
+      "materials": [
+        "Cockpit",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}
