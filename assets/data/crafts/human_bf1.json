@@ -1,0 +1,27 @@
+{
+  "name": "Human_BF1",
+  "side": "HUMANS",
+  "sensors_range_m": 6000,
+
+  "flight": {
+    "max_speed_mps": 220,
+    "acceleration_mps2": 45,
+    "max_turn_rate_dps": 70,
+    "max_pitch_deg": 80,
+    "max_bank_deg": 65,
+    "thrust_from_altitude": [[0, 2.2], [100, 1.0], [1200, 0.85], [1500, 0.25]],
+    "turn_from_speed": [[0, 0.7], [0.3, 1.0], [0.9, 1.0], [1.0, 0.7]]
+  },
+
+  "hull": {
+    "name": "HULL",
+    "armor": 400,
+    "critical": true,
+    "parts": [
+      { "name": "LE", "armor": 300, "critical": true,
+        "parts": [ { "name": "LW", "armor": 250 } ] },
+      { "name": "RE", "armor": 300, "critical": true,
+        "parts": [ { "name": "RW", "armor": 250 } ] }
+    ]
+  }
+}

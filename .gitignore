@@ -1,0 +1,10 @@
+# CMake build trees produced by cmake/*.bat
+build-*/
+# IDE
+.vs/
+*.user
+# Original game files: reference only, never committed
+legacy/
+# Assets extracted from the original game by tools/legacy_export.py
+assets/legacy/
+__pycache__/
