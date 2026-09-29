@@ -7,4 +7,6 @@ build-*/
 legacy/
 # Assets extracted from the original game by tools/legacy_export.py
 assets/legacy/
+# Throwaway probe scripts (see AGENTS.MD). Never $env:TEMP.
+tools/temp/
 __pycache__/
