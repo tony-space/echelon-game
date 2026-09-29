@@ -91,7 +91,7 @@ def _rgb565(c: int) -> tuple[int, int, int]:
 
 
 def decode_dxt(block_data: bytes, width: int, height: int, fourcc: bytes) -> list[bytearray]:
-    """Decode the first mip of a DXT1/DXT5 image into RGBA rows."""
+    """Decode the first mip of a DXT1/DXT3/DXT5 image into RGBA rows."""
     rows = [bytearray(width * 4) for _ in range(height)]
     bw, bh = (width + 3) // 4, (height + 3) // 4
     block_size = 8 if fourcc == b"DXT1" else 16
@@ -110,6 +110,10 @@ def decode_dxt(block_data: bytes, width: int, height: int, fourcc: bytes) -> lis
                 else:
                     table += [((5 - i) * a0 + i * a1) // 5 for i in range(1, 5)] + [0, 255]
                 alpha = [table[(bits >> (3 * i)) & 7] for i in range(16)]
+                block = block[8:]
+            elif fourcc == b"DXT3":
+                bits = int.from_bytes(block[0:8], "little")
+                alpha = [((bits >> (4 * i)) & 15) * 17 for i in range(16)]
                 block = block[8:]
             c0, c1 = struct.unpack_from("<HH", block, 0)
             bits = struct.unpack_from("<I", block, 4)[0]
@@ -154,7 +158,7 @@ def export_texture(textures: Container, name: str, out_dir: Path) -> str | None:
     rec = textures.record(name)
     width, height = struct.unpack_from("<II", rec, 16)
     fourcc = rec[48:52]
-    if fourcc not in (b"DXT1", b"DXT5"):
+    if fourcc not in (b"DXT1", b"DXT3", b"DXT5"):
         print(f"  ! texture {name}: unsupported format {fourcc!r}", file=sys.stderr)
         return None
     rows = decode_dxt(rec[56:], width, height, fourcc)

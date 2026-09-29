@@ -9,6 +9,7 @@
 #include <glm/vec4.hpp>
 
 #include <filesystem>
+#include <limits>
 #include <memory>
 #include <stdexcept>
 #include <string>
@@ -68,6 +69,9 @@ public:
 	// Toggles a sub-object by name (e.g. "cockpit_CoPilot"); returns false if absent.
 	bool setVisible(std::string_view name, bool visible);
 	std::size_t triangleCount() const { return m_triangles; }
+	// Axis-aligned bounds of the parts visible at load time, in model space.
+	glm::vec3 boundsMin() const { return m_boundsMin; }
+	glm::vec3 boundsMax() const { return m_boundsMax; }
 
 private:
 	const Texture* texture(const std::string& name, const std::filesystem::path& texturesDir, const Texture& fallback);
@@ -75,6 +79,8 @@ private:
 	std::vector<Part> m_parts;
 	std::unordered_map<std::string, std::unique_ptr<Texture>> m_textures;
 	std::size_t m_triangles = 0;
+	glm::vec3 m_boundsMin{std::numeric_limits<float>::max()};
+	glm::vec3 m_boundsMax{std::numeric_limits<float>::lowest()};
 };
 
 } // namespace ech

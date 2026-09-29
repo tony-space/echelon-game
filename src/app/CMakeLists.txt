@@ -18,8 +18,9 @@ set(SRC
 	render/texture.hpp
 	render/texture.cpp
 	render/camera.hpp
-	render/placeholder_craft.hpp
-	render/placeholder_craft.cpp
+	render/frame.hpp
+	render/terrain_renderer.hpp
+	render/terrain_renderer.cpp
 )
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${SRC})
 

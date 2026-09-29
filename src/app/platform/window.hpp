@@ -38,10 +38,16 @@ public:
 	int framebufferHeight() const;
 	float aspect() const;
 
+	// Vertical mouse wheel notches accumulated since the previous call.
+	double consumeScroll();
+
 	GLFWwindow* handle() const { return m_window; }
 
 private:
+	static void onScroll(GLFWwindow* window, double dx, double dy);
+
 	GLFWwindow* m_window = nullptr;
+	double m_scroll = 0.0;
 };
 
 } // namespace ech

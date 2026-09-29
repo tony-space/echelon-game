@@ -1,6 +1,9 @@
 #include <echelon/math/color.hpp>
 
 #include <boost/test/unit_test.hpp>
+#include <glm/geometric.hpp>
+
+#include <cmath>
 
 using namespace ech;
 
@@ -42,6 +45,30 @@ BOOST_AUTO_TEST_CASE(fog_transmittance_is_beer_lambert)
 	const float a = fogTransmittance(0.0002f, 3000.0f);
 	const float b = fogTransmittance(0.0002f, 5000.0f);
 	BOOST_CHECK_CLOSE(a * b, fogTransmittance(0.0002f, 8000.0f), 1e-3);
+}
+
+BOOST_AUTO_TEST_CASE(height_fog_matches_numeric_integral)
+{
+	const float sigma0 = 0.0001f, H = 2500.0f;
+	// Level ray at sea level is the homogeneous case.
+	BOOST_CHECK_CLOSE(heightFogTransmittance(sigma0, H, glm::vec3(0.0f), glm::vec3(10000.0f, 0.0f, 0.0f)),
+		fogTransmittance(sigma0, 10000.0f), 1e-2);
+
+	// Slanted ray: midpoint-rule integral of sigma0 * exp(-y / H) along it.
+	const glm::vec3 a(0.0f, 3000.0f, 0.0f), b(20000.0f, 100.0f, -5000.0f);
+	const float len = glm::length(b - a);
+	double od = 0.0;
+	const int n = 10000;
+	for (int i = 0; i < n; ++i) {
+		const float t = (static_cast<float>(i) + 0.5f) / n;
+		od += sigma0 * std::exp(-(a.y + (b.y - a.y) * t) / H) * len / n;
+	}
+	const float expected = static_cast<float>(std::exp(-od));
+	BOOST_CHECK_CLOSE(heightFogTransmittance(sigma0, H, a, b), expected, 0.1);
+	// Symmetric in the direction of travel.
+	BOOST_CHECK_CLOSE(heightFogTransmittance(sigma0, H, b, a), expected, 0.1);
+	// Thinner air up high: more light survives than at sea level over the same distance.
+	BOOST_CHECK_GT(expected, fogTransmittance(sigma0, len));
 }
 
 BOOST_AUTO_TEST_SUITE_END()

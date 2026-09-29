@@ -8,11 +8,13 @@ set(SRC
 	include/echelon/data/craft_spec.hpp
 	include/echelon/sim/flight.hpp
 	include/echelon/sim/fixed_step.hpp
+	include/echelon/terrain/heightfield.hpp
 
 	src/core/log.cpp
 	src/math/curve.cpp
 	src/data/craft_spec.cpp
 	src/sim/flight.cpp
+	src/terrain/heightfield.cpp
 )
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${SRC})
 

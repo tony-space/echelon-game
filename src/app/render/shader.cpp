@@ -87,18 +87,43 @@ void Shader::use() const
 	glUseProgram(m_program);
 }
 
-GLint Shader::location(std::string_view name) const
+GLint Shader::lookup(std::string_view name) const
 {
+	if (const auto it = m_locations.find(name); it != m_locations.end())
+		return it->second;
 	const std::string n(name);
 	const GLint loc = glGetUniformLocation(m_program, n.c_str());
-	if (loc < 0)
-		log::warn("uniform '{}' not found", n);
+	m_locations.emplace(n, loc);
 	return loc;
+}
+
+GLint Shader::location(std::string_view name) const
+{
+	const bool known = m_locations.contains(name);
+	const GLint loc = lookup(name);
+	if (loc < 0 && !known)
+		log::warn("uniform '{}' not found", name);
+	return loc;
+}
+
+bool Shader::has(std::string_view name) const
+{
+	return lookup(name) >= 0;
 }
 
 void Shader::set(std::string_view name, int value) const
 {
 	glUniform1i(location(name), value);
+}
+
+void Shader::set(std::string_view name, const glm::ivec2& value) const
+{
+	glUniform2iv(location(name), 1, glm::value_ptr(value));
+}
+
+void Shader::set(std::string_view name, const glm::ivec4& value) const
+{
+	glUniform4iv(location(name), 1, glm::value_ptr(value));
 }
 
 void Shader::set(std::string_view name, float value) const

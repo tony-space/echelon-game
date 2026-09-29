@@ -3,76 +3,69 @@
 #include "platform/window.hpp"
 #include "render/gl.hpp"
 
-#include <algorithm>
-#include <cmath>
-
 namespace ech {
-
-namespace {
-
-constexpr float kDeadZone = 0.04f;    // fraction of half-screen
-constexpr float kFullDeflection = 0.7f; // reticle distance for max turn rate
-constexpr float kThrottleRate = 0.8f;   // per second on W/S
-
-float shapeAxis(float v)
-{
-	const float a = std::abs(v);
-	if (a < kDeadZone)
-		return 0.0f;
-	const float t = std::min((a - kDeadZone) / (kFullDeflection - kDeadZone), 1.0f);
-	return std::copysign(t * t, v); // quadratic: fine control near centre
-}
-
-} // namespace
 
 Input::Input(Window& window)
 	: m_window(window)
 {
-	m_controls.throttle = 0.6f;
-	glfwSetInputMode(window.handle(), GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
 }
 
-void Input::update(float dt)
+void Input::update()
 {
 	GLFWwindow* w = m_window.handle();
+	const auto down = [w](int key) { return glfwGetKey(w, key) == GLFW_PRESS; };
 
-	int width = 0, height = 0;
-	glfwGetWindowSize(w, &width, &height);
+	const bool look = glfwGetMouseButton(w, GLFW_MOUSE_BUTTON_RIGHT) == GLFW_PRESS;
 	double cx = 0.0, cy = 0.0;
-	glfwGetCursorPos(w, &cx, &cy);
-
-	if (width > 0 && height > 0) {
-		m_reticleNdc.x = std::clamp(static_cast<float>(cx) / static_cast<float>(width) * 2.0f - 1.0f, -1.0f, 1.0f);
-		m_reticleNdc.y = std::clamp(1.0f - static_cast<float>(cy) / static_cast<float>(height) * 2.0f, -1.0f, 1.0f);
+	if (look != m_looking) {
+		// A disabled cursor gives unbounded relative motion; restore it on release.
+		glfwSetInputMode(w, GLFW_CURSOR, look ? GLFW_CURSOR_DISABLED : GLFW_CURSOR_NORMAL);
+		glfwGetCursorPos(w, &m_lastCursorX, &m_lastCursorY);
+		m_looking = look;
+	}
+	m_lookDelta = glm::vec2(0.0f);
+	if (m_looking) {
+		glfwGetCursorPos(w, &cx, &cy);
+		m_lookDelta = glm::vec2(static_cast<float>(cx - m_lastCursorX), static_cast<float>(cy - m_lastCursorY));
+		m_lastCursorX = cx;
+		m_lastCursorY = cy;
 	}
 
-	m_controls.aimYaw = shapeAxis(m_reticleNdc.x);
-	m_controls.aimPitch = shapeAxis(m_reticleNdc.y);
+	m_move = glm::vec3(0.0f);
+	if (down(GLFW_KEY_W))
+		m_move.z += 1.0f;
+	if (down(GLFW_KEY_S))
+		m_move.z -= 1.0f;
+	if (down(GLFW_KEY_D))
+		m_move.x += 1.0f;
+	if (down(GLFW_KEY_A))
+		m_move.x -= 1.0f;
+	if (down(GLFW_KEY_E) || down(GLFW_KEY_SPACE))
+		m_move.y += 1.0f;
+	if (down(GLFW_KEY_Q) || down(GLFW_KEY_C))
+		m_move.y -= 1.0f;
 
-	float throttle = m_controls.throttle;
-	if (glfwGetKey(w, GLFW_KEY_W) == GLFW_PRESS)
-		throttle += kThrottleRate * dt;
-	if (glfwGetKey(w, GLFW_KEY_S) == GLFW_PRESS)
-		throttle -= kThrottleRate * dt;
-	if (glfwGetKey(w, GLFW_KEY_LEFT_SHIFT) == GLFW_PRESS)
-		throttle = 1.0f;
-	if (glfwGetKey(w, GLFW_KEY_LEFT_CONTROL) == GLFW_PRESS)
-		throttle = 0.0f;
-	m_controls.throttle = std::clamp(throttle, 0.0f, 1.0f);
+	m_speedFactor = 1.0f;
+	if (down(GLFW_KEY_LEFT_SHIFT))
+		m_speedFactor *= 8.0f;
+	if (down(GLFW_KEY_LEFT_CONTROL))
+		m_speedFactor *= 0.125f;
 
-	m_quit = glfwGetKey(w, GLFW_KEY_ESCAPE) == GLFW_PRESS;
+	m_scroll = static_cast<float>(m_window.consumeScroll());
 
-	const bool resetDown = glfwGetKey(w, GLFW_KEY_R) == GLFW_PRESS;
+	m_quit = down(GLFW_KEY_ESCAPE);
+
+	const bool resetDown = down(GLFW_KEY_R);
 	m_reset = resetDown && !m_resetHeld;
 	m_resetHeld = resetDown;
 
 	m_damageSelect = 0;
 	const int numberKeys[4] = {GLFW_KEY_1, GLFW_KEY_2, GLFW_KEY_3, GLFW_KEY_4};
 	for (int i = 0; i < 4; ++i) {
-		const bool down = glfwGetKey(w, numberKeys[i]) == GLFW_PRESS;
-		if (down && !m_damageHeld[i])
+		const bool pressed = down(numberKeys[i]);
+		if (pressed && !m_damageHeld[i])
 			m_damageSelect = i + 1;
-		m_damageHeld[i] = down;
+		m_damageHeld[i] = pressed;
 	}
 }
 

@@ -8,6 +8,7 @@ set(SRC
 	flight_test.cpp
 	frame_test.cpp
 	fixed_step_test.cpp
+	heightfield_test.cpp
 )
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${SRC})
 

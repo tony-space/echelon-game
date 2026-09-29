@@ -48,6 +48,8 @@ Window::Window(const WindowDesc& desc)
 
 	glfwMakeContextCurrent(m_window);
 	glfwSwapInterval(desc.vsync ? 1 : 0);
+	glfwSetWindowUserPointer(m_window, this);
+	glfwSetScrollCallback(m_window, &Window::onScroll);
 
 	const GLenum glewStatus = glewInit();
 	if (glewStatus != GLEW_OK) {
@@ -128,6 +130,19 @@ float Window::aspect() const
 {
 	const int h = framebufferHeight();
 	return h > 0 ? static_cast<float>(framebufferWidth()) / static_cast<float>(h) : 1.0f;
+}
+
+double Window::consumeScroll()
+{
+	const double s = m_scroll;
+	m_scroll = 0.0;
+	return s;
+}
+
+void Window::onScroll(GLFWwindow* window, double /*dx*/, double dy)
+{
+	if (auto* self = static_cast<Window*>(glfwGetWindowUserPointer(window)))
+		self->m_scroll += dy;
 }
 
 } // namespace ech

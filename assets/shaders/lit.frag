@@ -7,7 +7,9 @@
 in vec3 vWorldPos;
 in vec3 vNormal;
 in vec2 vUv;
+in float vLogZ;
 
+uniform float uLogDepth;
 uniform sampler2D uAlbedo;
 uniform vec3 uSunDir;    // normalized, towards the sun
 uniform vec3 uCameraPos;
@@ -18,9 +20,22 @@ uniform vec3 uSunColor;       // linear radiance of direct sunlight
 uniform vec3 uSkyAmbient;     // linear, hemisphere light from above
 uniform vec3 uGroundAmbient;  // linear, bounce light from below
 uniform vec3 uFogColor;       // linear in-scattered light (sky at the horizon)
-uniform float uFogExtinction; // 1/m, Beer-Lambert: T = exp(-uFogExtinction * dist)
+uniform float uFogExtinction; // 1/m at sea level
+uniform float uFogScaleHeight; // m, extinction falls off as exp(-y / H)
 
 out vec4 fragColor;
+
+// Beer-Lambert through an exponential atmosphere, integrated along the view
+// ray. Same as ech::heightFogTransmittance (color.hpp); keep in sync with
+// terrain.frag and water.frag.
+float fogTransmittance(vec3 eye, vec3 p)
+{
+	float k = 1.0 / uFogScaleHeight;
+	float dy = (p.y - eye.y) * k;
+	float e0 = exp(-eye.y * k);
+	float meanDensity = abs(dy) < 1e-4 ? e0 : (e0 - exp(-p.y * k)) / dy;
+	return exp(-uFogExtinction * length(p - eye) * meanDensity);
+}
 
 void main()
 {
@@ -40,10 +55,9 @@ void main()
 
 	// Homogeneous fog: the surface radiance is attenuated by the transmittance
 	// and the same fraction of sky light is scattered in along the ray.
-	float dist = length(uCameraPos - vWorldPos);
-	float transmittance = exp(-uFogExtinction * dist);
-	color = mix(uFogColor, color, transmittance);
+	color = mix(uFogColor, color, fogTransmittance(uCameraPos, vWorldPos));
 
 	// Highlights stay visible on glass even where it is mostly transparent.
 	fragColor = vec4(color, clamp(uAlpha + spec, 0.0, 1.0));
+	gl_FragDepth = log2(vLogZ) * uLogDepth * 0.5;
 }

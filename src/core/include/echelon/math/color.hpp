@@ -2,6 +2,7 @@
 
 #include <glm/vec3.hpp>
 
+#include <algorithm>
 #include <cmath>
 
 namespace ech {
@@ -37,6 +38,21 @@ inline glm::vec3 linearToSrgb(const glm::vec3& c)
 inline float fogTransmittance(float extinctionPerMetre, float distance)
 {
 	return std::exp(-extinctionPerMetre * distance);
+}
+
+// Same, through an exponential atmosphere: extinction sigma0 * exp(-y / H) at
+// height y. Integrated analytically along the straight segment a -> b.
+// Must match fogTransmittance() in the lit / terrain / water shaders.
+inline float heightFogTransmittance(float sigma0, float scaleHeight, const glm::vec3& a, const glm::vec3& b)
+{
+	const float dist = std::sqrt((b.x - a.x) * (b.x - a.x) + (b.y - a.y) * (b.y - a.y) + (b.z - a.z) * (b.z - a.z));
+	const float k = 1.0f / scaleHeight;
+	const float x = (b.y - a.y) * k;
+	const float ea = std::exp(-a.y * k);
+	// Mean density factor along the segment; the limit for a level ray is exp(-y / H).
+	const float safeX = std::copysign(std::max(std::abs(x), 1e-4f), x);
+	const float mean = std::abs(x) < 1e-4f ? ea : (ea - std::exp(-b.y * k)) / safeX;
+	return std::exp(-sigma0 * dist * mean);
 }
 
 } // namespace ech

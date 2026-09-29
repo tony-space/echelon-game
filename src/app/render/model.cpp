@@ -177,6 +177,13 @@ Model::Model(const std::filesystem::path& modelJson, const std::filesystem::path
 
 		Emesh em = loadEmesh(dir / std::string(meshVal->as_string()));
 		m_triangles += em.data.indices.size() / 3;
+		if (part.visible) {
+			for (const Vertex& v : em.data.vertices) {
+				const glm::vec3 p = part.offset + part.orientation * v.position;
+				m_boundsMin = glm::min(m_boundsMin, p);
+				m_boundsMax = glm::max(m_boundsMax, p);
+			}
+		}
 		part.mesh = std::make_unique<Mesh>(em.data);
 		for (const EmeshSubset& s : em.subsets) {
 			Subset sub;
@@ -191,6 +198,8 @@ Model::Model(const std::filesystem::path& modelJson, const std::filesystem::path
 		}
 		m_parts.push_back(std::move(part));
 	}
+	if (m_boundsMin.x > m_boundsMax.x)
+		m_boundsMin = m_boundsMax = glm::vec3(0.0f);
 
 	log::info("model {}: {} parts, {} triangles, {} textures", modelJson.filename().string(), m_parts.size(),
 		m_triangles, m_textures.size());

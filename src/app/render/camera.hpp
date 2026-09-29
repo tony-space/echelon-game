@@ -2,70 +2,56 @@
 
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/mat4x4.hpp>
+#include <glm/trigonometric.hpp>
 #include <glm/vec3.hpp>
+
+#include <algorithm>
+#include <cmath>
 
 namespace ech {
 
-// Third-person chase camera: sits behind and above the target, looks slightly
-// ahead of it, and lags a little so turns read on screen.
-class ChaseCamera {
+// Free-flying inspection camera. Yaw 0 looks along -Z (engine heading 0),
+// positive yaw turns right; pitch is positive up.
+class FlyCamera {
 public:
 	glm::vec3 position{0.0f};
-	glm::vec3 target{0.0f};
+	float yawDeg = 0.0f;
+	float pitchDeg = 0.0f;
 	float fovDeg = 60.0f;
 	float nearPlane = 0.5f;
-	float farPlane = 20000.0f;
+	float farPlane = 150000.0f; // depth is logarithmic, see lit.vert
 
-	void snapTo(const glm::vec3& craftPos, const glm::vec3& craftForward, const glm::vec3& craftUp)
+	glm::vec3 forward() const
 	{
-		m_offset = desiredOffset(craftForward, craftUp);
-		position = craftPos + m_offset;
-		target = lookTarget(craftPos, craftForward);
+		const float y = glm::radians(yawDeg), p = glm::radians(pitchDeg);
+		return glm::vec3(std::sin(y) * std::cos(p), std::sin(p), -std::cos(y) * std::cos(p));
+	}
+	glm::vec3 right() const
+	{
+		const float y = glm::radians(yawDeg);
+		return glm::vec3(std::cos(y), 0.0f, std::sin(y));
 	}
 
-	// The lag is applied to the offset in the craft's frame, not to the world
-	// position: otherwise the camera would trail by speed / followRate metres.
-	void follow(const glm::vec3& craftPos, const glm::vec3& craftForward, const glm::vec3& craftUp, float dt)
+	void rotate(float dYawDeg, float dPitchDeg)
 	{
-		const glm::vec3 wanted = desiredOffset(craftForward, craftUp);
-		const float k = 1.0f - glm::exp(-followRate * dt);
-		m_offset += (wanted - m_offset) * k;
-		position = craftPos + m_offset;
-		target = lookTarget(craftPos, craftForward);
+		yawDeg = std::fmod(yawDeg + dYawDeg, 360.0f);
+		pitchDeg = std::clamp(pitchDeg + dPitchDeg, -89.0f, 89.0f);
 	}
 
-	glm::mat4 view() const
+	void lookAt(const glm::vec3& target)
 	{
-		return glm::lookAt(position, target, glm::vec3(0.0f, 1.0f, 0.0f));
+		const glm::vec3 d = target - position;
+		const float horizontal = std::sqrt(d.x * d.x + d.z * d.z);
+		yawDeg = glm::degrees(std::atan2(d.x, -d.z));
+		pitchDeg = std::clamp(glm::degrees(std::atan2(d.y, horizontal)), -89.0f, 89.0f);
 	}
+
+	glm::mat4 view() const { return glm::lookAt(position, position + forward(), glm::vec3(0.0f, 1.0f, 0.0f)); }
 
 	glm::mat4 projection(float aspect) const
 	{
 		return glm::perspective(glm::radians(fovDeg), aspect, nearPlane, farPlane);
 	}
-
-	float distanceBehind = 22.0f;
-	float heightAbove = 6.0f;
-	float lookAhead = 40.0f;
-	float followRate = 6.0f; // 1/s
-	float orbitDeg = 0.0f; // rotates the camera around the craft's up axis (debug views)
-
-private:
-	// Orbit views look at the craft itself; the chase view looks ahead of it.
-	glm::vec3 lookTarget(const glm::vec3& craftPos, const glm::vec3& fwd) const
-	{
-		return orbitDeg != 0.0f ? craftPos : craftPos + fwd * lookAhead;
-	}
-
-	glm::vec3 desiredOffset(const glm::vec3& fwd, const glm::vec3& up) const
-	{
-		glm::vec3 back = -fwd * distanceBehind;
-		if (orbitDeg != 0.0f)
-			back = glm::vec3(glm::rotate(glm::mat4(1.0f), glm::radians(orbitDeg), up) * glm::vec4(back, 0.0f));
-		return back + up * heightAbove;
-	}
-
-	glm::vec3 m_offset{0.0f};
 };
 
 } // namespace ech
