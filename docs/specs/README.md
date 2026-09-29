@@ -42,4 +42,5 @@
 | [export.md](export.md) | Наш `model.json` и EMSH |
 | [rendering.md](rendering.md) | Линейный свет и sRGB в ремейке |
 | [mechanics.md](mechanics.md) | Системы игры и что из них данные, а что поведение |
+| [modules.md](modules.md) | DLL движка: фабрики, граф, имена, которые остались в бинарнике |
 | [open.md](open.md) | Что ещё не дочитано |
