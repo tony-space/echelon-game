@@ -1,0 +1,1325 @@
+{
+  "static": "Tower 1",
+  "source": "tower1",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "tower1_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok3mb",
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D01",
+      "mesh": "tower1_im2_tower_D01.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D02",
+      "mesh": "tower1_im2_tower_D02.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D03",
+      "mesh": "tower1_im2_tower_D03.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D04",
+      "mesh": "tower1_im2_tower_D04.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D05",
+      "mesh": "tower1_im2_tower_D05.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D06",
+      "mesh": "tower1_im2_tower_D06.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D07",
+      "mesh": "tower1_im2_tower_D07.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D08",
+      "mesh": "tower1_im2_tower_D08.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D09",
+      "mesh": "tower1_im2_tower_D09.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_D10",
+      "mesh": "tower1_im2_tower_D10.emesh",
+      "parent": "tower",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D01",
+      "mesh": "tower1_im2_tower_top_D01.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D02",
+      "mesh": "tower1_im2_tower_top_D02.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D03",
+      "mesh": "tower1_im2_tower_top_D03.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D04",
+      "mesh": "tower1_im2_tower_top_D04.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D05",
+      "mesh": "tower1_im2_tower_top_D05.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D06",
+      "mesh": "tower1_im2_tower_top_D06.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D07",
+      "mesh": "tower1_im2_tower_top_D07.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D08",
+      "mesh": "tower1_im2_tower_top_D08.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D09",
+      "mesh": "tower1_im2_tower_top_D09.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D10",
+      "mesh": "tower1_im2_tower_top_D10.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D11",
+      "mesh": "tower1_im2_tower_top_D11.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D12",
+      "mesh": "tower1_im2_tower_top_D12.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D13",
+      "mesh": "tower1_im2_tower_top_D13.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D14",
+      "mesh": "tower1_im2_tower_top_D14.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D15",
+      "mesh": "tower1_im2_tower_top_D15.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D16",
+      "mesh": "tower1_im2_tower_top_D16.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D17",
+      "mesh": "tower1_im2_tower_top_D17.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D18",
+      "mesh": "tower1_im2_tower_top_D18.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D19",
+      "mesh": "tower1_im2_tower_top_D19.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D20",
+      "mesh": "tower1_im2_tower_top_D20.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D21",
+      "mesh": "tower1_im2_tower_top_D21.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D22",
+      "mesh": "tower1_im2_tower_top_D22.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D23",
+      "mesh": "tower1_im2_tower_top_D23.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D24",
+      "mesh": "tower1_im2_tower_top_D24.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D25",
+      "mesh": "tower1_im2_tower_top_D25.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D26",
+      "mesh": "tower1_im2_tower_top_D26.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D27",
+      "mesh": "tower1_im2_tower_top_D27.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D28",
+      "mesh": "tower1_im2_tower_top_D28.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D29",
+      "mesh": "tower1_im2_tower_top_D29.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D30",
+      "mesh": "tower1_im2_tower_top_D30.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D31",
+      "mesh": "tower1_im2_tower_top_D31.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D32",
+      "mesh": "tower1_im2_tower_top_D32.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D33",
+      "mesh": "tower1_im2_tower_top_D33.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D34",
+      "mesh": "tower1_im2_tower_top_D34.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D35",
+      "mesh": "tower1_im2_tower_top_D35.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_D36",
+      "mesh": "tower1_im2_tower_top_D36.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

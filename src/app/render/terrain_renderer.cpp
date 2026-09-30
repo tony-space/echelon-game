@@ -1,6 +1,7 @@
 ﻿#include "render/terrain_renderer.hpp"
 
 #include "render/frame.hpp"
+#include "render/frustum.hpp"
 
 #include <echelon/core/log.hpp>
 #include <echelon/math/color.hpp>
@@ -161,25 +162,6 @@ std::unique_ptr<Texture> optionalTexture(const std::string& name, const std::fil
 }
 
 // Plane normals point inwards; a box is outside if it lies fully behind one.
-std::array<glm::vec4, 6> frustumPlanes(const glm::mat4& viewProj)
-{
-	const glm::mat4 m = glm::transpose(viewProj);
-	std::array<glm::vec4, 6> p = {m[3] + m[0], m[3] - m[0], m[3] + m[1], m[3] - m[1], m[3] + m[2], m[3] - m[2]};
-	for (glm::vec4& plane : p)
-		plane /= glm::length(glm::vec3(plane));
-	return p;
-}
-
-bool boxVisible(const std::array<glm::vec4, 6>& planes, const glm::vec3& lo, const glm::vec3& hi)
-{
-	for (const glm::vec4& p : planes) {
-		const glm::vec3 v(p.x >= 0.0f ? hi.x : lo.x, p.y >= 0.0f ? hi.y : lo.y, p.z >= 0.0f ? hi.z : lo.z);
-		if (glm::dot(glm::vec3(p), v) + p.w < 0.0f)
-			return false;
-	}
-	return true;
-}
-
 } // namespace
 
 TerrainRenderer::TerrainRenderer(const Heightfield& field, const std::filesystem::path& descJson,

@@ -1,0 +1,95 @@
+{
+  "static": "V Bunker 3",
+  "source": "vs_bunker3",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "vs_bunker3_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        1.8167085647583008,
+        6.374303817749023,
+        -3.947934150695801
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        1.8167085647583008,
+        6.374303817749023,
+        -3.947934150695801
+      ],
+      "textures": [
+        "adokab",
+        "alimapeb",
+        "alimapprtbb"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "border",
+      "mesh": "vs_bunker3_im2_border.emesh",
+      "parent": "",
+      "position": [
+        3.6249523162841797,
+        3.599289894104004,
+        3.5681374073028564
+      ],
+      "orientation": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "local_position": [
+        3.6249523162841797,
+        3.599289894104004,
+        3.5681374073028564
+      ],
+      "textures": [
+        "alimapab"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tubes",
+      "mesh": "vs_bunker3_im2_tubes.emesh",
+      "parent": "",
+      "position": [
+        -15.557612419128418,
+        1.6030778884887695,
+        -3.1854658126831055
+      ],
+      "orientation": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "local_position": [
+        -15.557612419128418,
+        1.6030778884887695,
+        -3.1854658126831055
+      ],
+      "textures": [
+        "alimapeb",
+        "alimapprtab"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    }
+  ]
+}

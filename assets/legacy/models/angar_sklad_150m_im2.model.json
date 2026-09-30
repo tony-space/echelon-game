@@ -1,0 +1,766 @@
+{
+  "static": "Military Hangar 150m",
+  "source": "angar_sklad_150m",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "AngA",
+      "mesh": "angar_sklad_150m_im2_AngA.emesh",
+      "parent": "",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "textures": [
+        "anb",
+        "g-bbb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D01",
+      "mesh": "angar_sklad_150m_im2_AngA_D01.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D02",
+      "mesh": "angar_sklad_150m_im2_AngA_D02.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D03",
+      "mesh": "angar_sklad_150m_im2_AngA_D03.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D04",
+      "mesh": "angar_sklad_150m_im2_AngA_D04.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D05",
+      "mesh": "angar_sklad_150m_im2_AngA_D05.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D06",
+      "mesh": "angar_sklad_150m_im2_AngA_D06.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D07",
+      "mesh": "angar_sklad_150m_im2_AngA_D07.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D08",
+      "mesh": "angar_sklad_150m_im2_AngA_D08.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D09",
+      "mesh": "angar_sklad_150m_im2_AngA_D09.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D10",
+      "mesh": "angar_sklad_150m_im2_AngA_D10.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D11",
+      "mesh": "angar_sklad_150m_im2_AngA_D11.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D12",
+      "mesh": "angar_sklad_150m_im2_AngA_D12.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "AngA_D13",
+      "mesh": "angar_sklad_150m_im2_AngA_D13.emesh",
+      "parent": "AngA",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D01",
+      "mesh": "angar_sklad_150m_im2_D01.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D02",
+      "mesh": "angar_sklad_150m_im2_D02.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D03",
+      "mesh": "angar_sklad_150m_im2_D03.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D04",
+      "mesh": "angar_sklad_150m_im2_D04.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D05",
+      "mesh": "angar_sklad_150m_im2_D05.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D06",
+      "mesh": "angar_sklad_150m_im2_D06.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D07",
+      "mesh": "angar_sklad_150m_im2_D07.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D08",
+      "mesh": "angar_sklad_150m_im2_D08.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D09",
+      "mesh": "angar_sklad_150m_im2_D09.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D10",
+      "mesh": "angar_sklad_150m_im2_D10.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D11",
+      "mesh": "angar_sklad_150m_im2_D11.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D12",
+      "mesh": "angar_sklad_150m_im2_D12.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "angar_sklad_150m_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "anb",
+        "g-bbb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Export an aircraft model from the original Echelon (Storm engine) data files.
+"""Export an aircraft or static model from the original Echelon (Storm engine) data files.
 
-Reads Data/objects.dat, Data/gdata.dat, Data/Graphics/mesh.dat and
-Data/Graphics/textures.dat and writes:
+Reads Data/objects.dat, Data/objects2.dat (statics), Data/gdata.dat,
+Data/Graphics/mesh.dat, Data/Graphics/textures.dat and, when a hash is missing
+there, Data/Graphics/atextures.dat. Writes:
 
     <out>/models/<file>_im<N>.model.json   one model per damage state
     <out>/models/<file>_im<N>_<part>.emesh  vertices + indices per part (see write_emesh)
@@ -152,10 +153,17 @@ def write_png(path: Path, width: int, height: int, rgba_rows: list[bytearray]) -
     path.write_bytes(png)
 
 
-def export_texture(textures: Container, name: str, out_dir: Path) -> str | None:
-    if name not in textures:
+def export_texture(textures: Container, name: str, out_dir: Path,
+                   extras: list[Container] | None = None) -> str | None:
+    src: Container | None = textures if name in textures else None
+    if src is None:
+        for extra in extras or []:
+            if name in extra:
+                src = extra
+                break
+    if src is None:
         return None
-    rec = textures.record(name)
+    rec = src.record(name)
     width, height = struct.unpack_from("<II", rec, 16)
     fourcc = rec[48:52]
     if fourcc not in (b"DXT1", b"DXT3", b"DXT5"):
@@ -332,15 +340,20 @@ class PartNode:
     children: list["PartNode"] = field(default_factory=list)
 
 
-def parse_craft_hull(gdata: bytes, craft: str) -> tuple[str, PartNode]:
-    """Returns (mesh file name, root part) from the Craft("...") block in gdata.dat."""
-    start = gdata.find(f'Craft("{craft}")'.encode())
+def parse_craft_hull(gdata: bytes, craft: str, kind: str = "Craft",
+                     window: int = 20000) -> tuple[str, PartNode]:
+    """Returns (mesh file name, root part) from a Craft("...") or Static("...") block.
+
+    `window` bounds how much of gdata is scanned after the opening token. Crafts
+    fit in the default; a static with a deep Part tree needs a larger window.
+    """
+    start = gdata.find(f'{kind}("{craft}")'.encode())
     if start < 0:
-        raise KeyError(f"Craft {craft!r} not found in gdata.dat")
-    text = gdata[start:start + 20000].decode("cp1251", "replace")
+        raise KeyError(f"{kind} {craft!r} not found in gdata.dat")
+    text = gdata[start:start + window].decode("cp1251", "replace")
     root_m = re.search(r'Root\("([^"]+)"\)\s*\{', text)
     if not root_m:
-        raise ValueError(f"{craft}: no Root block")
+        raise ValueError(f"{kind} {craft}: no Root block")
     file_m = re.search(r'FileName\s*=\s*"([^"]+)"', text[root_m.end():])
     mesh_file = file_m.group(1) if file_m else craft
 
@@ -452,7 +465,14 @@ def mesh_bbox_d3d(pm: PartMesh) -> tuple[float, ...]:
     return (lo[0], -hi[1], lo[2], hi[0], -lo[1], hi[2])
 
 
-def parse_object_nodes(objects: Container, name: str) -> list[ObjectNode]:
+def parse_object_nodes(objects: Container, name: str, pos_limit: float = 40.0,
+                       bbox_limit: float = 80.0) -> list[ObjectNode]:
+    """Scan a MEOS record for part nodes.
+
+    The default limits match aircraft (part offsets stay inside 40 m, part
+    bboxes inside 80 m). Statics — a 600 m bridge, a radar complex — need both
+    limits raised; callers that do so pass the wider values explicitly.
+    """
     if name not in objects:
         return []
     rec = objects.record(name)
@@ -471,7 +491,7 @@ def parse_object_nodes(objects: Container, name: str) -> list[ObjectNode]:
             continue
         if abs(sum(a * b for a, b in zip(fwd, up))) > 0.05:
             continue
-        if any(abs(c) > 40.0 for c in pos):
+        if any(abs(c) > pos_limit for c in pos):
             continue
         # A node and the same floats read 4 bytes later both look orthonormal.
         if off - last == 4:
@@ -480,7 +500,7 @@ def parse_object_nodes(objects: Container, name: str) -> list[ObjectNode]:
         p = off - 40
         while p >= 0 and len(bboxes) < 8:
             e = struct.unpack_from("<7f3I", rec, p)
-            if not all(abs(v) < 80.0 for v in e[:7]) or e[9] >= 100000:
+            if not all(abs(v) < bbox_limit for v in e[:7]) or e[9] >= 100000:
                 break
             if any(abs(v) > 1e-6 for v in e[:6]) and e[6] > 0:
                 bboxes.append(e[:6])
@@ -519,6 +539,143 @@ def assign_nodes(nodes: list[ObjectNode], parts: list[tuple[str, PartMesh]]) -> 
         used_parts.add(sub)
         used_nodes.add(i)
     return out
+
+
+# objects2.dat root parent sentinel (not a container name hash).
+O2_ROOT = 0xFF5F5C6C
+
+
+@dataclass
+class O2Node:
+    """One node of an objects2.dat record.
+
+    A mesh node is 200 bytes and its name hash is the container hash of the
+    mesh stub `<file>[_part]_Im0`. A 48-byte anchor has no name (name_hash is
+    None) and carries only a transform. `extra` on a mesh node counts the
+    anchors that follow it; this parser does not need that count because the
+    two sizes are told apart by the record itself.
+    """
+    parent: int
+    position: tuple[float, float, float]
+    forward: tuple[float, float, float]
+    up: tuple[float, float, float]
+    name_hash: int | None
+
+
+def _is_unit_pair(fwd: tuple[float, ...], up: tuple[float, ...]) -> bool:
+    def length(v: tuple[float, ...]) -> float:
+        return sum(c * c for c in v) ** 0.5
+
+    fl, ul = length(fwd), length(up)
+    if not (0.97 < fl < 1.03 and 0.97 < ul < 1.03):
+        return False
+    return abs(sum(a * b for a, b in zip(fwd, up))) < 0.05
+
+
+def parse_objects2_nodes(rec: bytes) -> list[O2Node]:
+    """Walk a packed objects2 record: 200-byte mesh nodes and 48-byte anchors.
+
+    Verified by consuming every record in the Wind Warriors file exactly.
+    """
+    nodes: list[O2Node] = []
+    off = 0
+    n = len(rec)
+    while off + 48 <= n:
+        fwd = struct.unpack_from("<3f", rec, off + 24)
+        up = struct.unpack_from("<3f", rec, off + 36)
+        if not _is_unit_pair(fwd, up):
+            break
+        parent = struct.unpack_from("<I", rec, off + 4)[0]
+        pos = struct.unpack_from("<3f", rec, off + 12)
+        name_hash: int | None = None
+        step = 48
+        if off + 200 <= n:
+            h1, h2 = struct.unpack_from("<2I", rec, off + 48)
+            nxt = off + 200
+            nxt_ok = nxt == n or (
+                nxt + 48 <= n and _is_unit_pair(
+                    struct.unpack_from("<3f", rec, nxt + 24),
+                    struct.unpack_from("<3f", rec, nxt + 36)))
+            if h1 == h2 and nxt_ok:
+                name_hash = h1
+                step = 200
+        if step == 48:
+            nxt = off + 48
+            nxt_ok = nxt == n or (
+                nxt + 48 <= n and _is_unit_pair(
+                    struct.unpack_from("<3f", rec, nxt + 24),
+                    struct.unpack_from("<3f", rec, nxt + 36)))
+            if not nxt_ok:
+                break
+        nodes.append(O2Node(parent, pos, fwd, up, name_hash))
+        off += step
+    return nodes
+
+
+def _same_abs_components(a: tuple[float, ...], b: tuple[float, ...], tol: float = 0.05) -> bool:
+    """True when the two vectors hold the same absolute components, any order.
+
+    objects2 stores the same point as the objects.dat node, but the axis order
+    is not one fixed permutation (it follows the node). Matching on the sorted
+    absolute values finds that node without inventing a conversion.
+    """
+    aa = sorted(abs(c) for c in a)
+    bb = sorted(abs(c) for c in b)
+    return all(abs(x - y) <= tol for x, y in zip(aa, bb))
+
+
+def bind_objects2_fallbacks(mesh_file: str, meshes: Container, objects2: Container,
+                            parts: list[tuple[str, PartMesh]], d3d_nodes: list[ObjectNode],
+                            assigned: dict[str, ObjectNode]) -> None:
+    """Name-match parts that bbox matching missed.
+
+    The objects2 node is identified by the container hash of `<file>[_part]_Im0`.
+    Its position is then tied to the unique objects.dat node with the same
+    absolute components, and that D3D node (position and basis) is used.
+    """
+    if mesh_file not in objects2:
+        return
+    by_hash = {n.name_hash: n for n in parse_objects2_nodes(objects2.record(mesh_file))
+               if n.name_hash not in (None, 0xFFFFFFFF)}
+    for sub, _pm in parts:
+        if sub in assigned:
+            continue
+        stub = f"{mesh_file}_Im0" if sub == HULL_PART else f"{mesh_file}_{sub}_Im0"
+        if stub not in meshes.by_name:
+            continue
+        o2 = by_hash.get(meshes.by_name[stub][0])
+        if o2 is None:
+            continue
+        hits = [n for n in d3d_nodes if _same_abs_components(n.position, o2.position)]
+        if len(hits) != 1:
+            print(f"  ! {sub}: objects2 node matches {len(hits)} objects.dat nodes", file=sys.stderr)
+            continue
+        # The name tie can land on a hardpoint whose position numbers coincide but
+        # whose bbox is a different volume. Reject those; a real part stays within
+        # a few metres (tower hull was 17 m, a swapped hangar pivot was 60 m+).
+        want = mesh_bbox_d3d(_pm)
+        dist = min(max(abs(a - b) for a, b in zip(bb, want)) for bb in hits[0].bboxes)
+        if dist > 20.0:
+            print(f"  ! {sub}: objects2 tie bbox off by {dist:.1f} m, leaving the part at the origin",
+                  file=sys.stderr)
+            continue
+        assigned[sub] = hits[0]
+        print(f"  {sub}: placed from objects2 name via objects.dat node (bbox {dist:.1f} m)")
+
+
+def _static_display_for_file(text: str, filename: str) -> str | None:
+    for m in re.finditer(r'Static\("([^"]+)"\)', text):
+        window = text[m.end():m.end() + 12000]
+        nxt = re.search(r"\n(?:Static|Craft|Road|Vehicle|Turret)\(", window)
+        block = window[:nxt.start()] if nxt else window
+        fm = re.search(r'FileName\s*=\s*"([^"]+)"', block)
+        if fm and fm.group(1) == filename:
+            return m.group(1)
+    return None
+
+
+def list_statics(gdata: bytes) -> list[str]:
+    return [m.group(1) for m in re.finditer(r'Static\("([^"]+)"\)', gdata.decode("cp1251", "replace"))]
 
 
 HIDDEN_BY_DEFAULT = {"CoPilot"}
@@ -581,7 +738,9 @@ def _damage_states(meshes: Container, mesh_file: str, lod: int) -> list[int]:
     for n in meshes.by_name:
         if "_V" in n or not (n.startswith(prefix) and n.endswith(tail)):
             continue
-        m = re.search(r"_Im(\d+)$", n[len(prefix):-len(tail)])
+        mid = n[len(prefix):-len(tail)]
+        # Part records look like "<part>_Im<d>"; the hull record is just "Im<d>".
+        m = re.search(r"_Im(\d+)$", mid) or re.fullmatch(r"Im(\d+)", mid)
         if m:
             states.add(int(m.group(1)))
     return sorted(states)
@@ -589,29 +748,43 @@ def _damage_states(meshes: Container, mesh_file: str, lod: int) -> list[int]:
 
 def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
                  damage: int | None = None, sources: Sources | None = None,
-                 exported_textures: set[str] | None = None) -> bool:
-    """Writes one model per damage state. Returns False when the craft has no mesh.
+                 exported_textures: set[str] | None = None, *,
+                 entity: str = "Craft", json_key: str = "craft",
+                 pos_limit: float = 40.0, bbox_limit: float = 80.0,
+                 window: int = 20000, objects2: Container | None = None,
+                 extra_textures: list[Container] | None = None,
+                 mesh_override: str | None = None) -> bool:
+    """Writes one model per damage state. Returns False when the unit has no mesh.
 
     `damage` restricts the export to a single Im state; None writes every state
     present in mesh.dat. Placement is resolved once, from the intact mesh, and
-    reused: a damaged mesh has a different bbox and would miss its node."""
+    reused: a damaged mesh has a different bbox and would miss its node.
+
+    Aircraft keep the default limits and `json_key="craft"`. Statics pass wider
+    limits, `entity="Static"`, `json_key="static"` and the objects2 container
+    used when a bbox match fails. `mesh_override` exports a mesh file that has
+    no Static() block (bridge sections).
+    """
     print(f"== {craft}")
     src = sources or load_sources(data_dir)
     if exported_textures is None:
         exported_textures = set()
 
-    try:
-        mesh_file, root = parse_craft_hull(src.gdata, craft)
-    except (KeyError, ValueError) as e:
-        print(f"  skip: {e}")
-        return False
+    if mesh_override:
+        mesh_file, root = mesh_override, PartNode("HULL", (0.0, 0.0, 0.0))
+    else:
+        try:
+            mesh_file, root = parse_craft_hull(src.gdata, craft, entity, window)
+        except (KeyError, ValueError) as e:
+            print(f"  skip: {e}")
+            return False
     states = [damage] if damage is not None else _damage_states(src.meshes, mesh_file, lod)
     states = [d for d in states if _subs_at(src.meshes, mesh_file, lod, d)]
     if not states:
         print(f"  skip: no mesh records for {mesh_file}")
         return False
     print(f"  mesh file {mesh_file}, damage states {states}")
-    nodes = parse_object_nodes(src.objects, mesh_file)
+    nodes = parse_object_nodes(src.objects, mesh_file, pos_limit, bbox_limit)
 
     models_dir = out_dir / "models"
     tex_dir = out_dir / "textures"
@@ -640,6 +813,8 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
                                    _record_name(mesh_file, sub, base, lod)))
                   for sub in base_subs]
     assigned = assign_nodes(nodes, base_parts)
+    if objects2 is not None:
+        bind_objects2_fallbacks(mesh_file, src.meshes, objects2, base_parts, nodes, assigned)
     for sub, _pm in base_parts:
         node = assigned.get(sub)
         if node is not None:
@@ -669,6 +844,9 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
 
     for state in states:
         parts_json = []
+        bound_min = [float("inf")] * 3
+        bound_max = [float("-inf")] * 3
+        tri_total = 0
         for sub in _subs_at(src.meshes, mesh_file, lod, state):
             try:
                 pm = parse_lod(src.meshes, src.textures, src.materials,
@@ -682,9 +860,18 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
             qx, qy, qz, qw = _quat_from_columns(_d3d_rotation_to_engine(abs_rot))
             emesh = models_dir / f"{mesh_file}_im{state}_{sub}.emesh"
             write_emesh(emesh, pm)
+            tri_total += len(pm.indices) // 3
+            if json_key == "static":
+                rot_e = _d3d_rotation_to_engine(abs_rot)
+                for v in pm.vertices:
+                    p = _mul_vec(rot_e, v[:3])
+                    for k in range(3):
+                        c = p[k] + (ox, oy, oz)[k]
+                        bound_min[k] = min(bound_min[k], c)
+                        bound_max[k] = max(bound_max[k], c)
             for s in pm.subsets:
                 if s.texture and s.texture not in exported_textures:
-                    if export_texture(src.textures, s.texture, tex_dir):
+                    if export_texture(src.textures, s.texture, tex_dir, extra_textures):
                         exported_textures.add(s.texture)
             parts_json.append({
                 "name": sub,
@@ -701,7 +888,7 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
                 "visible": sub.split("_")[-1].casefold() not in {n.casefold() for n in HIDDEN_BY_DEFAULT},
             })
         model = {
-            "craft": craft,
+            json_key: craft,
             "source": mesh_file,
             "lod": lod,
             "damage_state": state,
@@ -709,8 +896,69 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
         }
         out_json = models_dir / f"{mesh_file}_im{state}.model.json"
         out_json.write_text(json.dumps(model, indent=2), encoding="utf-8")
-        print(f"  im{state}: {len(parts_json)} parts -> {out_json.name}")
+        print(f"  im{state}: {len(parts_json)} parts, {tri_total} tris -> {out_json.name}")
+        if json_key == "static" and bound_min[0] <= bound_max[0]:
+            size = tuple(round(bound_max[k] - bound_min[k], 1) for k in range(3))
+            print(f"  im{state} engine size (m) xyz={size}")
     return True
+
+
+def _load_optional(path: Path) -> Container | None:
+    if not path.is_file():
+        return None
+    return Container.load(path)
+
+
+def export_static(data_dir: Path, name: str, out_dir: Path, lod: int = 0,
+                  damage: int | None = None, sources: Sources | None = None,
+                  exported_textures: set[str] | None = None,
+                  objects2: Container | None = None,
+                  extra_textures: list[Container] | None = None) -> bool:
+    """Export one static. `name` is a Static("...") title or a mesh FileName.
+
+    A FileName with no Static block (a bridge section) is exported as a single
+    mesh. Placement uses objects.dat in the D3D frame, with objects2 only to
+    recognise a part whose bbox did not match.
+    """
+    src = sources or load_sources(data_dir)
+    o2 = objects2 if objects2 is not None else Container.load(data_dir / "objects2.dat")
+    if extra_textures is None:
+        atex = _load_optional(data_dir / "Graphics" / "atextures.dat")
+        extra_textures = [atex] if atex is not None else []
+    text = src.gdata.decode("cp1251", "replace")
+    common = dict(lod=lod, damage=damage, sources=src, exported_textures=exported_textures,
+                  entity="Static", json_key="static", pos_limit=4000.0, bbox_limit=4000.0,
+                  window=100000, objects2=o2, extra_textures=extra_textures)
+    if f'Static("{name}")' in text:
+        return export_craft(data_dir, name, out_dir, **common)
+    display = _static_display_for_file(text, name)
+    if display:
+        return export_craft(data_dir, display, out_dir, **common)
+    # No Static block: still a mesh file (bridge section, shell, ...).
+    if not _subs_at(src.meshes, name, lod, 0) and not _damage_states(src.meshes, name, lod):
+        print(f"== {name}")
+        print(f"  skip: no Static(\"{name}\") and no mesh records")
+        return False
+    return export_craft(data_dir, name, out_dir, mesh_override=name, **common)
+
+
+def export_all_statics(data_dir: Path, out_dir: Path, lod: int, damage: int | None) -> None:
+    src = load_sources(data_dir)
+    o2 = Container.load(data_dir / "objects2.dat")
+    atex = _load_optional(data_dir / "Graphics" / "atextures.dat")
+    extras = [atex] if atex is not None else []
+    textures: set[str] = set()
+    done = skipped = 0
+    for name in list_statics(src.gdata):
+        try:
+            if export_static(data_dir, name, out_dir, lod, damage, src, textures, o2, extras):
+                done += 1
+            else:
+                skipped += 1
+        except Exception as e:
+            skipped += 1
+            print(f"  skip: {name}: {e}", file=sys.stderr)
+    print(f"exported {done}, skipped {skipped}")
 
 
 def export_all(data_dir: Path, out_dir: Path, lod: int, damage: int | None) -> None:
@@ -731,20 +979,31 @@ def export_all(data_dir: Path, out_dir: Path, lod: int, damage: int | None) -> N
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--data", type=Path, default=Path("legacy/Echelon/Data"),
-                    help="original Data directory (default: legacy/Echelon/Data)")
+    ap.add_argument("--data", type=Path, default=Path("legacy/Echelon Wind Warriors/Data"),
+                    help="original Data directory (default: legacy/Echelon Wind Warriors/Data)")
     ap.add_argument("--out", type=Path, default=Path("assets/legacy"),
                     help="output directory (default: assets/legacy, git-ignored)")
-    ap.add_argument("--craft", default="Human_BF1",
-                    help="Craft(\"...\") name in gdata.dat, or 'all'")
+    ap.add_argument("--craft", default=None,
+                    help="Craft(\"...\") name in gdata.dat, or 'all' (default: Human_BF1 when --static is absent)")
+    ap.add_argument("--static", default=None,
+                    help="Static(\"...\") title, mesh FileName, or 'all'")
     ap.add_argument("--lod", type=int, default=0)
     ap.add_argument("--damage", type=int, default=None,
                     help="only this Im state (default: every state the mesh has)")
     args = ap.parse_args()
-    if args.craft == "all":
+    if args.static and args.craft:
+        ap.error("--static and --craft are mutually exclusive")
+    if args.static:
+        if args.static == "all":
+            export_all_statics(args.data, args.out, args.lod, args.damage)
+        else:
+            export_static(args.data, args.static, args.out, args.lod, args.damage)
+        return 0
+    craft = args.craft or "Human_BF1"
+    if craft == "all":
         export_all(args.data, args.out, args.lod, args.damage)
     else:
-        export_craft(args.data, args.craft, args.out, args.lod, args.damage)
+        export_craft(args.data, craft, args.out, args.lod, args.damage)
     return 0
 
 

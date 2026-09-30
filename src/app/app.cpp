@@ -6,6 +6,7 @@
 #include "render/frame.hpp"
 #include "render/gl.hpp"
 #include "render/model.hpp"
+#include "render/scene_objects.hpp"
 #include "render/shader.hpp"
 #include "render/terrain_renderer.hpp"
 #include "render/texture.hpp"
@@ -22,6 +23,7 @@
 #include <cmath>
 #include <exception>
 #include <filesystem>
+#include <fstream>
 #include <format>
 #include <memory>
 #include <optional>
@@ -99,6 +101,17 @@ CraftModels loadCraftModels(const std::filesystem::path& assets, const std::stri
 	return out;
 }
 
+// Craft exhibits only. Static buildings share the file suffix but open with
+// "static" instead of "craft"; those are placed from a scene file.
+bool isCraftModel(const std::filesystem::path& json)
+{
+	std::ifstream in(json);
+	std::string line;
+	std::getline(in, line);
+	std::getline(in, line);
+	return line.find("\"craft\"") != std::string::npos;
+}
+
 // Every craft exported by tools/legacy_export.py (<file>_im0.model.json), sorted by name.
 std::vector<std::string> exportedCrafts(const std::filesystem::path& assets)
 {
@@ -109,7 +122,7 @@ std::vector<std::string> exportedCrafts(const std::filesystem::path& assets)
 	constexpr std::string_view suffix = "_im0.model.json";
 	for (const auto& entry : std::filesystem::directory_iterator(dir)) {
 		const std::string name = entry.path().filename().string();
-		if (name.size() > suffix.size() && name.ends_with(suffix))
+		if (name.size() > suffix.size() && name.ends_with(suffix) && isCraftModel(entry.path()))
 			files.push_back(name.substr(0, name.size() - suffix.size()));
 	}
 	std::sort(files.begin(), files.end());
@@ -151,6 +164,28 @@ Terrain loadTerrain(const AppOptions& options)
 		t.field.reset();
 	}
 	return t;
+}
+
+// Placed decorations of the map, if a scene file has been exported for it.
+std::unique_ptr<SceneObjects> loadSceneObjects(const AppOptions& options, const Terrain& terrain, const Texture& fallback)
+{
+	const auto file = options.assetsDir / "legacy/scenes" / (options.terrain + ".scene.json");
+	if (!std::filesystem::exists(file)) {
+		log::info("no scene objects for '{}' ({} absent)", options.terrain, file.string());
+		return nullptr;
+	}
+	try {
+		const auto start = std::chrono::steady_clock::now();
+		auto scene = std::make_unique<SceneObjects>(file, options.assetsDir / "legacy/models",
+			options.assetsDir / "legacy/textures", fallback,
+			[&terrain](float x, float z) { return terrain.groundAt(x, z); });
+		log::info("scene objects loaded in {:.2f} s",
+			std::chrono::duration<double>(std::chrono::steady_clock::now() - start).count());
+		return scene;
+	} catch (const std::exception& e) {
+		log::error("scene objects failed: {}", e.what());
+		return nullptr;
+	}
 }
 
 // Crafts side by side along +X, noses towards -Z, each resting on the ground.
@@ -226,6 +261,7 @@ int runApp(const AppOptions& options)
 		const Terrain terrain = loadTerrain(options);
 		std::vector<Exhibit> exhibits = buildExhibits(options, terrain, glassTex);
 		log::info("{} crafts on display", exhibits.size());
+		std::unique_ptr<SceneObjects> sceneObjects = loadSceneObjects(options, terrain, glassTex);
 
 		FlyCamera camera = initialCamera(options, terrain, exhibits);
 		float speedScale = 1.0f;
@@ -293,6 +329,8 @@ int runApp(const AppOptions& options)
 			for (const Exhibit& e : exhibits)
 				if (const Model* m = e.models.current())
 					m->draw(lit, glm::translate(glm::mat4(1.0f), e.position));
+			if (sceneObjects)
+				sceneObjects->draw(lit, f);
 
 			if (screenshotMode && ++frameIndex >= options.screenshotFrame) {
 				glFinish();
@@ -307,10 +345,12 @@ int runApp(const AppOptions& options)
 			if (statTimer >= 2.0) {
 				const glm::vec3 p = camera.position;
 				const auto stats = terrain.renderer ? terrain.renderer->stats() : TerrainRenderer::Stats{};
+				const auto objects = sceneObjects ? sceneObjects->stats() : SceneObjects::Stats{};
 				log::info("{:.0f} fps | cam {:.0f} {:.0f} {:.0f} (agl {:.0f} m) yaw {:.0f} pitch {:.0f} | "
-						  "terrain {} nodes, {:.2f}M tris, {} water",
+						  "terrain {} nodes, {:.2f}M tris, {} water | objects {} drawn, {} culled",
 					statFrames / statTimer, p.x, p.y, p.z, p.y - terrain.groundAt(p.x, p.z), camera.yawDeg,
-					camera.pitchDeg, stats.nodes, static_cast<double>(stats.triangles) / 1e6, stats.waterNodes);
+					camera.pitchDeg, stats.nodes, static_cast<double>(stats.triangles) / 1e6, stats.waterNodes,
+					objects.drawn, objects.culled);
 				statTimer = 0.0;
 				statFrames = 0;
 			}

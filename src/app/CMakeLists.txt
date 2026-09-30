@@ -19,6 +19,9 @@ set(SRC
 	render/texture.cpp
 	render/camera.hpp
 	render/frame.hpp
+	render/frustum.hpp
+	render/scene_objects.hpp
+	render/scene_objects.cpp
 	render/terrain_renderer.hpp
 	render/terrain_renderer.cpp
 )

@@ -1,0 +1,41 @@
+{
+  "static": "railroadbridge600m_part",
+  "source": "railroadbridge600m_part",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "railroadbridge600m_part_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        13.59582233428955,
+        -9.253000259399414,
+        -259.0543212890625
+      ],
+      "orientation": [
+        -4.776716237248381e-16,
+        -2.1855697696082663e-08,
+        -2.185570302515316e-08,
+        1.0
+      ],
+      "local_position": [
+        13.59582233428955,
+        -9.253000259399414,
+        -259.0543212890625
+      ],
+      "textures": [
+        "bok3m",
+        "bok6m",
+        "most",
+        "stena1",
+        "stena1m"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,2266 @@
+{
+  "static": "Craft Hangar Big",
+  "source": "gravang_big",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "Bunker",
+      "mesh": "gravang_big_im2_Bunker.emesh",
+      "parent": "",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "textures": [
+        "g-bbb"
+      ],
+      "materials": [
+        "RMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D01",
+      "mesh": "gravang_big_im2_Bunker_D01.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D02",
+      "mesh": "gravang_big_im2_Bunker_D02.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D03",
+      "mesh": "gravang_big_im2_Bunker_D03.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D04",
+      "mesh": "gravang_big_im2_Bunker_D04.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D05",
+      "mesh": "gravang_big_im2_Bunker_D05.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D06",
+      "mesh": "gravang_big_im2_Bunker_D06.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D07",
+      "mesh": "gravang_big_im2_Bunker_D07.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D08",
+      "mesh": "gravang_big_im2_Bunker_D08.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D09",
+      "mesh": "gravang_big_im2_Bunker_D09.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D10",
+      "mesh": "gravang_big_im2_Bunker_D10.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D11",
+      "mesh": "gravang_big_im2_Bunker_D11.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D12",
+      "mesh": "gravang_big_im2_Bunker_D12.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D13",
+      "mesh": "gravang_big_im2_Bunker_D13.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D14",
+      "mesh": "gravang_big_im2_Bunker_D14.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D15",
+      "mesh": "gravang_big_im2_Bunker_D15.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D16",
+      "mesh": "gravang_big_im2_Bunker_D16.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D17",
+      "mesh": "gravang_big_im2_Bunker_D17.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D18",
+      "mesh": "gravang_big_im2_Bunker_D18.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D19",
+      "mesh": "gravang_big_im2_Bunker_D19.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D20",
+      "mesh": "gravang_big_im2_Bunker_D20.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D21",
+      "mesh": "gravang_big_im2_Bunker_D21.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D22",
+      "mesh": "gravang_big_im2_Bunker_D22.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D23",
+      "mesh": "gravang_big_im2_Bunker_D23.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D24",
+      "mesh": "gravang_big_im2_Bunker_D24.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D25",
+      "mesh": "gravang_big_im2_Bunker_D25.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D26",
+      "mesh": "gravang_big_im2_Bunker_D26.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D27",
+      "mesh": "gravang_big_im2_Bunker_D27.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D28",
+      "mesh": "gravang_big_im2_Bunker_D28.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D29",
+      "mesh": "gravang_big_im2_Bunker_D29.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D30",
+      "mesh": "gravang_big_im2_Bunker_D30.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D31",
+      "mesh": "gravang_big_im2_Bunker_D31.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D32",
+      "mesh": "gravang_big_im2_Bunker_D32.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D33",
+      "mesh": "gravang_big_im2_Bunker_D33.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D34",
+      "mesh": "gravang_big_im2_Bunker_D34.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D35",
+      "mesh": "gravang_big_im2_Bunker_D35.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D36",
+      "mesh": "gravang_big_im2_Bunker_D36.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D37",
+      "mesh": "gravang_big_im2_Bunker_D37.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D38",
+      "mesh": "gravang_big_im2_Bunker_D38.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D39",
+      "mesh": "gravang_big_im2_Bunker_D39.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D40",
+      "mesh": "gravang_big_im2_Bunker_D40.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D41",
+      "mesh": "gravang_big_im2_Bunker_D41.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D42",
+      "mesh": "gravang_big_im2_Bunker_D42.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D43",
+      "mesh": "gravang_big_im2_Bunker_D43.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D44",
+      "mesh": "gravang_big_im2_Bunker_D44.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D45",
+      "mesh": "gravang_big_im2_Bunker_D45.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D46",
+      "mesh": "gravang_big_im2_Bunker_D46.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D47",
+      "mesh": "gravang_big_im2_Bunker_D47.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D48",
+      "mesh": "gravang_big_im2_Bunker_D48.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D49",
+      "mesh": "gravang_big_im2_Bunker_D49.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D50",
+      "mesh": "gravang_big_im2_Bunker_D50.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D51",
+      "mesh": "gravang_big_im2_Bunker_D51.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D52",
+      "mesh": "gravang_big_im2_Bunker_D52.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D53",
+      "mesh": "gravang_big_im2_Bunker_D53.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D54",
+      "mesh": "gravang_big_im2_Bunker_D54.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D55",
+      "mesh": "gravang_big_im2_Bunker_D55.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D56",
+      "mesh": "gravang_big_im2_Bunker_D56.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D57",
+      "mesh": "gravang_big_im2_Bunker_D57.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D58",
+      "mesh": "gravang_big_im2_Bunker_D58.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D59",
+      "mesh": "gravang_big_im2_Bunker_D59.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D60",
+      "mesh": "gravang_big_im2_Bunker_D60.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D61",
+      "mesh": "gravang_big_im2_Bunker_D61.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D62",
+      "mesh": "gravang_big_im2_Bunker_D62.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D63",
+      "mesh": "gravang_big_im2_Bunker_D63.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D64",
+      "mesh": "gravang_big_im2_Bunker_D64.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D65",
+      "mesh": "gravang_big_im2_Bunker_D65.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D66",
+      "mesh": "gravang_big_im2_Bunker_D66.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D67",
+      "mesh": "gravang_big_im2_Bunker_D67.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D68",
+      "mesh": "gravang_big_im2_Bunker_D68.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D69",
+      "mesh": "gravang_big_im2_Bunker_D69.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D70",
+      "mesh": "gravang_big_im2_Bunker_D70.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_D71",
+      "mesh": "gravang_big_im2_Bunker_D71.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map2mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_door",
+      "mesh": "gravang_big_im2_Bunker_door.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.5302769781269902,
+        27.672517786620958,
+        320.2577514770748
+      ],
+      "orientation": [
+        0.5000000541884884,
+        -0.4999999297891334,
+        0.499999937441199,
+        0.5000000785811853
+      ],
+      "local_position": [
+        -0.20520462095737457,
+        5.420083999633789,
+        -64.14202880859375
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "gravang_big_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "baza3polmb",
+        "map2mb",
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Metal",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolA",
+      "mesh": "gravang_big_im2_PolA.emesh",
+      "parent": "",
+      "position": [
+        -0.6085374355316162,
+        -4.103073596954346,
+        -308.8742370605469
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6085374355316162,
+        -4.103073596954346,
+        -308.8742370605469
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolB",
+      "mesh": "gravang_big_im2_PolB.emesh",
+      "parent": "",
+      "position": [
+        -0.6085298657417297,
+        -4.103085041046143,
+        -217.6094970703125
+      ],
+      "orientation": [
+        0.5000000460802513,
+        -0.4999999292953799,
+        0.4999999889114741,
+        0.5000000357129061
+      ],
+      "local_position": [
+        -0.6085298657417297,
+        -4.103085041046143,
+        -217.6094970703125
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolC",
+      "mesh": "gravang_big_im2_PolC.emesh",
+      "parent": "",
+      "position": [
+        -0.6085032224655151,
+        -4.1030778884887695,
+        -140.1295166015625
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6085032224655151,
+        -4.1030778884887695,
+        -140.1295166015625
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolD",
+      "mesh": "gravang_big_im2_PolD.emesh",
+      "parent": "",
+      "position": [
+        -0.6084985136985779,
+        -4.103083610534668,
+        -62.649513244628906
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6084985136985779,
+        -4.103083610534668,
+        -62.649513244628906
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolE",
+      "mesh": "gravang_big_im2_PolE.emesh",
+      "parent": "",
+      "position": [
+        -0.6084889769554138,
+        -4.103087425231934,
+        14.830490112304688
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6084889769554138,
+        -4.103087425231934,
+        14.830490112304688
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolF",
+      "mesh": "gravang_big_im2_PolF.emesh",
+      "parent": "",
+      "position": [
+        5.60388708114624,
+        -4.103083610534668,
+        104.70513916015625
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        5.60388708114624,
+        -4.103083610534668,
+        104.70513916015625
+      ],
+      "textures": [
+        "baza3polmb",
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    }
+  ]
+}

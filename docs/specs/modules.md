@@ -76,7 +76,7 @@
 | `TextureData.dll` | `GetMipLinearSize`, `GetSubMipSize` | Размеры мипов, без импортов |
 | `Clip.dll` | `clip::ClipIndexed` | Отсечение индексного буфера по плоскости. Импортов нет |
 | `Terrain.dll` | `TERRAIN_DATA::*` | Высота, вода, луч, открытие `.bx` / `.sq` / `.vb` |
-| `Environment.dll` | `CreateDH`, `CreateNS`, `CreateRB` | `CreateDH` — data hasher, `CreateNS` — navigation system. `CreateRB` баннера не имеет; в этой же DLL загрузчик `ROADDATA` |
+| `Environment.dll` | `CreateDH`, `CreateNS`, `CreateRB` | `CreateDH` — data hasher, `CreateNS` — navigation system. `CreateRB` собирает сеть дорог из точек миссии; каталог `ROADDATA` читает `StormData`. См. [roads.md](roads.md) |
 | `HashTools.dll` | `CreateHasher2`, `CreateCl` | «Hasher». Импортирует `Terrain.dll` |
 | `Feature.dll` | `CreateFeatureManager` | Меши фич: рендер логирует `FEATURE failed load mesh` |
 | `Sound.dll` | `CreateSInstance` → `ISound` | DirectSound. В логах `Sound`, `Listener3D` |

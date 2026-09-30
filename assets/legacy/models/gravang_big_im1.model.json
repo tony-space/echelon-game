@@ -1,0 +1,282 @@
+{
+  "static": "Craft Hangar Big",
+  "source": "gravang_big",
+  "lod": 0,
+  "damage_state": 1,
+  "parts": [
+    {
+      "name": "Bunker",
+      "mesh": "gravang_big_im1_Bunker.emesh",
+      "parent": "",
+      "position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.32506880164146423,
+        22.25243377685547,
+        384.3997802734375
+      ],
+      "textures": [
+        "baza3polmb",
+        "bok3m",
+        "map2mb",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_door",
+      "mesh": "gravang_big_im1_Bunker_door.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.5302769781269902,
+        27.672517786620958,
+        320.2577514770748
+      ],
+      "orientation": [
+        0.5000000541884884,
+        -0.4999999297891334,
+        0.499999937441199,
+        0.5000000785811853
+      ],
+      "local_position": [
+        -0.20520462095737457,
+        5.420083999633789,
+        -64.14202880859375
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "gravang_big_im1_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "baza3polmb",
+        "map2mb",
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Metal",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolA",
+      "mesh": "gravang_big_im1_PolA.emesh",
+      "parent": "",
+      "position": [
+        -0.6085374355316162,
+        -4.103073596954346,
+        -308.8742370605469
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6085374355316162,
+        -4.103073596954346,
+        -308.8742370605469
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolB",
+      "mesh": "gravang_big_im1_PolB.emesh",
+      "parent": "",
+      "position": [
+        -0.6085298657417297,
+        -4.103085041046143,
+        -217.6094970703125
+      ],
+      "orientation": [
+        0.5000000460802513,
+        -0.4999999292953799,
+        0.4999999889114741,
+        0.5000000357129061
+      ],
+      "local_position": [
+        -0.6085298657417297,
+        -4.103085041046143,
+        -217.6094970703125
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolC",
+      "mesh": "gravang_big_im1_PolC.emesh",
+      "parent": "",
+      "position": [
+        -0.6085032224655151,
+        -4.1030778884887695,
+        -140.1295166015625
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6085032224655151,
+        -4.1030778884887695,
+        -140.1295166015625
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolD",
+      "mesh": "gravang_big_im1_PolD.emesh",
+      "parent": "",
+      "position": [
+        -0.6084985136985779,
+        -4.103083610534668,
+        -62.649513244628906
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6084985136985779,
+        -4.103083610534668,
+        -62.649513244628906
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolE",
+      "mesh": "gravang_big_im1_PolE.emesh",
+      "parent": "",
+      "position": [
+        -0.6084889769554138,
+        -4.103087425231934,
+        14.830490112304688
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.6084889769554138,
+        -4.103087425231934,
+        14.830490112304688
+      ],
+      "textures": [
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "PolF",
+      "mesh": "gravang_big_im1_PolF.emesh",
+      "parent": "",
+      "position": [
+        5.60388708114624,
+        -4.103083610534668,
+        104.70513916015625
+      ],
+      "orientation": [
+        -5.919194911996328e-09,
+        3.7613091624677805e-08,
+        5.3461181925245534e-08,
+        1.0
+      ],
+      "local_position": [
+        5.60388708114624,
+        -4.103083610534668,
+        104.70513916015625
+      ],
+      "textures": [
+        "baza3polmb",
+        "stfortab",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Road"
+      ],
+      "visible": true
+    }
+  ]
+}

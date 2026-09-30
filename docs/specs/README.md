@@ -34,7 +34,9 @@
 | [inventory.md](inventory.md) | Каталог файлов обеих игр |
 | [containers.md](containers.md) | Контейнеры, меши, узлы, оси оригинала, материалы |
 | [gdata.md](gdata.md) | Текстовая база юнитов внутри `gdata.dat` |
+| [statics.md](statics.md) | Здания, ангары, базы: описание в `gdata` и расстановка в миссии |
 | [terrain.md](terrain.md) | Ландшафт `Scenes/` |
+| [roads.md](roads.md) | Дороги: каталог в `gdata`, полилиния миссии, как рисуется полотно |
 | [evg.md](evg.md) | Контейнер `EVG1`: миссии, меню, настройки, ИИ-команды |
 | [audio-video.md](audio-video.md) | `DSFX`, `GSND`, WAV, WMV, AVI |
 | [presentation.md](presentation.md) | Интерфейс, картинки, частицы, погода, вспышки |
@@ -44,3 +46,5 @@
 | [mechanics.md](mechanics.md) | Системы игры и что из них данные, а что поведение |
 | [modules.md](modules.md) | DLL движка: фабрики, граф, имена, которые остались в бинарнике |
 | [open.md](open.md) | Что ещё не дочитано |
+
+Парсер контейнера `EVG1`: [`tools/evg_dump.py`](../../tools/evg_dump.py).

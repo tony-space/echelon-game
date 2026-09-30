@@ -1,0 +1,121 @@
+{
+  "static": "Tower 1",
+  "source": "tower1",
+  "lod": 0,
+  "damage_state": 1,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "tower1_im1_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok3mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower",
+      "mesh": "tower1_im1_tower.emesh",
+      "parent": "",
+      "position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "orientation": [
+        4.483103488439605e-08,
+        4.0695955358826885e-08,
+        -6.88207974684925e-09,
+        1.000000000000001
+      ],
+      "local_position": [
+        0.3453216254711151,
+        16.095783233642578,
+        -0.015366677194833755
+      ],
+      "textures": [
+        "bok3mb",
+        "bok6mb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top",
+      "mesh": "tower1_im1_tower_top.emesh",
+      "parent": "tower",
+      "position": [
+        0.1460387911144764,
+        59.49282073779599,
+        0.036979056353674676
+      ],
+      "orientation": [
+        7.046271054988333e-08,
+        1.448714118658693e-07,
+        -1.9174083525934675e-08,
+        0.9999999999999959
+      ],
+      "local_position": [
+        -0.1992834359407425,
+        43.397037506103516,
+        0.052341826260089874
+      ],
+      "textures": [
+        "bok3mb",
+        "bok6mb",
+        "ucslmb"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_glass",
+      "mesh": "tower1_im1_tower_top_glass.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.14603920021220523,
+        59.49282100420048,
+        1.448912955279491
+      ],
+      "orientation": [
+        -4.455582958183875e-08,
+        7.039279143960392e-07,
+        -6.631041328491995e-08,
+        0.9999999999999286
+      ],
+      "local_position": [
+        2.1019476964872256e-44,
+        4.6538187348232896e-07,
+        1.4119338989257812
+      ],
+      "textures": [],
+      "materials": [
+        "Glass"
+      ],
+      "visible": true
+    }
+  ]
+}

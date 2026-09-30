@@ -1,0 +1,66 @@
+{
+  "static": "Military Hangar 150m",
+  "source": "angar_sklad_150m",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "AngA",
+      "mesh": "angar_sklad_150m_im0_AngA.emesh",
+      "parent": "",
+      "position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "orientation": [
+        -0.500000014901161,
+        0.5000000149011614,
+        -0.4999999701976783,
+        -0.5000000000000002
+      ],
+      "local_position": [
+        -0.2948627173900604,
+        -0.47266653180122375,
+        -37.53411865234375
+      ],
+      "textures": [
+        "an",
+        "g-bbb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "angar_sklad_150m_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "an",
+        "g-bbb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

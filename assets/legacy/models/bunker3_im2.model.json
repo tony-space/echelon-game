@@ -1,0 +1,2223 @@
+{
+  "static": "Bunker Light",
+  "source": "bunker3",
+  "lod": 0,
+  "damage_state": 2,
+  "parts": [
+    {
+      "name": "D01",
+      "mesh": "bunker3_im2_D01.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D02",
+      "mesh": "bunker3_im2_D02.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D03",
+      "mesh": "bunker3_im2_D03.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D04",
+      "mesh": "bunker3_im2_D04.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D05",
+      "mesh": "bunker3_im2_D05.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D06",
+      "mesh": "bunker3_im2_D06.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D07",
+      "mesh": "bunker3_im2_D07.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D08",
+      "mesh": "bunker3_im2_D08.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D09",
+      "mesh": "bunker3_im2_D09.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D10",
+      "mesh": "bunker3_im2_D10.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D11",
+      "mesh": "bunker3_im2_D11.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D12",
+      "mesh": "bunker3_im2_D12.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D13",
+      "mesh": "bunker3_im2_D13.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D14",
+      "mesh": "bunker3_im2_D14.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D15",
+      "mesh": "bunker3_im2_D15.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D16",
+      "mesh": "bunker3_im2_D16.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D17",
+      "mesh": "bunker3_im2_D17.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D18",
+      "mesh": "bunker3_im2_D18.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D19",
+      "mesh": "bunker3_im2_D19.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D20",
+      "mesh": "bunker3_im2_D20.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D21",
+      "mesh": "bunker3_im2_D21.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D22",
+      "mesh": "bunker3_im2_D22.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D23",
+      "mesh": "bunker3_im2_D23.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D24",
+      "mesh": "bunker3_im2_D24.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D25",
+      "mesh": "bunker3_im2_D25.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D26",
+      "mesh": "bunker3_im2_D26.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D27",
+      "mesh": "bunker3_im2_D27.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D28",
+      "mesh": "bunker3_im2_D28.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D29",
+      "mesh": "bunker3_im2_D29.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D30",
+      "mesh": "bunker3_im2_D30.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D31",
+      "mesh": "bunker3_im2_D31.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D32",
+      "mesh": "bunker3_im2_D32.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D33",
+      "mesh": "bunker3_im2_D33.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D34",
+      "mesh": "bunker3_im2_D34.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D35",
+      "mesh": "bunker3_im2_D35.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D36",
+      "mesh": "bunker3_im2_D36.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D37",
+      "mesh": "bunker3_im2_D37.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D38",
+      "mesh": "bunker3_im2_D38.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D39",
+      "mesh": "bunker3_im2_D39.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D40",
+      "mesh": "bunker3_im2_D40.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D41",
+      "mesh": "bunker3_im2_D41.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D42",
+      "mesh": "bunker3_im2_D42.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D43",
+      "mesh": "bunker3_im2_D43.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D44",
+      "mesh": "bunker3_im2_D44.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D45",
+      "mesh": "bunker3_im2_D45.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D46",
+      "mesh": "bunker3_im2_D46.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D47",
+      "mesh": "bunker3_im2_D47.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D48",
+      "mesh": "bunker3_im2_D48.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D49",
+      "mesh": "bunker3_im2_D49.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D50",
+      "mesh": "bunker3_im2_D50.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D51",
+      "mesh": "bunker3_im2_D51.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D52",
+      "mesh": "bunker3_im2_D52.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D53",
+      "mesh": "bunker3_im2_D53.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D54",
+      "mesh": "bunker3_im2_D54.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D55",
+      "mesh": "bunker3_im2_D55.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D56",
+      "mesh": "bunker3_im2_D56.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D57",
+      "mesh": "bunker3_im2_D57.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D58",
+      "mesh": "bunker3_im2_D58.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D59",
+      "mesh": "bunker3_im2_D59.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D60",
+      "mesh": "bunker3_im2_D60.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D61",
+      "mesh": "bunker3_im2_D61.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D62",
+      "mesh": "bunker3_im2_D62.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D63",
+      "mesh": "bunker3_im2_D63.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D64",
+      "mesh": "bunker3_im2_D64.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D65",
+      "mesh": "bunker3_im2_D65.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D66",
+      "mesh": "bunker3_im2_D66.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D67",
+      "mesh": "bunker3_im2_D67.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "D68",
+      "mesh": "bunker3_im2_D68.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "bunker3_im2_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.04969865083694458,
+        2.7725353240966797,
+        0.3638133704662323
+      ],
+      "orientation": [
+        1.271839768179707e-07,
+        -0.7071067465060397,
+        4.471300130245029e-08,
+        0.707106815867078
+      ],
+      "local_position": [
+        0.04969865083694458,
+        2.7725353240966797,
+        0.3638133704662323
+      ],
+      "textures": [
+        "bok3mb",
+        "bok6mb",
+        "stonemb"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerA_D01",
+      "mesh": "bunker3_im2_towerA_D01.emesh",
+      "parent": "towerA",
+      "position": [
+        -0.581225574016571,
+        1.3162997961044312,
+        -11.881386756896973
+      ],
+      "orientation": [
+        0.49999985983846745,
+        0.49999986232608273,
+        -0.500000154548464,
+        0.5000001232870938
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerA_D02",
+      "mesh": "bunker3_im2_towerA_D02.emesh",
+      "parent": "towerA",
+      "position": [
+        -0.581225574016571,
+        1.3162997961044312,
+        -11.881386756896973
+      ],
+      "orientation": [
+        0.49999985983846745,
+        0.49999986232608273,
+        -0.500000154548464,
+        0.5000001232870938
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerA_D03",
+      "mesh": "bunker3_im2_towerA_D03.emesh",
+      "parent": "towerA",
+      "position": [
+        -0.581225574016571,
+        1.3162997961044312,
+        -11.881386756896973
+      ],
+      "orientation": [
+        0.49999985983846745,
+        0.49999986232608273,
+        -0.500000154548464,
+        0.5000001232870938
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerA_D04",
+      "mesh": "bunker3_im2_towerA_D04.emesh",
+      "parent": "towerA",
+      "position": [
+        -0.581225574016571,
+        1.3162997961044312,
+        -11.881386756896973
+      ],
+      "orientation": [
+        0.49999985983846745,
+        0.49999986232608273,
+        -0.500000154548464,
+        0.5000001232870938
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerA_D05",
+      "mesh": "bunker3_im2_towerA_D05.emesh",
+      "parent": "towerA",
+      "position": [
+        -0.581225574016571,
+        1.3162997961044312,
+        -11.881386756896973
+      ],
+      "orientation": [
+        0.49999985983846745,
+        0.49999986232608273,
+        -0.500000154548464,
+        0.5000001232870938
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerB_D01",
+      "mesh": "bunker3_im2_towerB_D01.emesh",
+      "parent": "towerB",
+      "position": [
+        -0.5812271237373352,
+        1.3163132667541504,
+        12.007387161254883
+      ],
+      "orientation": [
+        0.4999997226685183,
+        -0.4999999414544898,
+        0.5000002305250107,
+        0.500000105352089
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerB_D02",
+      "mesh": "bunker3_im2_towerB_D02.emesh",
+      "parent": "towerB",
+      "position": [
+        -0.5812271237373352,
+        1.3163132667541504,
+        12.007387161254883
+      ],
+      "orientation": [
+        0.4999997226685183,
+        -0.4999999414544898,
+        0.5000002305250107,
+        0.500000105352089
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerB_D03",
+      "mesh": "bunker3_im2_towerB_D03.emesh",
+      "parent": "towerB",
+      "position": [
+        -0.5812271237373352,
+        1.3163132667541504,
+        12.007387161254883
+      ],
+      "orientation": [
+        0.4999997226685183,
+        -0.4999999414544898,
+        0.5000002305250107,
+        0.500000105352089
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerB_D04",
+      "mesh": "bunker3_im2_towerB_D04.emesh",
+      "parent": "towerB",
+      "position": [
+        -0.5812271237373352,
+        1.3163132667541504,
+        12.007387161254883
+      ],
+      "orientation": [
+        0.4999997226685183,
+        -0.4999999414544898,
+        0.5000002305250107,
+        0.500000105352089
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerB_D05",
+      "mesh": "bunker3_im2_towerB_D05.emesh",
+      "parent": "towerB",
+      "position": [
+        -0.5812271237373352,
+        1.3163132667541504,
+        12.007387161254883
+      ],
+      "orientation": [
+        0.4999997226685183,
+        -0.4999999414544898,
+        0.5000002305250107,
+        0.500000105352089
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "stonemb"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    }
+  ]
+}
