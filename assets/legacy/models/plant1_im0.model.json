@@ -1,0 +1,272 @@
+{
+  "static": "Plant 1",
+  "source": "plant1",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "plant1_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -2.7471179962158203,
+        21.529096603393555,
+        -2.704261541366577
+      ],
+      "orientation": [
+        7.375698489406456e-08,
+        -0.7071067811865553,
+        3.161013638317029e-08,
+        0.7071067811865476
+      ],
+      "local_position": [
+        -2.7471179962158203,
+        21.529096603393555,
+        -2.704261541366577
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "corridor",
+      "mesh": "plant1_im0_corridor.emesh",
+      "parent": "",
+      "position": [
+        79.55717468261719,
+        -6.508503437042236,
+        -86.6590576171875
+      ],
+      "orientation": [
+        0.4999999552965164,
+        0.4999999403953721,
+        -0.5000000894069623,
+        0.5000000149011679
+      ],
+      "local_position": [
+        79.55717468261719,
+        -6.508503437042236,
+        -86.6590576171875
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "corridor_pipe",
+      "mesh": "plant1_im0_corridor_pipe.emesh",
+      "parent": "corridor",
+      "position": [
+        93.30176929570632,
+        56.11972170364394,
+        -35.9451318349449
+      ],
+      "orientation": [
+        0.4999999252489425,
+        0.49999992562081674,
+        -0.500000115791845,
+        0.5000000333384016
+      ],
+      "local_position": [
+        -50.71393966674805,
+        13.744585990905762,
+        -62.62821578979492
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "corridor_pipeA",
+      "mesh": "plant1_im0_corridor_pipeA.emesh",
+      "parent": "corridor",
+      "position": [
+        93.30175405040951,
+        56.11972318137675,
+        -83.71878009697086
+      ],
+      "orientation": [
+        0.4999999252489425,
+        0.49999992562081674,
+        -0.500000115791845,
+        0.5000000333384016
+      ],
+      "local_position": [
+        -2.940291404724121,
+        13.744573593139648,
+        -62.62822723388672
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "corridor_pipeB",
+      "mesh": "plant1_im0_corridor_pipeB.emesh",
+      "parent": "corridor",
+      "position": [
+        93.30176133546227,
+        56.119708147904234,
+        -137.49586349388272
+      ],
+      "orientation": [
+        0.4999999252489425,
+        0.49999992562081674,
+        -0.500000115791845,
+        0.5000000333384016
+      ],
+      "local_position": [
+        50.8367919921875,
+        13.744584083557129,
+        -62.62822341918945
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wall",
+      "mesh": "plant1_im0_wall.emesh",
+      "parent": "",
+      "position": [
+        94.72565460205078,
+        -15.691250801086426,
+        7.921962261199951
+      ],
+      "orientation": [
+        0.4999999552965164,
+        0.4999999403953721,
+        -0.5000000894069623,
+        0.5000000149011679
+      ],
+      "local_position": [
+        94.72565460205078,
+        -15.691250801086426,
+        7.921962261199951
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallA",
+      "mesh": "plant1_im0_wallA.emesh",
+      "parent": "",
+      "position": [
+        70.1069107055664,
+        -15.69124698638916,
+        33.48948669433594
+      ],
+      "orientation": [
+        0.4999999552965164,
+        0.4999999403953721,
+        -0.5000000894069623,
+        0.5000000149011679
+      ],
+      "local_position": [
+        70.1069107055664,
+        -15.69124698638916,
+        33.48948669433594
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallB",
+      "mesh": "plant1_im0_wallB.emesh",
+      "parent": "",
+      "position": [
+        -29.139808654785156,
+        -15.691251754760742,
+        -75.35816955566406
+      ],
+      "orientation": [
+        0.4999999552965164,
+        0.4999999403953721,
+        -0.5000000894069623,
+        0.5000000149011679
+      ],
+      "local_position": [
+        -29.139808654785156,
+        -15.691251754760742,
+        -75.35816955566406
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallC",
+      "mesh": "plant1_im0_wallC.emesh",
+      "parent": "",
+      "position": [
+        36.96189498901367,
+        -15.691256523132324,
+        -117.15361785888672
+      ],
+      "orientation": [
+        0.4999999552965164,
+        0.4999999403953721,
+        -0.5000000894069623,
+        0.5000000149011679
+      ],
+      "local_position": [
+        36.96189498901367,
+        -15.691256523132324,
+        -117.15361785888672
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

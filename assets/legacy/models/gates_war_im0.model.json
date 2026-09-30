@@ -1,0 +1,97 @@
+{
+  "static": "Military Gates",
+  "source": "gates_war",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "gates_war_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.8113994598388672,
+        0.5864167809486389,
+        8.508261680603027
+      ],
+      "orientation": [
+        2.1855697696082643e-08,
+        1.0,
+        -1.1723879343617576e-15,
+        5.364221067338809e-08
+      ],
+      "local_position": [
+        0.8113994598388672,
+        0.5864167809486389,
+        8.508261680603027
+      ],
+      "textures": [
+        "map3",
+        "pol",
+        "stforta"
+      ],
+      "materials": [
+        "Metal",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "LTower",
+      "mesh": "gates_war_im0_LTower.emesh",
+      "parent": "",
+      "position": [
+        -19.192617416381836,
+        5.440269947052002,
+        3.4740631580352783
+      ],
+      "orientation": [
+        -2.842096234734453e-16,
+        -9.264422911079681e-23,
+        -1.7763568394002505e-15,
+        1.0
+      ],
+      "local_position": [
+        -19.192617416381836,
+        5.440269947052002,
+        3.4740631580352783
+      ],
+      "textures": [
+        "map3",
+        "pol"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "RTower",
+      "mesh": "gates_war_im0_RTower.emesh",
+      "parent": "",
+      "position": [
+        11.487710952758789,
+        15.278085708618164,
+        3.102407693862915
+      ],
+      "orientation": [
+        -2.842096234734453e-16,
+        -9.264422911079681e-23,
+        -1.7763568394002505e-15,
+        1.0
+      ],
+      "local_position": [
+        11.487710952758789,
+        15.278085708618164,
+        3.102407693862915
+      ],
+      "textures": [
+        "map3",
+        "pol"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

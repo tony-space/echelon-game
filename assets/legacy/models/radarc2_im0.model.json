@@ -1,0 +1,682 @@
+{
+  "static": "Radar Complex 2",
+  "source": "radarc2",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "Build A",
+      "mesh": "radarc2_im0_Build A.emesh",
+      "parent": "",
+      "position": [
+        1.3453595638275146,
+        25.258520126342773,
+        31.158733367919922
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        1.3453595638275146,
+        25.258520126342773,
+        31.158733367919922
+      ],
+      "textures": [
+        "baza3polm",
+        "bok3m",
+        "bok6m",
+        "map2m",
+        "stena1m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_AAcan A",
+      "mesh": "radarc2_im0_Build A_AAcan A.emesh",
+      "parent": "Build A",
+      "position": [
+        10.497352406247611,
+        29.089002209206882,
+        -53.3004794888698
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        9.151988983154297,
+        -84.45921325683594,
+        -3.8304824829101562
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "ucslm"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_AAcan B",
+      "mesh": "radarc2_im0_Build A_AAcan B.emesh",
+      "parent": "Build A",
+      "position": [
+        -40.15556463826493,
+        29.08900442331647,
+        -28.365960981543886
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -41.50092697143555,
+        -59.52469253540039,
+        -3.8304824829101562
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "ucslm"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_GField",
+      "mesh": "radarc2_im0_Build A_GField.emesh",
+      "parent": "Build A",
+      "position": [
+        -38.44135857400082,
+        43.49990064965558,
+        0.48722283972443137
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -39.786720275878906,
+        -30.6715087890625,
+        -18.241378784179688
+      ],
+      "textures": [
+        "baza3polm",
+        "bok3m",
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_Gate A",
+      "mesh": "radarc2_im0_Build A_Gate A.emesh",
+      "parent": "Build A",
+      "position": [
+        -5.547066491185144,
+        10.257938686287643,
+        -59.26369124976409
+      ],
+      "orientation": [
+        -0.4999999781443038,
+        0.5000000218556981,
+        -0.49999999999999956,
+        -0.49999999999999956
+      ],
+      "local_position": [
+        -6.892429351806641,
+        -90.42242431640625,
+        15.000581741333008
+      ],
+      "textures": [
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_HAAcan A",
+      "mesh": "radarc2_im0_Build A_HAAcan A.emesh",
+      "parent": "Build A",
+      "position": [
+        -18.483635100099665,
+        25.17460909734352,
+        116.35344990839361
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -19.828990936279297,
+        85.19471740722656,
+        0.08391189575195312
+      ],
+      "textures": [
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_HAAcan B",
+      "mesh": "radarc2_im0_Build A_HAAcan B.emesh",
+      "parent": "Build A",
+      "position": [
+        9.091796723630804,
+        25.174607891982916,
+        116.35345111375422
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        7.746440887451172,
+        85.19471740722656,
+        0.08391189575195312
+      ],
+      "textures": [
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_LitTower",
+      "mesh": "radarc2_im0_Build A_LitTower.emesh",
+      "parent": "Build A",
+      "position": [
+        -4.270342749329337,
+        53.866663224596216,
+        30.721662275892175
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -5.615703582763672,
+        -0.4370708465576172,
+        -28.608142852783203
+      ],
+      "textures": [
+        "stena1m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_Tower B",
+      "mesh": "radarc2_im0_Build A_Tower B.emesh",
+      "parent": "Build A",
+      "position": [
+        -9.132533794768952,
+        85.28055427575228,
+        80.41128112769023
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -10.477893829345703,
+        49.25254821777344,
+        -60.02203369140625
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "stena1m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_Tower B_HRadar2a",
+      "mesh": "radarc2_im0_Build A_Tower B_HRadar2a.emesh",
+      "parent": "Build A_Tower B",
+      "position": [
+        -9.333457773436859,
+        57.29807137437858,
+        97.41337920240363
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -0.20092201232910156,
+        17.002098083496094,
+        27.98248291015625
+      ],
+      "textures": [
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_Tower B_HRadar4a",
+      "mesh": "radarc2_im0_Build A_Tower B_HRadar4a.emesh",
+      "parent": "Build A_Tower B",
+      "position": [
+        9.39948327551002,
+        89.13025439342636,
+        77.02880513110993
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        18.53201675415039,
+        -3.382476806640625,
+        -3.849700927734375
+      ],
+      "textures": [
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Build A_Tower B_HRadar4b",
+      "mesh": "radarc2_im0_Build A_Tower B_HRadar4b.emesh",
+      "parent": "Build A_Tower B",
+      "position": [
+        -27.796607422732166,
+        89.13024838992484,
+        77.02879587582237
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -18.664073944091797,
+        -3.3824844360351562,
+        -3.8496932983398438
+      ],
+      "textures": [
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "radarc2_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        41.22193145751953,
+        7.603555679321289,
+        -3.791037082672119
+      ],
+      "orientation": [
+        -4.776714225580403e-16,
+        2.1855695919725824e-08,
+        2.1855699472439483e-08,
+        1.0
+      ],
+      "local_position": [
+        41.22193145751953,
+        7.603555679321289,
+        -3.791037082672119
+      ],
+      "textures": [
+        "baza3polm",
+        "bok3m",
+        "stonem"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower A",
+      "mesh": "radarc2_im0_Tower A.emesh",
+      "parent": "",
+      "position": [
+        22.75940704345703,
+        77.22882080078125,
+        0.5396183133125305
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        22.75940704345703,
+        77.22882080078125,
+        0.5396183133125305
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "stena1m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower A_AAcan",
+      "mesh": "radarc2_im0_Tower A_AAcan.emesh",
+      "parent": "Tower A",
+      "position": [
+        40.6633485592892,
+        63.638053111436676,
+        0.499600775835153
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        17.903942108154297,
+        -0.040018320083618164,
+        13.590766906738281
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "ucslm"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower A_Gate",
+      "mesh": "radarc2_im0_Tower A_Gate.emesh",
+      "parent": "Tower A",
+      "position": [
+        48.417755982968885,
+        10.25795633693373,
+        1.255488146346197
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        25.65835189819336,
+        0.7158687114715576,
+        66.97086334228516
+      ],
+      "textures": [
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower A_HRadar1a",
+      "mesh": "radarc2_im0_Tower A_HRadar1a.emesh",
+      "parent": "Tower A",
+      "position": [
+        19.376932846931002,
+        118.40926375869266,
+        -17.992390959295953
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -3.382476806640625,
+        -18.53200912475586,
+        -41.180442810058594
+      ],
+      "textures": [
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower A_HRadar1b",
+      "mesh": "radarc2_im0_Tower A_HRadar1b.emesh",
+      "parent": "Tower A",
+      "position": [
+        19.376935035736157,
+        118.40928664687601,
+        19.203701646295034
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -3.3824729919433594,
+        18.66408348083496,
+        -41.18046569824219
+      ],
+      "textures": [
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower A_HRadar2a",
+      "mesh": "radarc2_im0_Tower A_HRadar2a.emesh",
+      "parent": "Tower A",
+      "position": [
+        39.76150934149415,
+        86.57710954734175,
+        0.7405510824075886
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        17.00210189819336,
+        0.20093202590942383,
+        -9.348289489746094
+      ],
+      "textures": [
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower C",
+      "mesh": "radarc2_im0_Tower C.emesh",
+      "parent": "",
+      "position": [
+        -38.97884750366211,
+        39.89802169799805,
+        44.80731201171875
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -38.97884750366211,
+        39.89802169799805,
+        44.80731201171875
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "stena1m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower C_AAcan",
+      "mesh": "radarc2_im0_Tower C_AAcan.emesh",
+      "parent": "Tower C",
+      "position": [
+        -59.06862364688425,
+        59.06189815598422,
+        44.53516300124242
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -20.08977699279785,
+        -0.27214813232421875,
+        -19.163875579833984
+      ],
+      "textures": [
+        "bok6m",
+        "map2m",
+        "ucslm"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower C_Gate B",
+      "mesh": "radarc2_im0_Tower C_Gate B.emesh",
+      "parent": "Tower C",
+      "position": [
+        -56.7138741705117,
+        10.553871930007865,
+        44.31069105827327
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -17.73502540588379,
+        -0.49662017822265625,
+        29.34415054321289
+      ],
+      "textures": [
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Tower C_HAAcan",
+      "mesh": "radarc2_im0_Tower C_HAAcan.emesh",
+      "parent": "Tower C",
+      "position": [
+        -40.081586961382826,
+        65.71479802183522,
+        24.362628888565308
+      ],
+      "orientation": [
+        0.7071067811865486,
+        -3.09086240969265e-08,
+        -5.849050204022889e-23,
+        0.7071067811865465
+      ],
+      "local_position": [
+        -1.1027414798736572,
+        -20.444683074951172,
+        -25.816776275634766
+      ],
+      "textures": [
+        "bok6m",
+        "map2m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

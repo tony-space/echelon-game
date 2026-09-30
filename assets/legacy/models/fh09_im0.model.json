@@ -1,0 +1,37 @@
+{
+  "static": "Home 09",
+  "source": "fh09",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "fh09_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -6.635262489318848,
+        2.5819692611694336,
+        2.6717758178710938
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        -6.635262489318848,
+        2.5819692611694336,
+        2.6717758178710938
+      ],
+      "textures": [
+        "an",
+        "mapkr1"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

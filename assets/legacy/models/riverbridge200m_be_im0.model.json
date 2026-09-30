@@ -1,0 +1,41 @@
+{
+  "static": "riverbridge200m_be",
+  "source": "riverbridge200m_be",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "riverbridge200m_be_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok3m",
+        "bok6m",
+        "most",
+        "stena1",
+        "stena1m"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

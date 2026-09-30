@@ -1,0 +1,121 @@
+{
+  "static": "Tower 2",
+  "source": "tower2",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "tower2_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.001071329228579998,
+        29.405332565307617,
+        -0.36382219195365906
+      ],
+      "orientation": [
+        1.0993530906438792e-07,
+        -0.7071067812533954,
+        4.00718168192542e-08,
+        0.7071067811197156
+      ],
+      "local_position": [
+        0.001071329228579998,
+        29.405332565307617,
+        -0.36382219195365906
+      ],
+      "textures": [
+        "bok3m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower",
+      "mesh": "tower2_im0_tower.emesh",
+      "parent": "",
+      "position": [
+        0.4939379394054413,
+        34.698848724365234,
+        -0.16219711303710938
+      ],
+      "orientation": [
+        0.0,
+        -4.2475896577798267e-08,
+        -1.6672640775949085e-15,
+        1.0
+      ],
+      "local_position": [
+        0.4939379394054413,
+        34.698848724365234,
+        -0.16219711303710938
+      ],
+      "textures": [
+        "bok3m",
+        "bok6m"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top",
+      "mesh": "tower2_im0_tower_top.emesh",
+      "parent": "tower",
+      "position": [
+        0.3067209573917138,
+        71.84424209594727,
+        -0.16492330872196695
+      ],
+      "orientation": [
+        3.7251169243551054e-08,
+        -6.194393821220849e-08,
+        -4.1425001129090044e-08,
+        0.9999999999999999
+      ],
+      "local_position": [
+        -0.18721698224544525,
+        37.14539337158203,
+        -0.0027261797804385424
+      ],
+      "textures": [
+        "bok3m",
+        "ucslm"
+      ],
+      "materials": [
+        "Fpo_DefaultGlass",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "tower_top_glass",
+      "mesh": "tower2_im0_tower_top_glass.emesh",
+      "parent": "tower_top",
+      "position": [
+        0.3067212108127171,
+        70.31428830225761,
+        -3.9516992501149697
+      ],
+      "orientation": [
+        0.49999993303268825,
+        0.4999998468350797,
+        -0.5000000614187071,
+        0.5000001587136134
+      ],
+      "local_position": [
+        -8.895793257579498e-08,
+        -1.5299540758132935,
+        -3.786775827407837
+      ],
+      "textures": [],
+      "materials": [
+        "Glass"
+      ],
+      "visible": true
+    }
+  ]
+}

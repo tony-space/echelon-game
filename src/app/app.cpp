@@ -6,6 +6,7 @@
 #include "render/frame.hpp"
 #include "render/gl.hpp"
 #include "render/model.hpp"
+#include "render/roads.hpp"
 #include "render/scene_objects.hpp"
 #include "render/shader.hpp"
 #include "render/terrain_renderer.hpp"
@@ -167,6 +168,24 @@ Terrain loadTerrain(const AppOptions& options)
 }
 
 // Placed decorations of the map, if a scene file has been exported for it.
+std::unique_ptr<Roads> loadRoads(const AppOptions& options, const Terrain& terrain, const Texture& fallback)
+{
+	const auto file = options.assetsDir / "legacy/scenes" / (options.terrain + ".roads.json");
+	if (!std::filesystem::exists(file)) {
+		log::info("no roads for '{}' ({} absent)", options.terrain, file.string());
+		return nullptr;
+	}
+	try {
+		auto roads = std::make_unique<Roads>(file, options.assetsDir / "legacy/textures", fallback,
+			[&terrain](float x, float z) { return terrain.groundAt(x, z); });
+		log::info("roads: {} polylines", roads->roadCount());
+		return roads;
+	} catch (const std::exception& e) {
+		log::error("roads failed: {}", e.what());
+		return nullptr;
+	}
+}
+
 std::unique_ptr<SceneObjects> loadSceneObjects(const AppOptions& options, const Terrain& terrain, const Texture& fallback)
 {
 	const auto file = options.assetsDir / "legacy/scenes" / (options.terrain + ".scene.json");
@@ -261,6 +280,7 @@ int runApp(const AppOptions& options)
 		const Terrain terrain = loadTerrain(options);
 		std::vector<Exhibit> exhibits = buildExhibits(options, terrain, glassTex);
 		log::info("{} crafts on display", exhibits.size());
+		std::unique_ptr<Roads> roads = loadRoads(options, terrain, glassTex);
 		std::unique_ptr<SceneObjects> sceneObjects = loadSceneObjects(options, terrain, glassTex);
 
 		FlyCamera camera = initialCamera(options, terrain, exhibits);
@@ -326,6 +346,8 @@ int runApp(const AppOptions& options)
 			f.apply(lit);
 			lit.set("uTint", glm::vec3(1.0f));
 			lit.set("uAlpha", 1.0f);
+			if (roads)
+				roads->draw(lit);
 			for (const Exhibit& e : exhibits)
 				if (const Model* m = e.models.current())
 					m->draw(lit, glm::translate(glm::mat4(1.0f), e.position));

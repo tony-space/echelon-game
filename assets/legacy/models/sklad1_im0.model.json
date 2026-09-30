@@ -1,0 +1,38 @@
+{
+  "static": "Military Depot",
+  "source": "sklad1",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "sklad1_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.6226174235343933,
+        7.983138561248779,
+        0.2776077091693878
+      ],
+      "orientation": [
+        -5.265011182586932e-08,
+        1.0,
+        -3.0035840103678268e-15,
+        -5.7048012536143096e-08
+      ],
+      "local_position": [
+        -0.6226174235343933,
+        7.983138561248779,
+        0.2776077091693878
+      ],
+      "textures": [
+        "bok3m",
+        "bok6m",
+        "stonem"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

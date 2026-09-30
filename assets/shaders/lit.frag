@@ -10,6 +10,10 @@ in vec2 vUv;
 in float vLogZ;
 
 uniform float uLogDepth;
+// Relative pull towards the camera for ground decals (roads): 0.001 moves the
+// written depth 1 m closer at 1 km. 0 for everything else. glPolygonOffset does
+// not apply once gl_FragDepth is written, hence a uniform.
+uniform float uDepthBias;
 uniform sampler2D uAlbedo;
 uniform vec3 uSunDir;    // normalized, towards the sun
 uniform vec3 uCameraPos;
@@ -59,5 +63,5 @@ void main()
 
 	// Highlights stay visible on glass even where it is mostly transparent.
 	fragColor = vec4(color, clamp(uAlpha + spec, 0.0, 1.0));
-	gl_FragDepth = log2(vLogZ) * uLogDepth * 0.5;
+	gl_FragDepth = log2(vLogZ * (1.0 - uDepthBias)) * uLogDepth * 0.5;
 }

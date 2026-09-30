@@ -1,0 +1,567 @@
+{
+  "static": "Energy Station 1B",
+  "source": "energy1bb",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "energy1bb_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.4169180393218994,
+        20.228548049926758,
+        4.740904331207275
+      ],
+      "orientation": [
+        1.0536712127723507e-08,
+        -0.7071067811865478,
+        -3.1610136383170534e-08,
+        0.7071067811865476
+      ],
+      "local_position": [
+        0.4169180393218994,
+        20.228548049926758,
+        4.740904331207275
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab",
+        "stonem"
+      ],
+      "materials": [
+        "Beton",
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "block",
+      "mesh": "energy1bb_im0_block.emesh",
+      "parent": "",
+      "position": [
+        35.20491027832031,
+        -14.023893356323242,
+        -0.34209907054901123
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        35.20491027832031,
+        -14.023893356323242,
+        -0.34209907054901123
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "blockA",
+      "mesh": "energy1bb_im0_blockA.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "blockB",
+      "mesh": "energy1bb_im0_blockB.emesh",
+      "parent": "",
+      "position": [
+        32.4471435546875,
+        -11.33625316619873,
+        -17.426651000976562
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        32.4471435546875,
+        -11.33625316619873,
+        -17.426651000976562
+      ],
+      "textures": [
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "dome",
+      "mesh": "energy1bb_im0_dome.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "domeA",
+      "mesh": "energy1bb_im0_domeA.emesh",
+      "parent": "",
+      "position": [
+        36.042240142822266,
+        -0.4033617079257965,
+        -10.936795234680176
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        36.042240142822266,
+        -0.4033617079257965,
+        -10.936795234680176
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "domeB",
+      "mesh": "energy1bb_im0_domeB.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "pipe",
+      "mesh": "energy1bb_im0_pipe.emesh",
+      "parent": "",
+      "position": [
+        20.27613067626953,
+        37.48202896118164,
+        20.507274627685547
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        20.27613067626953,
+        37.48202896118164,
+        20.507274627685547
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "pipeA",
+      "mesh": "energy1bb_im0_pipeA.emesh",
+      "parent": "",
+      "position": [
+        -20.16456413269043,
+        37.48202896118164,
+        20.212499618530273
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        -20.16456413269043,
+        37.48202896118164,
+        20.212499618530273
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "pipeB",
+      "mesh": "energy1bb_im0_pipeB.emesh",
+      "parent": "",
+      "position": [
+        -19.947654724121094,
+        37.48202896118164,
+        -20.151165008544922
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        -19.947654724121094,
+        37.48202896118164,
+        -20.151165008544922
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "pipeC",
+      "mesh": "energy1bb_im0_pipeC.emesh",
+      "parent": "",
+      "position": [
+        20.42646598815918,
+        37.482025146484375,
+        -19.85721206665039
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        20.42646598815918,
+        37.482025146484375,
+        -19.85721206665039
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stone",
+      "mesh": "energy1bb_im0_stone.emesh",
+      "parent": "",
+      "position": [
+        19.379486083984375,
+        -16.469013214111328,
+        56.697364807128906
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        19.379486083984375,
+        -16.469013214111328,
+        56.697364807128906
+      ],
+      "textures": [
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoneA",
+      "mesh": "energy1bb_im0_stoneA.emesh",
+      "parent": "",
+      "position": [
+        26.798664093017578,
+        -16.469005584716797,
+        45.45920181274414
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        26.798664093017578,
+        -16.469005584716797,
+        45.45920181274414
+      ],
+      "textures": [
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoneB",
+      "mesh": "energy1bb_im0_stoneB.emesh",
+      "parent": "",
+      "position": [
+        15.259827613830566,
+        -16.469003677368164,
+        -48.13608932495117
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        15.259827613830566,
+        -16.469003677368164,
+        -48.13608932495117
+      ],
+      "textures": [
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "stoneC",
+      "mesh": "energy1bb_im0_stoneC.emesh",
+      "parent": "",
+      "position": [
+        30.003957748413086,
+        -16.4689998626709,
+        -48.12190246582031
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        30.003957748413086,
+        -16.4689998626709,
+        -48.12190246582031
+      ],
+      "textures": [
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallA",
+      "mesh": "energy1bb_im0_wallA.emesh",
+      "parent": "",
+      "position": [
+        2.1855623722076416,
+        -18.07418441772461,
+        39.284698486328125
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        2.1855623722076416,
+        -18.07418441772461,
+        39.284698486328125
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallB",
+      "mesh": "energy1bb_im0_wallB.emesh",
+      "parent": "",
+      "position": [
+        -1.93409264087677,
+        -18.074172973632812,
+        -30.723424911499023
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        -1.93409264087677,
+        -18.074172973632812,
+        -30.723424911499023
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallC",
+      "mesh": "energy1bb_im0_wallC.emesh",
+      "parent": "",
+      "position": [
+        47.197879791259766,
+        -18.074174880981445,
+        -30.709245681762695
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        47.197879791259766,
+        -18.074174880981445,
+        -30.709245681762695
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "wallD",
+      "mesh": "energy1bb_im0_wallD.emesh",
+      "parent": "",
+      "position": [
+        43.99258041381836,
+        -18.07417869567871,
+        28.046541213989258
+      ],
+      "orientation": [
+        0.4999999850988395,
+        0.5000000447034829,
+        -0.49999997019768094,
+        0.5000000000000047
+      ],
+      "local_position": [
+        43.99258041381836,
+        -18.07417869567871,
+        28.046541213989258
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

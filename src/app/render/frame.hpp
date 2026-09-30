@@ -60,6 +60,7 @@ struct Frame {
 		set("uFogExtinction", atmosphere.fogExtinction);
 		set("uFogScaleHeight", atmosphere.fogScaleHeight);
 		set("uLogDepth", 2.0f / std::log2(farPlane + 1.0f));
+		set("uDepthBias", 0.0f);
 	}
 };
 

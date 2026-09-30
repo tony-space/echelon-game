@@ -1,0 +1,182 @@
+{
+  "static": "Bunker Heavy",
+  "source": "bunker1",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "bunker1_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.019140005111694336,
+        12.590681076049805,
+        -0.29989108443260193
+      ],
+      "orientation": [
+        1.3852717781039963e-07,
+        -0.7071067182918156,
+        -1.1525518951120474e-07,
+        0.7071068440812853
+      ],
+      "local_position": [
+        0.019140005111694336,
+        12.590681076049805,
+        -0.29989108443260193
+      ],
+      "textures": [
+        "baza3polm",
+        "bok6m",
+        "stonem"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "kolpakA",
+      "mesh": "bunker1_im0_kolpakA.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "bok3m",
+        "sl3-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "kolpakB",
+      "mesh": "bunker1_im0_kolpakB.emesh",
+      "parent": "",
+      "position": [
+        16.6038875579834,
+        5.328823566436768,
+        7.968468189239502
+      ],
+      "orientation": [
+        0.49999985477653575,
+        0.5000000849318753,
+        -0.49999988526599604,
+        0.5000001750258322
+      ],
+      "local_position": [
+        16.6038875579834,
+        5.328823566436768,
+        7.968468189239502
+      ],
+      "textures": [
+        "bok3m",
+        "sl3-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "kolpakC",
+      "mesh": "bunker1_im0_kolpakC.emesh",
+      "parent": "",
+      "position": [
+        16.6038875579834,
+        5.328821182250977,
+        -8.010222434997559
+      ],
+      "orientation": [
+        0.49999985477653575,
+        0.5000000849318753,
+        -0.49999988526599604,
+        0.5000001750258322
+      ],
+      "local_position": [
+        16.6038875579834,
+        5.328821182250977,
+        -8.010222434997559
+      ],
+      "textures": [
+        "bok3m",
+        "sl3-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerA",
+      "mesh": "bunker1_im0_towerA.emesh",
+      "parent": "",
+      "position": [
+        -5.323676109313965,
+        6.616026878356934,
+        27.813005447387695
+      ],
+      "orientation": [
+        0.49999985477653575,
+        0.5000000849318753,
+        -0.49999988526599604,
+        0.5000001750258322
+      ],
+      "local_position": [
+        -5.323676109313965,
+        6.616026878356934,
+        27.813005447387695
+      ],
+      "textures": [
+        "stonem"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerb",
+      "mesh": "bunker1_im0_towerb.emesh",
+      "parent": "",
+      "position": [
+        -5.323673248291016,
+        6.616024971008301,
+        -27.68685531616211
+      ],
+      "orientation": [
+        0.49999985477653575,
+        0.5000000849318753,
+        -0.49999988526599604,
+        0.5000001750258322
+      ],
+      "local_position": [
+        -5.323673248291016,
+        6.616024971008301,
+        -27.68685531616211
+      ],
+      "textures": [
+        "stonem"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    }
+  ]
+}

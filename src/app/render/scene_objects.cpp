@@ -9,6 +9,8 @@
 #include <boost/json.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
+#include <algorithm>
+#include <cmath>
 #include <format>
 #include <fstream>
 #include <sstream>
@@ -18,6 +20,9 @@ namespace ech {
 namespace json = boost::json;
 
 namespace {
+
+// Deck sits this far above the higher of the recorded height and the ground at each end.
+constexpr float kDeckLift = 0.5f;
 
 glm::vec3 readVec3(const json::value& v, const char* what)
 {
@@ -76,13 +81,114 @@ SceneObjects::SceneObjects(const std::filesystem::path& sceneJson, const std::fi
 		// Engine heading: 0 faces -Z, positive turns right, hence the minus (see FlightState::orientation).
 		inst.matrix = glm::rotate(glm::translate(glm::mat4(1.0f), inst.position), glm::radians(-inst.headingDeg),
 			glm::vec3(0.0f, 1.0f, 0.0f));
-		const glm::vec3 lo = inst.model->boundsMin(), hi = inst.model->boundsMax();
-		inst.centre = glm::vec3(inst.matrix * glm::vec4(0.5f * (lo + hi), 1.0f));
-		inst.radius = 0.5f * glm::length(hi - lo);
-		m_instances.push_back(std::move(inst));
+		addInstance(*inst.model, inst.file, inst.matrix);
 	}
-	log::info("scene {}: {} objects, {} models{}", sceneJson.filename().string(), m_instances.size(),
-		m_models.size(), missing ? std::format(", {} without a model", missing) : std::string());
+	const std::size_t placed = m_instances.size();
+	log::info("scene {}: {} objects, {} models{}", sceneJson.filename().string(), placed, m_models.size(),
+		missing ? std::format(", {} without a model", missing) : std::string());
+
+	const json::array* bridges = obj->if_contains("bridges") ? obj->at("bridges").if_array() : nullptr;
+	if (!bridges)
+		return;
+	int spans = 0;
+	for (const json::value& v : *bridges) {
+		const json::object* b = v.if_object();
+		if (!b || !b->if_contains("entrance") || !b->if_contains("section") || !b->if_contains("points")) {
+			log::warn("scene {}: bridge without entrance/section/points skipped", sceneJson.filename().string());
+			continue;
+		}
+		const auto entranceFile = json::value_to<std::string>(b->at("entrance"));
+		const auto sectionFile = json::value_to<std::string>(b->at("section"));
+		const Model* entrance = loadModel(entranceFile, modelsDir, texturesDir, fallback);
+		const Model* section = loadModel(sectionFile, modelsDir, texturesDir, fallback);
+		if (!entrance || !section)
+			continue;
+		const float deckY = b->if_contains("deck_y") ? static_cast<float>(b->at("deck_y").to_number<double>()) : 0.0f;
+		const json::array* points = b->at("points").if_array();
+		if (!points || points->size() < 2)
+			continue;
+		std::vector<glm::vec3> ends;
+		for (const json::value& p : *points) {
+			glm::vec3 e = readVec3(p, "bridge point");
+			// The deck meets the roads that end here, and those lie on the ground. The
+			// original takes max(recorded y, ground), but the canyon bridge by the
+			// training centre records y = 400, some 300 m above both rims.
+			if (ground)
+				e.y = ground(e.x, e.z);
+			e.y += kDeckLift;
+			ends.push_back(e);
+		}
+		for (std::size_t i = 0; i + 1 < ends.size(); ++i) {
+			placeSpan(*entrance, *section, entranceFile, sectionFile, ends[i], ends[i + 1], deckY);
+			++spans;
+		}
+	}
+	log::info("scene {}: {} bridge spans, {} pieces", sceneJson.filename().string(), spans, m_instances.size() - placed);
+}
+
+void SceneObjects::addInstance(const Model& model, const std::string& file, const glm::mat4& matrix)
+{
+	Instance inst;
+	inst.model = &model;
+	inst.file = file;
+	inst.matrix = matrix;
+	inst.position = glm::vec3(matrix[3]);
+	const glm::vec3 lo = model.boundsMin(), hi = model.boundsMax();
+	inst.centre = glm::vec3(matrix * glm::vec4(0.5f * (lo + hi), 1.0f));
+	inst.radius = 0.5f * glm::length(hi - lo);
+	m_instances.push_back(std::move(inst));
+}
+
+// Same layout as StormGame.dll 10014128..10014754. An entrance stands on each
+// end point with its source +Z (engine -Z) towards the other end: the pier and
+// abutment behind the end, the pylon and the deck reaching into the span. n =
+// round((L - 2 * entrance max Z) / section length) sections follow, the first
+// one's min Z against the entrance's max Z. Nothing is stretched: the middle may
+// overlap the far entrance or leave a gap, as in the original; n <= 0 drops it.
+// Z extents below are in the source frame, i.e. negated engine Z.
+int SceneObjects::placeSpan(const Model& entrance, const Model& section, const std::string& entranceFile,
+	const std::string& sectionFile, glm::vec3 a, glm::vec3 b, float deckY)
+{
+	const glm::vec3 diff = b - a;
+	const float length = glm::length(diff);
+	const float entranceMaxZ = -entrance.boundsMin().z;
+	const float sectionMinZ = -section.boundsMax().z;
+	const float sectionLength = section.boundsMax().z - section.boundsMin().z;
+	if (length < 1.0f || sectionLength < 1.0f)
+		return 0;
+	const int sections = static_cast<int>(std::lround((length - 2.0f * entranceMaxZ) / sectionLength));
+
+	const glm::vec3 forward = diff / length;
+	const glm::vec3 worldUp(0.0f, 1.0f, 0.0f);
+	// Local engine -Z along `inwards`; the cross axis stays horizontal, +Y follows the slope.
+	const auto basis = [&](const glm::vec3& inwards) {
+		const glm::vec3 z = -inwards;
+		const glm::vec3 x = glm::normalize(glm::cross(worldUp, z));
+		const glm::vec3 y = glm::cross(z, x);
+		return glm::mat4(glm::vec4(x, 0.0f), glm::vec4(y, 0.0f), glm::vec4(z, 0.0f), glm::vec4(0.0f, 0.0f, 0.0f, 1.0f));
+	};
+	const glm::mat4 fromA = basis(forward);
+	const glm::mat4 fromB = basis(-forward);
+	const glm::vec3 up = glm::vec3(fromA[1]);
+	// Origin at distance s along the span, dropped so that the deck (local y = deckY) meets the line a-b.
+	const auto place = [&](float s, const glm::mat4& rot) {
+		return glm::translate(glm::mat4(1.0f), a + forward * s - up * deckY) * rot;
+	};
+
+	int pieces = 0;
+	addInstance(entrance, entranceFile, place(0.0f, fromA));
+	++pieces;
+	const float first = entranceMaxZ - sectionMinZ;
+	for (int i = 0; i < sections; ++i) {
+		addInstance(section, sectionFile, place(first + sectionLength * static_cast<float>(i), fromA));
+		++pieces;
+	}
+	addInstance(entrance, entranceFile, place(length, fromB));
+	++pieces;
+	const float middle = length - 2.0f * entranceMaxZ - sectionLength * static_cast<float>(std::max(sections, 0));
+	log::info("bridge {} m: {} sections, {} m {}", static_cast<int>(length), std::max(sections, 0),
+		static_cast<int>(std::abs(middle)), middle < 0.0f ? "overlap" : "gap");
+	return pieces;
 }
 
 const Model* SceneObjects::loadModel(const std::string& file, const std::filesystem::path& modelsDir,

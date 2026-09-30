@@ -1,0 +1,38 @@
+{
+  "static": "Home 08",
+  "source": "fh08",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "fh08_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.06045321375131607,
+        2.891456365585327,
+        0.7199372053146362
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.06045321375131607,
+        2.891456365585327,
+        0.7199372053146362
+      ],
+      "textures": [
+        "an",
+        "domab",
+        "mapkr1"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

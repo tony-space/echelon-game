@@ -1,0 +1,123 @@
+{
+  "static": "V AAC Medium Turret Plasma",
+  "source": "vtur_aam",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "vtur_aam_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.2857486605644226,
+        3.774691104888916,
+        -0.023398883640766144
+      ],
+      "orientation": [
+        5.3642205522011795e-08,
+        1.000000000000004,
+        8.940696005765822e-08,
+        2.1855691123739365e-08
+      ],
+      "local_position": [
+        -0.2857486605644226,
+        3.774691104888916,
+        -0.023398883640766144
+      ],
+      "textures": [
+        "t2",
+        "t3"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret",
+      "mesh": "vtur_aam_im0_turret.emesh",
+      "parent": "",
+      "position": [
+        0.0005332656437531114,
+        2.562277317047119,
+        0.13767875730991364
+      ],
+      "orientation": [
+        0.0,
+        7.101891630320933e-16,
+        3.5538739021800193e-16,
+        1.0
+      ],
+      "local_position": [
+        0.0005332656437531114,
+        2.562277317047119,
+        0.13767875730991364
+      ],
+      "textures": [
+        "t2",
+        "t3"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret_gunA",
+      "mesh": "vtur_aam_im0_turret_gunA.emesh",
+      "parent": "turret",
+      "position": [
+        -0.028081493801437495,
+        2.6029291376471515,
+        0.032815121114254234
+      ],
+      "orientation": [
+        1.3772606166639757e-07,
+        -9.1134031803617e-08,
+        -5.986178817675194e-08,
+        1.0000000000000095
+      ],
+      "local_position": [
+        -0.02861475944519043,
+        0.040651820600032806,
+        -0.10486363619565964
+      ],
+      "textures": [
+        "t3"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret_gunB",
+      "mesh": "vtur_aam_im0_turret_gunB.emesh",
+      "parent": "turret",
+      "position": [
+        -0.028081523603759883,
+        2.6029291376471515,
+        0.032815121114254234
+      ],
+      "orientation": [
+        1.3772606166639757e-07,
+        -9.1134031803617e-08,
+        -5.986178817675194e-08,
+        1.0000000000000095
+      ],
+      "local_position": [
+        -0.028614789247512817,
+        0.040651820600032806,
+        -0.10486363619565964
+      ],
+      "textures": [
+        "t2",
+        "t3"
+      ],
+      "materials": [
+        "VMetal"
+      ],
+      "visible": true
+    }
+  ]
+}

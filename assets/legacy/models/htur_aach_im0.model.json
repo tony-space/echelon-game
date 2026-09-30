@@ -1,0 +1,176 @@
+{
+  "static": "AAC Heavy Turret Cannon",
+  "source": "htur_aach",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "htur_aach_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.02884107455611229,
+        2.032834768295288,
+        0.31418395042419434
+      ],
+      "orientation": [
+        6.895432846931709e-08,
+        -6.633931695546965e-08,
+        -1.5712282275524008e-08,
+        1.0000000000000024
+      ],
+      "local_position": [
+        0.02884107455611229,
+        2.032834768295288,
+        0.31418395042419434
+      ],
+      "textures": [
+        "sl-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret",
+      "mesh": "htur_aach_im0_turret.emesh",
+      "parent": "",
+      "position": [
+        -0.03608459606766701,
+        1.7818167209625244,
+        -0.2144612818956375
+      ],
+      "orientation": [
+        7.801445711663746e-09,
+        -2.478128950350101e-09,
+        -1.0890325993677233e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.03608459606766701,
+        1.7818167209625244,
+        -0.2144612818956375
+      ],
+      "textures": [
+        "sl-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret_gunA",
+      "mesh": "htur_aach_im0_turret_gunA.emesh",
+      "parent": "turret",
+      "position": [
+        1.9345743230264902,
+        2.780623270650154,
+        -0.009855557958768302
+      ],
+      "orientation": [
+        -6.3755194357991e-09,
+        -5.012707215458495e-08,
+        -1.3468550072496447e-07,
+        0.9999999999999988
+      ],
+      "local_position": [
+        1.9706588983535767,
+        0.9988065958023071,
+        0.20460569858551025
+      ],
+      "textures": [
+        "sl-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret_gunB",
+      "mesh": "htur_aach_im0_turret_gunB.emesh",
+      "parent": "turret",
+      "position": [
+        1.9806915097238411,
+        2.783366514104181,
+        -0.028271798498745088
+      ],
+      "orientation": [
+        -6.3755194357991e-09,
+        -5.012707215458495e-08,
+        -1.3468550072496447e-07,
+        0.9999999999999988
+      ],
+      "local_position": [
+        2.0167760848999023,
+        1.0015498399734497,
+        0.1861894577741623
+      ],
+      "textures": [
+        "sl-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret_gunC",
+      "mesh": "htur_aach_im0_turret_gunC.emesh",
+      "parent": "turret",
+      "position": [
+        -1.9292140432912517,
+        2.780624129666338,
+        -0.009853774068182719
+      ],
+      "orientation": [
+        -1.2650727825615469e-08,
+        -5.3611382598202856e-08,
+        -1.3511927252675601e-07,
+        0.999999999999999
+      ],
+      "local_position": [
+        -1.8931294679641724,
+        0.9988073706626892,
+        0.2046075016260147
+      ],
+      "textures": [
+        "sl-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "turret_gunD",
+      "mesh": "htur_aach_im0_turret_gunD.emesh",
+      "parent": "turret",
+      "position": [
+        -1.9753315873144355,
+        2.7833663618503595,
+        -0.0282714753791114
+      ],
+      "orientation": [
+        7.82195660899777e-08,
+        -9.205910826609524e-08,
+        -1.0850827500026989e-07,
+        1.0000000000000007
+      ],
+      "local_position": [
+        -1.9392470121383667,
+        1.0015496015548706,
+        0.18618980050086975
+      ],
+      "textures": [
+        "sl-ham"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

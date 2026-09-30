@@ -1,0 +1,41 @@
+{
+  "static": "Military Bld 3",
+  "source": "dom_mil3",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "dom_mil3_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        2.078449010848999,
+        8.651199340820312,
+        3.653930425643921
+      ],
+      "orientation": [
+        -1.4901162082025997e-08,
+        1.0000000000000018,
+        5.960465188081788e-08,
+        1.490116119384784e-08
+      ],
+      "local_position": [
+        2.078449010848999,
+        8.651199340820312,
+        3.653930425643921
+      ],
+      "textures": [
+        "baza3polm",
+        "bok3m",
+        "bok6m",
+        "map2m",
+        "stonem"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

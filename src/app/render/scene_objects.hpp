@@ -32,8 +32,14 @@ public:
 //     "objects": [ { "model": "bunker3",           // assets/legacy/models/<model>_im0.model.json
 //                    "position": [x, y, z],        // engine metres; see on_ground
 //                    "heading_deg": 0.0,           // 0 faces -Z, positive turns right (engine heading)
-//                    "on_ground": true } ] }       // y becomes an offset above the terrain
-// Missing fields default to heading 0, on_ground true.
+//                    "on_ground": true } ],        // y becomes an offset above the terrain
+//     "bridges": [ { "entrance": "riverbridge200m_be", // abutment, pylon and the first stretch of deck
+//                    "section": "riverbridge200m_part", // repeated span, pier in the middle
+//                    "deck_y": 17.9,                    // road surface height in the mesh
+//                    "points": [[x, y, z], ...] } ] }   // ends of the span; the deck meets the ground there
+// Missing fields default to heading 0, on_ground true. A bridge is tiled as in
+// the original: an entrance on each end facing inwards, sections in between
+// (docs/specs/roads.md).
 class SceneObjects {
 public:
 	using GroundFn = std::function<float(float x, float z)>;
@@ -71,6 +77,10 @@ public:
 private:
 	const Model* loadModel(const std::string& file, const std::filesystem::path& modelsDir,
 		const std::filesystem::path& texturesDir, const Texture& fallback);
+	void addInstance(const Model& model, const std::string& file, const glm::mat4& matrix);
+	// One span from `a` to `b` (world, deck height already applied). Returns pieces placed.
+	int placeSpan(const Model& entrance, const Model& section, const std::string& entranceFile,
+		const std::string& sectionFile, glm::vec3 a, glm::vec3 b, float deckY);
 
 	std::unordered_map<std::string, std::unique_ptr<Model>> m_models;
 	std::vector<Instance> m_instances;

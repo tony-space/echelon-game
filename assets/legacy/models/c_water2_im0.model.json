@@ -1,0 +1,41 @@
+{
+  "static": "Cisterna Water 2",
+  "source": "c_water2",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "c_water2_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.28498339653015137,
+        16.15121841430664,
+        0.18514280021190643
+      ],
+      "orientation": [
+        -4.776713555024431e-16,
+        -2.1855694143368984e-08,
+        -2.1855699472439483e-08,
+        1.0
+      ],
+      "local_position": [
+        0.28498339653015137,
+        16.15121841430664,
+        0.18514280021190643
+      ],
+      "textures": [
+        "bok3m",
+        "bok6m",
+        "stonem",
+        "ucist",
+        "ucslm"
+      ],
+      "materials": [
+        "Beton",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

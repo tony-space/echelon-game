@@ -1,0 +1,125 @@
+{
+  "static": "H2V Gates",
+  "source": "h2v_gates",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "h2v_gates_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.5482699275016785,
+        24.667850494384766,
+        1.5010625123977661
+      ],
+      "orientation": [
+        2.98023223876953e-08,
+        -2.1855695268375245e-08,
+        -2.185569834743313e-08,
+        1.0000000000000004
+      ],
+      "local_position": [
+        0.5482699275016785,
+        24.667850494384766,
+        1.5010625123977661
+      ],
+      "textures": [
+        "domabv"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "war",
+      "mesh": "h2v_gates_im0_war.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map3htv",
+        "pol",
+        "stfortav"
+      ],
+      "materials": [
+        "Metal",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "war_LTower",
+      "mesh": "h2v_gates_im0_war_LTower.emesh",
+      "parent": "war",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map3htv",
+        "pol"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "war_RTower",
+      "mesh": "h2v_gates_im0_war_RTower.emesh",
+      "parent": "war",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "map3htv",
+        "pol"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

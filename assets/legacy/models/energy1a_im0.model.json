@@ -1,0 +1,189 @@
+{
+  "static": "Energy Station 1A",
+  "source": "energy1a",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "energy1a_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.2887672185897827,
+        9.936217308044434,
+        -0.4646344780921936
+      ],
+      "orientation": [
+        5.960464477539052e-08,
+        -2.185569816973824e-08,
+        -2.1855700775140646e-08,
+        1.0000000000000018
+      ],
+      "local_position": [
+        0.2887672185897827,
+        9.936217308044434,
+        -0.4646344780921936
+      ],
+      "textures": [
+        "domaa",
+        "domab",
+        "stonem"
+      ],
+      "materials": [
+        "Beton",
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "block",
+      "mesh": "energy1a_im0_block.emesh",
+      "parent": "",
+      "position": [
+        21.76787567138672,
+        -1.2825989723205566,
+        4.32733154296875
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090861907263061e-08,
+        -7.53644380168212e-15,
+        0.7071067811865476
+      ],
+      "local_position": [
+        21.76787567138672,
+        -1.2825989723205566,
+        4.32733154296875
+      ],
+      "textures": [
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "blockA",
+      "mesh": "energy1a_im0_blockA.emesh",
+      "parent": "",
+      "position": [
+        -22.9758243560791,
+        1.4994816780090332,
+        3.9981613159179688
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090861907263061e-08,
+        -7.53644380168212e-15,
+        0.7071067811865476
+      ],
+      "local_position": [
+        -22.9758243560791,
+        1.4994816780090332,
+        3.9981613159179688
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "blockA_towerA",
+      "mesh": "energy1a_im0_blockA_towerA.emesh",
+      "parent": "blockA",
+      "position": [
+        -23.96156779177675,
+        21.479431586092744,
+        4.149682803326834
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.0908611021778396e-08,
+        -1.558729631448512e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        -0.9857425689697266,
+        0.1515214443206787,
+        -19.979949951171875
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerfound",
+      "mesh": "energy1a_im0_towerfound.emesh",
+      "parent": "",
+      "position": [
+        -0.012303782626986504,
+        23.449848175048828,
+        -0.03517850488424301
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090861907263061e-08,
+        -7.53644380168212e-15,
+        0.7071067811865476
+      ],
+      "local_position": [
+        -0.012303782626986504,
+        23.449848175048828,
+        -0.03517850488424301
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "towerfound_tower",
+      "mesh": "energy1a_im0_towerfound_tower.emesh",
+      "parent": "towerfound",
+      "position": [
+        -0.012303697832209864,
+        43.327503204345746,
+        -0.03517777504389036
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090861102177765e-08,
+        -1.5587296763692176e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        9.536744300930877e-07,
+        7.298403943423182e-07,
+        -19.877655029296875
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

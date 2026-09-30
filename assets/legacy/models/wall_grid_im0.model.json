@@ -1,0 +1,132 @@
+{
+  "static": "Military Fence",
+  "source": "wall_grid",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "wall_grid_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.2294921875,
+        0.482041597366333,
+        5.223740577697754
+      ],
+      "orientation": [
+        2.1855697696082643e-08,
+        1.0,
+        -1.1723879343617576e-15,
+        5.364221067338809e-08
+      ],
+      "local_position": [
+        -0.2294921875,
+        0.482041597366333,
+        5.223740577697754
+      ],
+      "textures": [
+        "grid",
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Grid",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WallA",
+      "mesh": "wall_grid_im0_WallA.emesh",
+      "parent": "",
+      "position": [
+        -56.12535858154297,
+        3.842064619064331,
+        -0.07220810651779175
+      ],
+      "orientation": [
+        2.247646264474859e-08,
+        -0.707106781186545,
+        0.70710678118655,
+        5.338508925382332e-08
+      ],
+      "local_position": [
+        -56.12535858154297,
+        3.842064619064331,
+        -0.07220810651779175
+      ],
+      "textures": [
+        "grid",
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Grid",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WallB",
+      "mesh": "wall_grid_im0_WallB.emesh",
+      "parent": "",
+      "position": [
+        -18.61474609375,
+        3.8420629501342773,
+        -0.07221212983131409
+      ],
+      "orientation": [
+        2.247646264474859e-08,
+        -0.707106781186545,
+        0.70710678118655,
+        5.338508925382332e-08
+      ],
+      "local_position": [
+        -18.61474609375,
+        3.8420629501342773,
+        -0.07221212983131409
+      ],
+      "textures": [
+        "grid",
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Grid",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WallD",
+      "mesh": "wall_grid_im0_WallD.emesh",
+      "parent": "",
+      "position": [
+        56.49998474121094,
+        3.842059850692749,
+        -0.07221923768520355
+      ],
+      "orientation": [
+        0.0,
+        -9.926167350636332e-23,
+        6.292648835658024e-31,
+        1.0
+      ],
+      "local_position": [
+        56.49998474121094,
+        3.842059850692749,
+        -0.07221923768520355
+      ],
+      "textures": [
+        "grid",
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Grid",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "static": "Plant 2",
+  "source": "plant2",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "plant2_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        3.658191680908203,
+        11.947342872619629,
+        -11.202991485595703
+      ],
+      "orientation": [
+        5.960464477539052e-08,
+        -2.1855698169738134e-08,
+        -2.1855702551497486e-08,
+        1.0000000000000018
+      ],
+      "local_position": [
+        3.658191680908203,
+        11.947342872619629,
+        -11.202991485595703
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "block",
+      "mesh": "plant2_im0_block.emesh",
+      "parent": "",
+      "position": [
+        48.32487487792969,
+        -2.61320161819458,
+        17.30806541442871
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090862158477855e-08,
+        -1.004859173557616e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        48.32487487792969,
+        -2.61320161819458,
+        17.30806541442871
+      ],
+      "textures": [
+        "baza3polm1",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "blockA",
+      "mesh": "plant2_im0_blockA.emesh",
+      "parent": "",
+      "position": [
+        -16.015459060668945,
+        13.527386665344238,
+        -74.57142639160156
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090862158477855e-08,
+        -1.004859173557616e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        -16.015459060668945,
+        13.527386665344238,
+        -74.57142639160156
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "block_pipe",
+      "mesh": "plant2_im0_block_pipe.emesh",
+      "parent": "block",
+      "position": [
+        60.50004804024626,
+        40.951587732358455,
+        25.39425510592855
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.09086122043152e-08,
+        -1.9429055029356284e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        12.175174713134766,
+        8.086190223693848,
+        -43.564788818359375
+      ],
+      "textures": [
+        "domab",
+        "g-bbb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "block_pipeA",
+      "mesh": "plant2_im0_block_pipeA.emesh",
+      "parent": "block",
+      "position": [
+        60.50004735402607,
+        40.951587732358455,
+        9.695373479799404
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.09086122043152e-08,
+        -1.9429055029356284e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        12.175174713134766,
+        -7.612691402435303,
+        -43.564788818359375
+      ],
+      "textures": [
+        "domab",
+        "g-bbb"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "dome",
+      "mesh": "plant2_im0_dome.emesh",
+      "parent": "",
+      "position": [
+        64.72290802001953,
+        4.54524040222168,
+        -14.454206466674805
+      ],
+      "orientation": [
+        0.7071067811865475,
+        3.090862158477855e-08,
+        -1.004859173557616e-14,
+        0.7071067811865476
+      ],
+      "local_position": [
+        64.72290802001953,
+        4.54524040222168,
+        -14.454206466674805
+      ],
+      "textures": [
+        "baza3polm1",
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House",
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

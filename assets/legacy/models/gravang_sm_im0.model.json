@@ -1,0 +1,100 @@
+{
+  "static": "Craft Hangar",
+  "source": "gravang_sm",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "Bunker",
+      "mesh": "gravang_sm_im0_Bunker.emesh",
+      "parent": "",
+      "position": [
+        -0.3251301348209381,
+        27.91877555847168,
+        68.83920288085938
+      ],
+      "orientation": [
+        -6.800650927135275e-15,
+        2.98023117295541e-08,
+        -2.4689038369274577e-08,
+        1.0
+      ],
+      "local_position": [
+        -0.3251301348209381,
+        27.91877555847168,
+        68.83920288085938
+      ],
+      "textures": [
+        "baza3polm",
+        "bok3m",
+        "map2m",
+        "stonem"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "Bunker_door",
+      "mesh": "gravang_sm_im0_Bunker_door.emesh",
+      "parent": "Bunker",
+      "position": [
+        -0.530338013284965,
+        33.33886147558579,
+        4.697143566918555
+      ],
+      "orientation": [
+        0.5000000580610905,
+        -0.4999999551435512,
+        0.49999999191713657,
+        0.49999999487824137
+      ],
+      "local_position": [
+        -0.2052043229341507,
+        5.420085906982422,
+        -64.14205932617188
+      ],
+      "textures": [
+        "stonem"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "gravang_sm_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "baza3polm",
+        "map2m",
+        "stforta",
+        "stonem"
+      ],
+      "materials": [
+        "Beton",
+        "Metal",
+        "Road"
+      ],
+      "visible": true
+    }
+  ]
+}

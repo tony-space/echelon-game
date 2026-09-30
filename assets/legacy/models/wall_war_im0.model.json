@@ -1,0 +1,124 @@
+{
+  "static": "Military Wall",
+  "source": "wall_war",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "wall_war_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.2294921875,
+        0.482041597366333,
+        5.223740577697754
+      ],
+      "orientation": [
+        2.1855697696082643e-08,
+        1.0,
+        -1.1723879343617576e-15,
+        5.364221067338809e-08
+      ],
+      "local_position": [
+        -0.2294921875,
+        0.482041597366333,
+        5.223740577697754
+      ],
+      "textures": [
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WallA",
+      "mesh": "wall_war_im0_WallA.emesh",
+      "parent": "",
+      "position": [
+        -55.94285583496094,
+        3.842064619064331,
+        6.001796919008484e-06
+      ],
+      "orientation": [
+        2.247646264474859e-08,
+        -0.707106781186545,
+        0.70710678118655,
+        5.338508925382332e-08
+      ],
+      "local_position": [
+        -55.94285583496094,
+        3.842064619064331,
+        6.001796919008484e-06
+      ],
+      "textures": [
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WallB",
+      "mesh": "wall_war_im0_WallB.emesh",
+      "parent": "",
+      "position": [
+        -18.432241439819336,
+        3.8420581817626953,
+        1.97749227481836e-06
+      ],
+      "orientation": [
+        2.247646264474859e-08,
+        -0.707106781186545,
+        0.70710678118655,
+        5.338508925382332e-08
+      ],
+      "local_position": [
+        -18.432241439819336,
+        3.8420581817626953,
+        1.97749227481836e-06
+      ],
+      "textures": [
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WallD",
+      "mesh": "wall_war_im0_WallD.emesh",
+      "parent": "",
+      "position": [
+        56.556488037109375,
+        3.842057466506958,
+        -5.590793080045842e-06
+      ],
+      "orientation": [
+        0.0,
+        -9.926167350636332e-23,
+        6.292648835658024e-31,
+        1.0
+      ],
+      "local_position": [
+        56.556488037109375,
+        3.842057466506958,
+        -5.590793080045842e-06
+      ],
+      "textures": [
+        "pol",
+        "tun1"
+      ],
+      "materials": [
+        "Beton"
+      ],
+      "visible": true
+    }
+  ]
+}

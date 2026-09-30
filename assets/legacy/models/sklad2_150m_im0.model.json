@@ -1,0 +1,70 @@
+{
+  "static": "Military Depot 150m",
+  "source": "sklad2_150m",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "AngA",
+      "mesh": "sklad2_150m_im0_AngA.emesh",
+      "parent": "",
+      "position": [
+        -0.2948603630065918,
+        0.6452345848083496,
+        -40.1607551574707
+      ],
+      "orientation": [
+        -0.4999999850988399,
+        0.5000000447034825,
+        -0.4999999701976805,
+        -0.5000000000000051
+      ],
+      "local_position": [
+        -0.2948603630065918,
+        0.6452345848083496,
+        -40.1607551574707
+      ],
+      "textures": [
+        "domaa",
+        "domab",
+        "g-bbb"
+      ],
+      "materials": [
+        "House",
+        "Road"
+      ],
+      "visible": true
+    },
+    {
+      "name": "HULL",
+      "mesh": "sklad2_150m_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "textures": [
+        "domaa",
+        "domab",
+        "g-bbb"
+      ],
+      "materials": [
+        "House",
+        "Road"
+      ],
+      "visible": true
+    }
+  ]
+}

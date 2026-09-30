@@ -1,0 +1,120 @@
+{
+  "vehicle": "H_MEDIUM Cannon",
+  "source": "h-med2",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "h-med2_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.42440053820610046,
+        1.6806577444076538,
+        0.7509450912475586
+      ],
+      "orientation": [
+        -6.400253482752305e-08,
+        1.0,
+        2.829388409594387e-15,
+        4.4207443039568164e-08
+      ],
+      "local_position": [
+        0.42440053820610046,
+        1.6806577444076538,
+        0.7509450912475586
+      ],
+      "textures": [
+        "tank"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "TurretTM",
+      "mesh": "h-med2_im0_TurretTM.emesh",
+      "parent": "",
+      "position": [
+        0.011903996579349041,
+        2.119598388671875,
+        1.3333959579467773
+      ],
+      "orientation": [
+        3.552713678800501e-15,
+        -2.7131524091739195e-22,
+        -3.141127246958361e-22,
+        1.0
+      ],
+      "local_position": [
+        0.011903996579349041,
+        2.119598388671875,
+        1.3333959579467773
+      ],
+      "textures": [
+        "tank"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "TurretTM_TurretTA",
+      "mesh": "h-med2_im0_TurretTM_TurretTA.emesh",
+      "parent": "TurretTM",
+      "position": [
+        0.024834044277668,
+        3.6568052768707275,
+        1.3377465000376214
+      ],
+      "orientation": [
+        -1.8132334775501335e-15,
+        4.4207439486853836e-08,
+        -1.1495380647375403e-08,
+        1.0
+      ],
+      "local_position": [
+        0.012930047698318958,
+        1.5372068881988525,
+        0.004350542090833187
+      ],
+      "textures": [
+        "tank"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    },
+    {
+      "name": "TurretTM_gun",
+      "mesh": "h-med2_im0_TurretTM_gun.emesh",
+      "parent": "TurretTM",
+      "position": [
+        0.5589117361232638,
+        1.896119669079808,
+        -2.5048801898956317
+      ],
+      "orientation": [
+        -1.6179478201649996e-08,
+        -1.1175877858761074e-08,
+        1.185705260230072e-07,
+        1.0000000000000002
+      ],
+      "local_position": [
+        0.5470077395439148,
+        -0.22347871959209442,
+        -3.8382761478424072
+      ],
+      "textures": [
+        "tank"
+      ],
+      "materials": [
+        "Metal"
+      ],
+      "visible": true
+    }
+  ]
+}

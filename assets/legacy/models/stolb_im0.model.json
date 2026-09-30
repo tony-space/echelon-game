@@ -1,0 +1,36 @@
+{
+  "static": "Stolb",
+  "source": "stolb",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "stolb_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        0.011361837387084961,
+        13.947481155395508,
+        -0.2513878643512726
+      ],
+      "orientation": [
+        -4.776714331494667e-16,
+        -2.1855694143368984e-08,
+        -2.1855695919725804e-08,
+        1.0
+      ],
+      "local_position": [
+        0.011361837387084961,
+        13.947481155395508,
+        -0.2513878643512726
+      ],
+      "textures": [
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

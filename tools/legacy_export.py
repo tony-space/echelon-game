@@ -784,7 +784,10 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
         print(f"  skip: no mesh records for {mesh_file}")
         return False
     print(f"  mesh file {mesh_file}, damage states {states}")
-    nodes = parse_object_nodes(src.objects, mesh_file, pos_limit, bbox_limit)
+    # A bare mesh (bridge section) is one root part at the origin. Its objects.dat
+    # record still contains float triples that pass the orthonormal test and a
+    # bbox match, which shifted riverbridge200m_part by 259 m along Z.
+    nodes = [] if mesh_override else parse_object_nodes(src.objects, mesh_file, pos_limit, bbox_limit)
 
     models_dir = out_dir / "models"
     tex_dir = out_dir / "textures"
@@ -813,7 +816,7 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
                                    _record_name(mesh_file, sub, base, lod)))
                   for sub in base_subs]
     assigned = assign_nodes(nodes, base_parts)
-    if objects2 is not None:
+    if objects2 is not None and not mesh_override:
         bind_objects2_fallbacks(mesh_file, src.meshes, objects2, base_parts, nodes, assigned)
     for sub, _pm in base_parts:
         node = assigned.get(sub)
@@ -824,7 +827,8 @@ def export_craft(data_dir: Path, craft: str, out_dir: Path, lod: int = 0,
             leaf = sub.split("_")[-1]
             local_pos[sub] = gdata_offsets.get(leaf, (0.0, 0.0, 0.0))
             local_rot[sub] = ident
-            print(f"  ! {sub}: no objects.dat node matched, using gdata offset", file=sys.stderr)
+            if not mesh_override:
+                print(f"  ! {sub}: no objects.dat node matched, using gdata offset", file=sys.stderr)
 
     def absolute_transform(sub: str) -> tuple[tuple[float, float, float], tuple[tuple[float, float, float], ...]]:
         """Parent-relative D3D transforms composed out to the model root."""

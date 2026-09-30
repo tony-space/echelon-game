@@ -1,0 +1,37 @@
+{
+  "static": "Home 06",
+  "source": "fh06",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "fh06_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.1798534393310547,
+        4.0811567306518555,
+        -0.007295234128832817
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        -0.1798534393310547,
+        4.0811567306518555,
+        -0.007295234128832817
+      ],
+      "textures": [
+        "domaa",
+        "domab"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}

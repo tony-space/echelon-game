@@ -22,6 +22,8 @@ set(SRC
 	render/frustum.hpp
 	render/scene_objects.hpp
 	render/scene_objects.cpp
+	render/roads.hpp
+	render/roads.cpp
 	render/terrain_renderer.hpp
 	render/terrain_renderer.cpp
 )

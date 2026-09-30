@@ -1,0 +1,64 @@
+{
+  "static": "Home 01",
+  "source": "fh01",
+  "lod": 0,
+  "damage_state": 0,
+  "parts": [
+    {
+      "name": "HULL",
+      "mesh": "fh01_im0_HULL.emesh",
+      "parent": "",
+      "position": [
+        -0.9965614676475525,
+        5.9541239738464355,
+        5.915722370147705
+      ],
+      "orientation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_position": [
+        -0.9965614676475525,
+        5.9541239738464355,
+        5.915722370147705
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    },
+    {
+      "name": "WALL",
+      "mesh": "fh01_im0_WALL.emesh",
+      "parent": "",
+      "position": [
+        1.055565357208252,
+        -6.23073148727417,
+        -2.4387218952178955
+      ],
+      "orientation": [
+        0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "local_position": [
+        1.055565357208252,
+        -6.23073148727417,
+        -2.4387218952178955
+      ],
+      "textures": [
+        "domaa"
+      ],
+      "materials": [
+        "House"
+      ],
+      "visible": true
+    }
+  ]
+}
